@@ -153,7 +153,7 @@
             mapTheme = [[[EGMapTheme alloc] initWithSeason: EGMapThemeSeasonSummer
                                                    andTime: EGMapThemeTimeDay
                                                 andWeather: EGMapThemeWeatherClear] autorelease];
-            [self.geoFencePoly setColor:1.0f g:0.f b:1.f a:0.3f];
+            [self.geoFencePoly setColor:1.0f g:0.f b:0.f a:0.2f];
             break;
         case 1:
             mapTheme = [[[EGMapTheme alloc] initWithSeason: EGMapThemeSeasonSummer
