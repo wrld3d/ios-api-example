@@ -101,6 +101,7 @@
     self.eegeoMapApi = nil;
     
     [self.eegeoMapView removeFromSuperview];
+    self.eegeoMapView.eegeoMapDelegate = nil;
     self.eegeoMapView = nil;
 }
 
@@ -202,7 +203,7 @@
     
     EGCoordinateBounds bounds = EGCoordinateBoundsFromCoordinatesMake(coordinates, numberOfCoordinates);
     
-    [self.eegeoMapApi setVisibleCoordinateBounds:bounds];
+    [self.eegeoMapApi setVisibleCoordinateBounds:bounds animated:YES];
 }
 
 - (void)addGeofencePolygon
