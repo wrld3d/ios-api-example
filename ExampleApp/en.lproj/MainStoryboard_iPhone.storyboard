@@ -4,8 +4,6 @@
         <deployment identifier="iOS"/>
         <development version="5100" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,8 +22,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ade-dI-bqV">
                                 <rect key="frame" x="16" y="641" width="130" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="KuL-VQ-uch"/>
-                                    <constraint firstAttribute="height" constant="44" id="p3W-db-Hhm"/>
+                                    <constraint firstAttribute="width" constant="130" id="UA6-BQ-lFw"/>
+                                    <constraint firstAttribute="height" constant="44" id="xLd-ce-3kg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Home">
@@ -35,7 +33,7 @@
                                     <action selector="cameraHome:" destination="DIw-PZ-sBR" eventType="touchUpInside" id="5Bb-sY-vC0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFP-ey-6ep">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFP-ey-6ep">
                                 <rect key="frame" x="154" y="641" width="130" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Frame Bounds">
@@ -48,13 +46,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LFP-ey-6ep" firstAttribute="leading" secondItem="Ade-dI-bqV" secondAttribute="trailing" constant="8" symbolic="YES" id="6oR-nV-j0I"/>
-                            <constraint firstItem="LFP-ey-6ep" firstAttribute="baseline" secondItem="Ade-dI-bqV" secondAttribute="firstBaseline" id="EzA-I6-RpT"/>
-                            <constraint firstItem="Ade-dI-bqV" firstAttribute="leading" secondItem="tsU-Lu-3SO" secondAttribute="leadingMargin" id="Hto-eJ-jSc"/>
-                            <constraint firstItem="LFP-ey-6ep" firstAttribute="top" secondItem="Ade-dI-bqV" secondAttribute="top" id="evY-vl-HoY"/>
-                            <constraint firstItem="Ade-dI-bqV" firstAttribute="top" secondItem="0Je-yO-5SK" secondAttribute="bottom" constant="205" id="l3f-FV-tST"/>
-                            <constraint firstItem="Ade-dI-bqV" firstAttribute="baseline" secondItem="LFP-ey-6ep" secondAttribute="firstBaseline" id="ow0-L4-T7W"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LFP-ey-6ep" secondAttribute="trailing" constant="20" id="ubh-cr-JE8"/>
+                            <constraint firstItem="LFP-ey-6ep" firstAttribute="leading" secondItem="Ade-dI-bqV" secondAttribute="trailing" constant="8" symbolic="YES" id="1vw-5e-AKZ"/>
+                            <constraint firstItem="LFP-ey-6ep" firstAttribute="top" secondItem="Ade-dI-bqV" secondAttribute="top" id="B0s-Jg-ayd"/>
+                            <constraint firstItem="Ade-dI-bqV" firstAttribute="top" secondItem="0Je-yO-5SK" secondAttribute="bottom" constant="205" id="C8C-VX-IGo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LFP-ey-6ep" secondAttribute="trailing" constant="20" id="h3i-U3-VOD"/>
+                            <constraint firstItem="Ade-dI-bqV" firstAttribute="leading" secondItem="tsU-Lu-3SO" secondAttribute="leadingMargin" id="wQr-Gs-WY5"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -191,7 +187,7 @@
                                     <action selector="cameraHome:" destination="bAD-v7-s6x" eventType="touchUpInside" id="Mud-Ea-Fgc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVT-Ll-3q6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVT-Ll-3q6">
                                 <rect key="frame" x="154" y="641" width="130" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Frame Bounds">
@@ -207,8 +203,6 @@
                             <constraint firstItem="bVT-Ll-3q6" firstAttribute="top" secondItem="52s-xQ-C1u" secondAttribute="top" id="A28-KP-UMF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bVT-Ll-3q6" secondAttribute="trailing" constant="20" id="Gsw-AU-HnY"/>
                             <constraint firstItem="bVT-Ll-3q6" firstAttribute="leading" secondItem="52s-xQ-C1u" secondAttribute="trailing" constant="8" symbolic="YES" id="Maf-6n-WT2"/>
-                            <constraint firstItem="52s-xQ-C1u" firstAttribute="baseline" secondItem="bVT-Ll-3q6" secondAttribute="firstBaseline" id="Z9u-Pj-h7j"/>
-                            <constraint firstItem="bVT-Ll-3q6" firstAttribute="baseline" secondItem="52s-xQ-C1u" secondAttribute="firstBaseline" id="gSa-sx-HWm"/>
                             <constraint firstItem="52s-xQ-C1u" firstAttribute="top" secondItem="f0i-mb-Gev" secondAttribute="bottom" constant="205" id="k9e-OW-e2q"/>
                             <constraint firstItem="52s-xQ-C1u" firstAttribute="leading" secondItem="dAB-f5-7ws" secondAttribute="leadingMargin" id="tWL-UM-SUq"/>
                         </constraints>
