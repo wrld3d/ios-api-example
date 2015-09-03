@@ -34,6 +34,11 @@
 {
     [super layoutSubviews];
     
+    self.bounds = CGRectMake(0,
+                             0,
+                             self.imageView.bounds.size.width,
+                             self.imageView.bounds.size.height + self.title.bounds.size.height);
+    
     self.layer.shouldRasterize = YES;
     self.layer.rasterizationScale = [[UIScreen mainScreen] scale];
 }
