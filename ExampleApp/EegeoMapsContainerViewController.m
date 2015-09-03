@@ -10,12 +10,12 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @end
 
-@interface EegeoMapsContainerViewController () <EegeoMapDelegate>
-@property (strong, nonatomic) id<EegeoMapApi> eegeoMapApi;
+@interface EegeoMapsContainerViewController () <EGMapDelegate>
+@property (strong, nonatomic) id<EGMapApi> eegeoMapApi;
 @end
 
 @interface EegeoMapsContainerViewController ()
-@property (strong, nonatomic) EegeoMapView* eegeoMapView;
+@property (strong, nonatomic) EGMapView* eegeoMapView;
 
 @property (strong, nonatomic) id<EGPrecacheOperation> precacheOperation;
 @property (strong, nonatomic) id<EGPolygon> geoFencePoly;
@@ -46,7 +46,7 @@
     
     m_mapThemeCursor = 0;
     
-    self.eegeoMapView = [[[EegeoMapView alloc] initWithFrame:self.view.bounds] autorelease];
+    self.eegeoMapView = [[[EGMapView alloc] initWithFrame:self.view.bounds] autorelease];
     self.eegeoMapView.eegeoMapDelegate = self;
     self.eegeoMapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
@@ -105,7 +105,7 @@
     self.eegeoMapView = nil;
 }
 
-- (void)eegeoMapReady:(id<EegeoMapApi>)api
+- (void)eegeoMapReady:(id<EGMapApi>)api
 {
     self.eegeoMapApi = api;
     [self handleMapAvailable];
