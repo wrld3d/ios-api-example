@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1839061B1BEA128000A06CE0 /* embedded_manifest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1839061A1BEA128000A06CE0 /* embedded_manifest.txt */; };
 		183ED1C11B4C378200B68A82 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ED1BD1B4C378200B68A82 /* Main.m */; };
 		186943881B4ED0DA00B8776D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 186943861B4ED0DA00B8776D /* Podfile */; };
 		186D2936196D9E4B00E004E0 /* placeholder.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D34A194A057200FAA1B9 /* placeholder.pvr */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		0B5C8EC9C89CE215E1C6A17B /* Pods-SDKSamplesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSamplesApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDKSamplesApp/Pods-SDKSamplesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		183856811B8CAE3F005D7CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1839061A1BEA128000A06CE0 /* embedded_manifest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = embedded_manifest.txt; sourceTree = "<group>"; };
 		183ED1BD1B4C378200B68A82 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = SOURCE_ROOT; };
 		184ED7121B4D6F6B00CCF43F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18574CFA1B8491EB002EDABB /* MapContainerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapContainerDelegate.h; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		7EE4825B16847E7C0006E99B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1839061A1BEA128000A06CE0 /* embedded_manifest.txt */,
 				18A481741B7E1DD50038FB8A /* custom_annotation_image.png */,
 				18D1D348194A057200FAA1B9 /* pins_example */,
 				18D1D363194A0EA000FAA1B9 /* platform_assets */,
@@ -315,6 +318,7 @@
 				18A481811B7E22CB0038FB8A /* AppleCustomAnnotationView.xib in Resources */,
 				222E069A1948B08B0004FFD9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				222E069B1948B08B0004FFD9 /* MainStoryboard_iPad.storyboard in Resources */,
+				1839061B1BEA128000A06CE0 /* embedded_manifest.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
