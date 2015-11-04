@@ -8,6 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		1839061B1BEA128000A06CE0 /* embedded_manifest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1839061A1BEA128000A06CE0 /* embedded_manifest.txt */; };
+		183906551BEA132A00A06CE0 /* London_London_railDiffuse_repeat.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839061D1BEA132A00A06CE0 /* London_London_railDiffuse_repeat.pvr */; };
+		183906561BEA132A00A06CE0 /* SanFrancisco_ldn_trains_01.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839061E1BEA132A00A06CE0 /* SanFrancisco_ldn_trains_01.pvr */; };
+		183906571BEA132A00A06CE0 /* SanFrancisco_placeholder_no_data.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839061F1BEA132A00A06CE0 /* SanFrancisco_placeholder_no_data.pvr */; };
+		183906581BEA132A00A06CE0 /* SanFrancisco_SanFran_roadDiffuse_repeat.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906201BEA132A00A06CE0 /* SanFrancisco_SanFran_roadDiffuse_repeat.pvr */; };
+		183906591BEA132A00A06CE0 /* SanFrancisco_SanFran_wallDiffuse.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906211BEA132A00A06CE0 /* SanFrancisco_SanFran_wallDiffuse.pvr */; };
+		1839065A1BEA132A00A06CE0 /* SanFrancisco_sf_planes_01.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906221BEA132A00A06CE0 /* SanFrancisco_sf_planes_01.pvr */; };
+		1839065B1BEA132A00A06CE0 /* SanFrancisco_sf_vehicles_01.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906231BEA132A00A06CE0 /* SanFrancisco_sf_vehicles_01.pvr */; };
+		1839065C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906241BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0.pvr */; };
+		1839065D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906251BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0_LOD.pvr */; };
+		1839065E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906261BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1.pvr */; };
+		1839065F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906271BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10.pvr */; };
+		183906601BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906281BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10_LOD.pvr */; };
+		183906611BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906291BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11.pvr */; };
+		183906621BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839062A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11_LOD.pvr */; };
+		183906631BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839062B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12.pvr */; };
+		183906641BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839062C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12_LOD.pvr */; };
+		183906651BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839062D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13.pvr */; };
+		183906661BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839062E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13_LOD.pvr */; };
+		183906671BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839062F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14.pvr */; };
+		183906681BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906301BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14_LOD.pvr */; };
+		183906691BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906311BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15.pvr */; };
+		1839066A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906321BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15_LOD.pvr */; };
+		1839066B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906331BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16.pvr */; };
+		1839066C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906341BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16_LOD.pvr */; };
+		1839066D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906351BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17.pvr */; };
+		1839066E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906361BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17_LOD.pvr */; };
+		1839066F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906371BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18.pvr */; };
+		183906701BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906381BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18_LOD.pvr */; };
+		183906711BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906391BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1_LOD.pvr */; };
+		183906721BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839063A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2.pvr */; };
+		183906731BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839063B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2_LOD.pvr */; };
+		183906741BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839063C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3.pvr */; };
+		183906751BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839063D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3_LOD.pvr */; };
+		183906761BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839063E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4.pvr */; };
+		183906771BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839063F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4_LOD.pvr */; };
+		183906781BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906401BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5.pvr */; };
+		183906791BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906411BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5_LOD.pvr */; };
+		1839067A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906421BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6.pvr */; };
+		1839067B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906431BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6_LOD.pvr */; };
+		1839067C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906441BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7.pvr */; };
+		1839067D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906451BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7_LOD.pvr */; };
+		1839067E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906461BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8.pvr */; };
+		1839067F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906471BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8_LOD.pvr */; };
+		183906801BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906481BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9.pvr */; };
+		183906811BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906491BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9_LOD.pvr */; };
+		183906821BEA132A00A06CE0 /* SanFrancisco_trees_01.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839064A1BEA132A00A06CE0 /* SanFrancisco_trees_01.pvr */; };
+		183906831BEA132A00A06CE0 /* SanFrancisco_trees_top_01.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839064B1BEA132A00A06CE0 /* SanFrancisco_trees_top_01.pvr */; };
+		183906841BEA132A00A06CE0 /* SanFrancisco_VehicleModels_recce_trams.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839064C1BEA132A00A06CE0 /* SanFrancisco_VehicleModels_recce_trams.pvr */; };
+		183906851BEA132A00A06CE0 /* SanFrancisco_Water_01.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839064D1BEA132A00A06CE0 /* SanFrancisco_Water_01.pvr */; };
+		183906861BEA132A00A06CE0 /* SanFrancisco_Water_01_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839064E1BEA132A00A06CE0 /* SanFrancisco_Water_01_LOD.pvr */; };
+		183906871BEA132A00A06CE0 /* SanFrancisco_Water_02.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 1839064F1BEA132A00A06CE0 /* SanFrancisco_Water_02.pvr */; };
+		183906881BEA132A00A06CE0 /* SanFrancisco_Water_02_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906501BEA132A00A06CE0 /* SanFrancisco_Water_02_LOD.pvr */; };
+		183906891BEA132A00A06CE0 /* SanFrancisco_Water_03.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906511BEA132A00A06CE0 /* SanFrancisco_Water_03.pvr */; };
+		1839068A1BEA132A00A06CE0 /* SanFrancisco_Water_03_LOD.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906521BEA132A00A06CE0 /* SanFrancisco_Water_03_LOD.pvr */; };
+		1839068B1BEA132A00A06CE0 /* SanFrancisco_water_normalmap.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906531BEA132A00A06CE0 /* SanFrancisco_water_normalmap.pvr */; };
+		1839068C1BEA132A00A06CE0 /* SanFrancisco_water_reflectionmap.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 183906541BEA132A00A06CE0 /* SanFrancisco_water_reflectionmap.pvr */; };
 		183ED1C11B4C378200B68A82 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ED1BD1B4C378200B68A82 /* Main.m */; };
 		186943881B4ED0DA00B8776D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 186943861B4ED0DA00B8776D /* Podfile */; };
 		186D2936196D9E4B00E004E0 /* placeholder.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D34A194A057200FAA1B9 /* placeholder.pvr */; };
@@ -47,6 +103,62 @@
 		0B5C8EC9C89CE215E1C6A17B /* Pods-SDKSamplesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSamplesApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDKSamplesApp/Pods-SDKSamplesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		183856811B8CAE3F005D7CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1839061A1BEA128000A06CE0 /* embedded_manifest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = embedded_manifest.txt; sourceTree = "<group>"; };
+		1839061D1BEA132A00A06CE0 /* London_London_railDiffuse_repeat.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = London_London_railDiffuse_repeat.pvr; sourceTree = "<group>"; };
+		1839061E1BEA132A00A06CE0 /* SanFrancisco_ldn_trains_01.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_ldn_trains_01.pvr; sourceTree = "<group>"; };
+		1839061F1BEA132A00A06CE0 /* SanFrancisco_placeholder_no_data.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_placeholder_no_data.pvr; sourceTree = "<group>"; };
+		183906201BEA132A00A06CE0 /* SanFrancisco_SanFran_roadDiffuse_repeat.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_SanFran_roadDiffuse_repeat.pvr; sourceTree = "<group>"; };
+		183906211BEA132A00A06CE0 /* SanFrancisco_SanFran_wallDiffuse.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_SanFran_wallDiffuse.pvr; sourceTree = "<group>"; };
+		183906221BEA132A00A06CE0 /* SanFrancisco_sf_planes_01.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_sf_planes_01.pvr; sourceTree = "<group>"; };
+		183906231BEA132A00A06CE0 /* SanFrancisco_sf_vehicles_01.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_sf_vehicles_01.pvr; sourceTree = "<group>"; };
+		183906241BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture0.pvr; sourceTree = "<group>"; };
+		183906251BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture0_LOD.pvr; sourceTree = "<group>"; };
+		183906261BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture1.pvr; sourceTree = "<group>"; };
+		183906271BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture10.pvr; sourceTree = "<group>"; };
+		183906281BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture10_LOD.pvr; sourceTree = "<group>"; };
+		183906291BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture11.pvr; sourceTree = "<group>"; };
+		1839062A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture11_LOD.pvr; sourceTree = "<group>"; };
+		1839062B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture12.pvr; sourceTree = "<group>"; };
+		1839062C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture12_LOD.pvr; sourceTree = "<group>"; };
+		1839062D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture13.pvr; sourceTree = "<group>"; };
+		1839062E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture13_LOD.pvr; sourceTree = "<group>"; };
+		1839062F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture14.pvr; sourceTree = "<group>"; };
+		183906301BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture14_LOD.pvr; sourceTree = "<group>"; };
+		183906311BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture15.pvr; sourceTree = "<group>"; };
+		183906321BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture15_LOD.pvr; sourceTree = "<group>"; };
+		183906331BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture16.pvr; sourceTree = "<group>"; };
+		183906341BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture16_LOD.pvr; sourceTree = "<group>"; };
+		183906351BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture17.pvr; sourceTree = "<group>"; };
+		183906361BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture17_LOD.pvr; sourceTree = "<group>"; };
+		183906371BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture18.pvr; sourceTree = "<group>"; };
+		183906381BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture18_LOD.pvr; sourceTree = "<group>"; };
+		183906391BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture1_LOD.pvr; sourceTree = "<group>"; };
+		1839063A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture2.pvr; sourceTree = "<group>"; };
+		1839063B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture2_LOD.pvr; sourceTree = "<group>"; };
+		1839063C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture3.pvr; sourceTree = "<group>"; };
+		1839063D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture3_LOD.pvr; sourceTree = "<group>"; };
+		1839063E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture4.pvr; sourceTree = "<group>"; };
+		1839063F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture4_LOD.pvr; sourceTree = "<group>"; };
+		183906401BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture5.pvr; sourceTree = "<group>"; };
+		183906411BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture5_LOD.pvr; sourceTree = "<group>"; };
+		183906421BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture6.pvr; sourceTree = "<group>"; };
+		183906431BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture6_LOD.pvr; sourceTree = "<group>"; };
+		183906441BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture7.pvr; sourceTree = "<group>"; };
+		183906451BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture7_LOD.pvr; sourceTree = "<group>"; };
+		183906461BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture8.pvr; sourceTree = "<group>"; };
+		183906471BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture8_LOD.pvr; sourceTree = "<group>"; };
+		183906481BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture9.pvr; sourceTree = "<group>"; };
+		183906491BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_TerrainTexture9_LOD.pvr; sourceTree = "<group>"; };
+		1839064A1BEA132A00A06CE0 /* SanFrancisco_trees_01.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_trees_01.pvr; sourceTree = "<group>"; };
+		1839064B1BEA132A00A06CE0 /* SanFrancisco_trees_top_01.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_trees_top_01.pvr; sourceTree = "<group>"; };
+		1839064C1BEA132A00A06CE0 /* SanFrancisco_VehicleModels_recce_trams.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_VehicleModels_recce_trams.pvr; sourceTree = "<group>"; };
+		1839064D1BEA132A00A06CE0 /* SanFrancisco_Water_01.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_Water_01.pvr; sourceTree = "<group>"; };
+		1839064E1BEA132A00A06CE0 /* SanFrancisco_Water_01_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_Water_01_LOD.pvr; sourceTree = "<group>"; };
+		1839064F1BEA132A00A06CE0 /* SanFrancisco_Water_02.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_Water_02.pvr; sourceTree = "<group>"; };
+		183906501BEA132A00A06CE0 /* SanFrancisco_Water_02_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_Water_02_LOD.pvr; sourceTree = "<group>"; };
+		183906511BEA132A00A06CE0 /* SanFrancisco_Water_03.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_Water_03.pvr; sourceTree = "<group>"; };
+		183906521BEA132A00A06CE0 /* SanFrancisco_Water_03_LOD.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_Water_03_LOD.pvr; sourceTree = "<group>"; };
+		183906531BEA132A00A06CE0 /* SanFrancisco_water_normalmap.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_water_normalmap.pvr; sourceTree = "<group>"; };
+		183906541BEA132A00A06CE0 /* SanFrancisco_water_reflectionmap.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = SanFrancisco_water_reflectionmap.pvr; sourceTree = "<group>"; };
 		183ED1BD1B4C378200B68A82 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = SOURCE_ROOT; };
 		184ED7121B4D6F6B00CCF43F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18574CFA1B8491EB002EDABB /* MapContainerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapContainerDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +238,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1839061C1BEA132A00A06CE0 /* EmbeddedTheme */ = {
+			isa = PBXGroup;
+			children = (
+				1839061D1BEA132A00A06CE0 /* London_London_railDiffuse_repeat.pvr */,
+				1839061E1BEA132A00A06CE0 /* SanFrancisco_ldn_trains_01.pvr */,
+				1839061F1BEA132A00A06CE0 /* SanFrancisco_placeholder_no_data.pvr */,
+				183906201BEA132A00A06CE0 /* SanFrancisco_SanFran_roadDiffuse_repeat.pvr */,
+				183906211BEA132A00A06CE0 /* SanFrancisco_SanFran_wallDiffuse.pvr */,
+				183906221BEA132A00A06CE0 /* SanFrancisco_sf_planes_01.pvr */,
+				183906231BEA132A00A06CE0 /* SanFrancisco_sf_vehicles_01.pvr */,
+				183906241BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0.pvr */,
+				183906251BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0_LOD.pvr */,
+				183906261BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1.pvr */,
+				183906271BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10.pvr */,
+				183906281BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10_LOD.pvr */,
+				183906291BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11.pvr */,
+				1839062A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11_LOD.pvr */,
+				1839062B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12.pvr */,
+				1839062C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12_LOD.pvr */,
+				1839062D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13.pvr */,
+				1839062E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13_LOD.pvr */,
+				1839062F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14.pvr */,
+				183906301BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14_LOD.pvr */,
+				183906311BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15.pvr */,
+				183906321BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15_LOD.pvr */,
+				183906331BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16.pvr */,
+				183906341BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16_LOD.pvr */,
+				183906351BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17.pvr */,
+				183906361BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17_LOD.pvr */,
+				183906371BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18.pvr */,
+				183906381BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18_LOD.pvr */,
+				183906391BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1_LOD.pvr */,
+				1839063A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2.pvr */,
+				1839063B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2_LOD.pvr */,
+				1839063C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3.pvr */,
+				1839063D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3_LOD.pvr */,
+				1839063E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4.pvr */,
+				1839063F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4_LOD.pvr */,
+				183906401BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5.pvr */,
+				183906411BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5_LOD.pvr */,
+				183906421BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6.pvr */,
+				183906431BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6_LOD.pvr */,
+				183906441BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7.pvr */,
+				183906451BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7_LOD.pvr */,
+				183906461BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8.pvr */,
+				183906471BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8_LOD.pvr */,
+				183906481BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9.pvr */,
+				183906491BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9_LOD.pvr */,
+				1839064A1BEA132A00A06CE0 /* SanFrancisco_trees_01.pvr */,
+				1839064B1BEA132A00A06CE0 /* SanFrancisco_trees_top_01.pvr */,
+				1839064C1BEA132A00A06CE0 /* SanFrancisco_VehicleModels_recce_trams.pvr */,
+				1839064D1BEA132A00A06CE0 /* SanFrancisco_Water_01.pvr */,
+				1839064E1BEA132A00A06CE0 /* SanFrancisco_Water_01_LOD.pvr */,
+				1839064F1BEA132A00A06CE0 /* SanFrancisco_Water_02.pvr */,
+				183906501BEA132A00A06CE0 /* SanFrancisco_Water_02_LOD.pvr */,
+				183906511BEA132A00A06CE0 /* SanFrancisco_Water_03.pvr */,
+				183906521BEA132A00A06CE0 /* SanFrancisco_Water_03_LOD.pvr */,
+				183906531BEA132A00A06CE0 /* SanFrancisco_water_normalmap.pvr */,
+				183906541BEA132A00A06CE0 /* SanFrancisco_water_reflectionmap.pvr */,
+			);
+			name = EmbeddedTheme;
+			path = Textures/EmbeddedTheme;
+			sourceTree = "<group>";
+		};
 		18A481771B7E22CB0038FB8A /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +405,7 @@
 		7EE4825B16847E7C0006E99B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1839061C1BEA132A00A06CE0 /* EmbeddedTheme */,
 				1839061A1BEA128000A06CE0 /* embedded_manifest.txt */,
 				18A481741B7E1DD50038FB8A /* custom_annotation_image.png */,
 				18D1D348194A057200FAA1B9 /* pins_example */,
@@ -306,19 +483,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				186D2936196D9E4B00E004E0 /* placeholder.pvr in Resources */,
+				183906691BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15.pvr in Resources */,
+				183906761BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4.pvr in Resources */,
 				186D2937196D9E4B00E004E0 /* FrankBold50_A8_icons_0.png in Resources */,
 				186D2938196D9E4B00E004E0 /* FrankBold50_A8_icons.fnt in Resources */,
 				186943881B4ED0DA00B8776D /* Podfile in Resources */,
+				183906611BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11.pvr in Resources */,
+				1839066A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15_LOD.pvr in Resources */,
+				1839068B1BEA132A00A06CE0 /* SanFrancisco_water_normalmap.pvr in Resources */,
+				183906791BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5_LOD.pvr in Resources */,
 				186D293B196D9E4B00E004E0 /* pins_example in Resources */,
+				183906631BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12.pvr in Resources */,
+				183906821BEA132A00A06CE0 /* SanFrancisco_trees_01.pvr in Resources */,
+				183906671BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14.pvr in Resources */,
 				18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */,
+				183906731BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2_LOD.pvr in Resources */,
+				183906581BEA132A00A06CE0 /* SanFrancisco_SanFran_roadDiffuse_repeat.pvr in Resources */,
+				1839065A1BEA132A00A06CE0 /* SanFrancisco_sf_planes_01.pvr in Resources */,
+				183906551BEA132A00A06CE0 /* London_London_railDiffuse_repeat.pvr in Resources */,
+				1839065B1BEA132A00A06CE0 /* SanFrancisco_sf_vehicles_01.pvr in Resources */,
+				183906661BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13_LOD.pvr in Resources */,
 				18A481761B7E1DD50038FB8A /* custom_annotation_image.png in Resources */,
+				183906571BEA132A00A06CE0 /* SanFrancisco_placeholder_no_data.pvr in Resources */,
 				E0B9CF9319F697090012D0B4 /* Images.xcassets in Resources */,
+				183906681BEA132A00A06CE0 /* SanFrancisco_TerrainTexture14_LOD.pvr in Resources */,
 				E096AE1D19F6713300C3D04A /* SplashScreen-1024x768.png in Resources */,
+				183906741BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3.pvr in Resources */,
+				183906811BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9_LOD.pvr in Resources */,
+				183906831BEA132A00A06CE0 /* SanFrancisco_trees_top_01.pvr in Resources */,
+				183906881BEA132A00A06CE0 /* SanFrancisco_Water_02_LOD.pvr in Resources */,
 				222E06991948B08B0004FFD9 /* InfoPlist.strings in Resources */,
+				1839067D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7_LOD.pvr in Resources */,
+				183906561BEA132A00A06CE0 /* SanFrancisco_ldn_trains_01.pvr in Resources */,
+				1839065F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10.pvr in Resources */,
+				1839066B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16.pvr in Resources */,
+				183906751BEA132A00A06CE0 /* SanFrancisco_TerrainTexture3_LOD.pvr in Resources */,
+				1839068C1BEA132A00A06CE0 /* SanFrancisco_water_reflectionmap.pvr in Resources */,
+				1839066D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17.pvr in Resources */,
+				183906641BEA132A00A06CE0 /* SanFrancisco_TerrainTexture12_LOD.pvr in Resources */,
+				183906711BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1_LOD.pvr in Resources */,
+				183906781BEA132A00A06CE0 /* SanFrancisco_TerrainTexture5.pvr in Resources */,
+				1839068A1BEA132A00A06CE0 /* SanFrancisco_Water_03_LOD.pvr in Resources */,
+				183906841BEA132A00A06CE0 /* SanFrancisco_VehicleModels_recce_trams.pvr in Resources */,
+				1839067A1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6.pvr in Resources */,
+				183906771BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4_LOD.pvr in Resources */,
+				183906621BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11_LOD.pvr in Resources */,
+				1839067F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8_LOD.pvr in Resources */,
+				183906601BEA132A00A06CE0 /* SanFrancisco_TerrainTexture10_LOD.pvr in Resources */,
+				1839067C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture7.pvr in Resources */,
 				18A481811B7E22CB0038FB8A /* AppleCustomAnnotationView.xib in Resources */,
+				183906801BEA132A00A06CE0 /* SanFrancisco_TerrainTexture9.pvr in Resources */,
+				1839066C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture16_LOD.pvr in Resources */,
+				183906701BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18_LOD.pvr in Resources */,
+				183906891BEA132A00A06CE0 /* SanFrancisco_Water_03.pvr in Resources */,
+				183906871BEA132A00A06CE0 /* SanFrancisco_Water_02.pvr in Resources */,
+				183906591BEA132A00A06CE0 /* SanFrancisco_SanFran_wallDiffuse.pvr in Resources */,
+				1839066E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture17_LOD.pvr in Resources */,
 				222E069A1948B08B0004FFD9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				222E069B1948B08B0004FFD9 /* MainStoryboard_iPad.storyboard in Resources */,
+				1839065E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture1.pvr in Resources */,
+				183906721BEA132A00A06CE0 /* SanFrancisco_TerrainTexture2.pvr in Resources */,
+				1839066F1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture18.pvr in Resources */,
+				1839067E1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture8.pvr in Resources */,
+				1839065D1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0_LOD.pvr in Resources */,
+				1839065C1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture0.pvr in Resources */,
+				1839067B1BEA132A00A06CE0 /* SanFrancisco_TerrainTexture6_LOD.pvr in Resources */,
+				183906651BEA132A00A06CE0 /* SanFrancisco_TerrainTexture13.pvr in Resources */,
+				183906861BEA132A00A06CE0 /* SanFrancisco_Water_01_LOD.pvr in Resources */,
 				1839061B1BEA128000A06CE0 /* embedded_manifest.txt in Resources */,
+				183906851BEA132A00A06CE0 /* SanFrancisco_Water_01.pvr in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
