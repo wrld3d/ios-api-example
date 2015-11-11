@@ -56,5 +56,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>eeGeoAppBase</key>
+	<string>iOS-API</string>
 </dict>
 </plist>
