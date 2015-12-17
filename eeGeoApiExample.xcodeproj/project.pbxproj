@@ -80,6 +80,8 @@
 		18A481831B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18A4817C1B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm */; };
 		18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A4817D1B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib */; };
 		18A87A041B83663900AAAC09 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A87A021B83663900AAAC09 /* MainViewController.m */; };
+		18F578031C2316BE007E1A1F /* DejaVuSansBold_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F578011C2316BE007E1A1F /* DejaVuSansBold_0.png */; };
+		18F578041C2316BE007E1A1F /* DejaVuSansBold.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */; };
 		222E068C1948B08B0004FFD9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF5D8641737F9A40049D787 /* CoreLocation.framework */; };
 		222E068D1948B08B0004FFD9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE48257168477CB0006E99B /* libz.dylib */; };
 		222E068E1948B08B0004FFD9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE48255168477A80006E99B /* MobileCoreServices.framework */; };
@@ -183,6 +185,8 @@
 		18D1D344194A057200FAA1B9 /* FrankBold50_A8_icons.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FrankBold50_A8_icons.fnt; sourceTree = "<group>"; };
 		18D1D348194A057200FAA1B9 /* pins_example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pins_example; sourceTree = "<group>"; };
 		18D1D34A194A057200FAA1B9 /* placeholder.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = placeholder.pvr; sourceTree = "<group>"; };
+		18F578011C2316BE007E1A1F /* DejaVuSansBold_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DejaVuSansBold_0.png; sourceTree = "<group>"; };
+		18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DejaVuSansBold.fnt; sourceTree = "<group>"; };
 		1C38D7CDD1B632A7F282D1B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		222E06C91948B08B0004FFD9 /* eeGeoApiExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eeGeoApiExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE481EA16836F370006E99B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -405,6 +409,8 @@
 		7EE4825B16847E7C0006E99B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18F578011C2316BE007E1A1F /* DejaVuSansBold_0.png */,
+				18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */,
 				1839061C1BEA132A00A06CE0 /* EmbeddedTheme */,
 				1839061A1BEA128000A06CE0 /* embedded_manifest.txt */,
 				18A481741B7E1DD50038FB8A /* custom_annotation_image.png */,
@@ -485,7 +491,9 @@
 				186D2936196D9E4B00E004E0 /* placeholder.pvr in Resources */,
 				183906691BEA132A00A06CE0 /* SanFrancisco_TerrainTexture15.pvr in Resources */,
 				183906761BEA132A00A06CE0 /* SanFrancisco_TerrainTexture4.pvr in Resources */,
+				18F578031C2316BE007E1A1F /* DejaVuSansBold_0.png in Resources */,
 				186D2937196D9E4B00E004E0 /* FrankBold50_A8_icons_0.png in Resources */,
+				18F578041C2316BE007E1A1F /* DejaVuSansBold.fnt in Resources */,
 				186D2938196D9E4B00E004E0 /* FrankBold50_A8_icons.fnt in Resources */,
 				186943881B4ED0DA00B8776D /* Podfile in Resources */,
 				183906611BEA132A00A06CE0 /* SanFrancisco_TerrainTexture11.pvr in Resources */,
