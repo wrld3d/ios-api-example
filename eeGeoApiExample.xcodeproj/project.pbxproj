@@ -421,8 +421,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LANGUAGE_STANDARD = "$(inherited)";
-				CLANG_CXX_LIBRARY = "$(inherited)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -433,7 +433,10 @@
 				INFOPLIST_FILE = "ExampleApp/eeGeoApiExample-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited) ";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-DCOMPILE_CPP_11",
+				);
 				PRODUCT_NAME = eeGeoApiExampleApp;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -447,8 +450,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_CXX_LANGUAGE_STANDARD = "$(inherited)";
-				CLANG_CXX_LIBRARY = "$(inherited)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -459,7 +462,10 @@
 				INFOPLIST_FILE = "ExampleApp/eeGeoApiExample-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited) ";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-DCOMPILE_CPP_11",
+				);
 				PRODUCT_NAME = eeGeoApiExampleApp;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
