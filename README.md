@@ -1,4 +1,8 @@
-![eeGeo](http://cdn2.eegeo.com/wp-content/uploads/2015/06/wide_eegeo_logo_hero.jpg)
+<a href="http://www.eegeo.com/">
+    <img src="http://cdn2.eegeo.com/wp-content/uploads/2016/03/eegeo_logo_quite_big.png" alt="eeGeo Logo" title="eegeo" align="right" height="80px" />
+</a>
+
+# eeGeo 3D Maps iOS API
 
 - [Getting started](#getting-started)
     - [CocoaPods](#cocoapods)
@@ -12,8 +16,6 @@
 - [Support](#support)
 - [Contributing](#contributing)
 - [License](#license)
-
-# eeGeo 3D Maps iOS API
 
 This example app showcases the [eeGeo iOS API](https://github.com/eegeo/ios-api), a C++11 OpenGL-based library for [beautiful and customisable 3D maps](http://www.eegeo.com). It is a minimal app that demonstrates the use of the eeGeo 3D Maps alongside Apple's MapKit and Google Maps.
 
