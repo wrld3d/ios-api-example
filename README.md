@@ -4,6 +4,7 @@
 
 # eeGeo 3D Maps iOS API
 
+- [Support](#support)
 - [Getting started](#getting-started)
     - [CocoaPods](#cocoapods)
     - [eeGeo API Key](#eegeo-api-key)
@@ -13,13 +14,16 @@
     - [EGMapAPI](#egmapapi)
         - [Annotations](#annotations)
         - [Themes](#themes)
-- [Support](#support)
 - [Contributing](#contributing)
 - [License](#license)
 
 This example app showcases the [eeGeo iOS API](https://github.com/eegeo/ios-api), a C++11 OpenGL-based library for [beautiful and customisable 3D maps](http://www.eegeo.com). It is a minimal app that demonstrates the use of the eeGeo 3D Maps alongside Apple's MapKit and Google Maps.
 
 The eeGeo 3D Maps API is simple to use and can be dropped unobtrusively into an app. It follows common idioms for mapping APIs, so should be familiar to anyone with prior experience there. This example app can be used as a basis for your own app, or can be used as a reference when integrating eeGeo's maps into an existing app.
+
+## Support
+
+If you have any questions, bug reports, or feature requests, feel free to submit to the [issue tracker](https://github.com/eegeo/ios-api-example/issues) for this repository.
 
 ## Getting Started 
 
@@ -169,10 +173,6 @@ Many other presets are available, allowing developers to create a distinctive an
 
 ![Four different seasons, weathers, and times of day](http://cdn2.eegeo.com/wp-content/uploads/2016/03/eegeo-four-seasons-themes.jpg)
 
-## Support
-
-If you have any questions, bug reports, or feature requests, feel free to submit to the [issue tracker](https://github.com/eegeo/ios-api-example/issues) for this repository. Alternatively, you can contact us at [support@eegeo.com](mailto:support@eegeo.com).
-
 ## Contributing 
 
 The following step by step guide details the process for contributing to the iOS API.
@@ -186,4 +186,4 @@ The following step by step guide details the process for contributing to the iOS
 
 ## License
 
-The eeGeo 3D Maps API is released under the Eegeo Platform SDK Evaluation license. See LICENSE.md for details.
+The eeGeo 3D Maps API is released under the Eegeo Platform SDK Evaluation license. See [LICENSE.md](https://github.com/eegeo/ios-api-example/blob/master/LICENSE.md) for details.
