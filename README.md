@@ -39,7 +39,7 @@ This section will walk you through the process of getting up and running quickly
 
 ### CocoaPods
 
-CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like the eeGeo 3D Maps API in your projects. If you're already familiar with CocoaPods, [skip ahead](eegeo-api-key). For more information about CocoaPods, including installation instructions, see the [CocoaPods guide](https://guides.cocoapods.org/).
+CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like the eeGeo 3D Maps API in your projects. If you're already familiar with CocoaPods, [skip ahead](#eegeo-api-key). For more information about CocoaPods, including installation instructions, see the [CocoaPods guide](https://guides.cocoapods.org/).
 
 The [eeGeo 3D Maps API CocoaPod](https://cocoapods.org/pods/eegeo) can be used by your project by including the 'eeGeo' pod in your Podfile. This saves having to manually configure and maintain an XCode project which includes the API.
 
