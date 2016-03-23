@@ -4,6 +4,8 @@
 
 # eeGeo 3D Maps iOS API
 
+![eeGeo](http://cdn2.eegeo.com/wp-content/uploads/2016/03/readme-banner.jpg)
+
 - [Support](#support)
 - [Getting started](#getting-started)
     - [CocoaPods](#cocoapods)
@@ -17,7 +19,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-This example app showcases the [eeGeo iOS API](https://github.com/eegeo/ios-api), a C++11 OpenGL-based library for [beautiful and customisable 3D maps](http://www.eegeo.com). It is a minimal app that demonstrates the use of the eeGeo 3D Maps alongside Apple's MapKit and Google Maps.
+This example app showcases the [eeGeo iOS API](https://github.com/eegeo/ios-api), an OpenGL-based library for [beautiful and customisable 3D maps](http://www.eegeo.com). It is a minimal app, written in Objective-C, that demonstrates the use of the eeGeo 3D Maps alongside Apple's MapKit and Google Maps.
 
 The eeGeo 3D Maps API is simple to use and can be dropped unobtrusively into an app. It follows common idioms for mapping APIs, so should be familiar to anyone with prior experience there. This example app can be used as a basis for your own app, or can be used as a reference when integrating eeGeo's maps into an existing app.
 
@@ -37,7 +39,7 @@ This section will walk you through the process of getting up and running quickly
 
 ### CocoaPods
 
-CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like the eeGeo 3D Maps API in your projects. See the [CocoaPods guide](https://guides.cocoapods.org/) for information about CocoaPods (including installation instructions).
+CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like the eeGeo 3D Maps API in your projects. If you're already familiar with CocoaPods, [skip ahead](eegeo-api-key). For more information about CocoaPods, including installation instructions, see the [CocoaPods guide](https://guides.cocoapods.org/).
 
 The [eeGeo 3D Maps API CocoaPod](https://cocoapods.org/pods/eegeo) can be used by your project by including the 'eeGeo' pod in your Podfile. This saves having to manually configure and maintain an XCode project which includes the API.
 
