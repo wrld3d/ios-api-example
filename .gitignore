@@ -20,3 +20,6 @@ Include
 .settings/
 project.properties
 **/xcuserdata/
+eeGeoApiExample.xcworkspace/contents.xcworkspacedata
+Podfile.lock
+Pods/
