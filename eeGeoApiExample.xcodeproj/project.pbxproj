@@ -13,7 +13,6 @@
 		186D2937196D9E4B00E004E0 /* FrankBold50_A8_icons_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D343194A057200FAA1B9 /* FrankBold50_A8_icons_0.png */; };
 		186D2938196D9E4B00E004E0 /* FrankBold50_A8_icons.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D344194A057200FAA1B9 /* FrankBold50_A8_icons.fnt */; };
 		186D293B196D9E4B00E004E0 /* pins_example in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D348194A057200FAA1B9 /* pins_example */; };
-		1882657D1C4CD74600EAF1F8 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 1882657C1C4CD74600EAF1F8 /* Textures */; };
 		1890C03F1B551C190037F289 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186943841B4ED01E00B8776D /* MapKit.framework */; };
 		1890C0471B5657BD0037F289 /* GoogleMapsContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890C0451B5657BD0037F289 /* GoogleMapsContainerViewController.m */; };
 		1890C04F1B5670C60037F289 /* AppleMapsContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890C04D1B5670C60037F289 /* AppleMapsContainerViewController.m */; };
@@ -40,6 +39,13 @@
 		222E06991948B08B0004FFD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EE481F516836F370006E99B /* InfoPlist.strings */; };
 		222E069A1948B08B0004FFD9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE4820C1683713B0006E99B /* MainStoryboard_iPhone.storyboard */; };
 		222E069B1948B08B0004FFD9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE4820F168371460006E99B /* MainStoryboard_iPad.storyboard */; };
+		2CD12BB21D90475500B49AD7 /* EmbeddedTheme in Resources */ = {isa = PBXBuildFile; fileRef = 2CD12BAB1D90475500B49AD7 /* EmbeddedTheme */; };
+		2CD12BB31D90475500B49AD7 /* placeholder_cube_negX.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD12BAC1D90475500B49AD7 /* placeholder_cube_negX.png */; };
+		2CD12BB41D90475500B49AD7 /* placeholder_cube_negY.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD12BAD1D90475500B49AD7 /* placeholder_cube_negY.png */; };
+		2CD12BB51D90475500B49AD7 /* placeholder_cube_negZ.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD12BAE1D90475500B49AD7 /* placeholder_cube_negZ.png */; };
+		2CD12BB61D90475500B49AD7 /* placeholder_cube_posX.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD12BAF1D90475500B49AD7 /* placeholder_cube_posX.png */; };
+		2CD12BB71D90475500B49AD7 /* placeholder_cube_posY.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD12BB01D90475500B49AD7 /* placeholder_cube_posY.png */; };
+		2CD12BB81D90475500B49AD7 /* placeholder_cube_posZ.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD12BB11D90475500B49AD7 /* placeholder_cube_posZ.png */; };
 		3A3A7DAA1D47715F00296F45 /* default_water_reflection_cube_map_negX.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A7DA41D47715F00296F45 /* default_water_reflection_cube_map_negX.png */; };
 		3A3A7DAB1D47715F00296F45 /* default_water_reflection_cube_map_negY.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A7DA51D47715F00296F45 /* default_water_reflection_cube_map_negY.png */; };
 		3A3A7DAC1D47715F00296F45 /* default_water_reflection_cube_map_negZ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A7DA61D47715F00296F45 /* default_water_reflection_cube_map_negZ.png */; };
@@ -60,7 +66,6 @@
 		18574CFA1B8491EB002EDABB /* MapContainerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapContainerDelegate.h; sourceTree = "<group>"; };
 		186943841B4ED01E00B8776D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		186943861B4ED0DA00B8776D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1882657C1C4CD74600EAF1F8 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
 		1890C0451B5657BD0037F289 /* GoogleMapsContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsContainerViewController.m; sourceTree = "<group>"; };
 		1890C0481B5657D00037F289 /* GoogleMapsContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapsContainerViewController.h; sourceTree = "<group>"; };
 		1890C04D1B5670C60037F289 /* AppleMapsContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleMapsContainerViewController.m; sourceTree = "<group>"; };
@@ -84,6 +89,13 @@
 		18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DejaVuSansBold.fnt; sourceTree = "<group>"; };
 		1C38D7CDD1B632A7F282D1B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		222E06C91948B08B0004FFD9 /* eeGeoApiExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eeGeoApiExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD12BAB1D90475500B49AD7 /* EmbeddedTheme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmbeddedTheme; sourceTree = "<group>"; };
+		2CD12BAC1D90475500B49AD7 /* placeholder_cube_negX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_cube_negX.png; sourceTree = "<group>"; };
+		2CD12BAD1D90475500B49AD7 /* placeholder_cube_negY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_cube_negY.png; sourceTree = "<group>"; };
+		2CD12BAE1D90475500B49AD7 /* placeholder_cube_negZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_cube_negZ.png; sourceTree = "<group>"; };
+		2CD12BAF1D90475500B49AD7 /* placeholder_cube_posX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_cube_posX.png; sourceTree = "<group>"; };
+		2CD12BB01D90475500B49AD7 /* placeholder_cube_posY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_cube_posY.png; sourceTree = "<group>"; };
+		2CD12BB11D90475500B49AD7 /* placeholder_cube_posZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_cube_posZ.png; sourceTree = "<group>"; };
 		3A3A7DA41D47715F00296F45 /* default_water_reflection_cube_map_negX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_water_reflection_cube_map_negX.png; sourceTree = "<group>"; };
 		3A3A7DA51D47715F00296F45 /* default_water_reflection_cube_map_negY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_water_reflection_cube_map_negY.png; sourceTree = "<group>"; };
 		3A3A7DA61D47715F00296F45 /* default_water_reflection_cube_map_negZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_water_reflection_cube_map_negZ.png; sourceTree = "<group>"; };
@@ -247,13 +259,19 @@
 		7EE4825B16847E7C0006E99B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2CD12BAB1D90475500B49AD7 /* EmbeddedTheme */,
+				2CD12BAC1D90475500B49AD7 /* placeholder_cube_negX.png */,
+				2CD12BAD1D90475500B49AD7 /* placeholder_cube_negY.png */,
+				2CD12BAE1D90475500B49AD7 /* placeholder_cube_negZ.png */,
+				2CD12BAF1D90475500B49AD7 /* placeholder_cube_posX.png */,
+				2CD12BB01D90475500B49AD7 /* placeholder_cube_posY.png */,
+				2CD12BB11D90475500B49AD7 /* placeholder_cube_posZ.png */,
 				3A3A7DA41D47715F00296F45 /* default_water_reflection_cube_map_negX.png */,
 				3A3A7DA51D47715F00296F45 /* default_water_reflection_cube_map_negY.png */,
 				3A3A7DA61D47715F00296F45 /* default_water_reflection_cube_map_negZ.png */,
 				3A3A7DA71D47715F00296F45 /* default_water_reflection_cube_map_posX.png */,
 				3A3A7DA81D47715F00296F45 /* default_water_reflection_cube_map_posY.png */,
 				3A3A7DA91D47715F00296F45 /* default_water_reflection_cube_map_posZ.png */,
-				1882657C1C4CD74600EAF1F8 /* Textures */,
 				18F578011C2316BE007E1A1F /* DejaVuSansBold_0.png */,
 				18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */,
 				F3B59B8F1D8ADBC80021493A /* embedded_manifest.bin */,
@@ -339,21 +357,27 @@
 				3A3A7DAF1D47715F00296F45 /* default_water_reflection_cube_map_posZ.png in Resources */,
 				3A3A7DAB1D47715F00296F45 /* default_water_reflection_cube_map_negY.png in Resources */,
 				18F578041C2316BE007E1A1F /* DejaVuSansBold.fnt in Resources */,
+				2CD12BB51D90475500B49AD7 /* placeholder_cube_negZ.png in Resources */,
+				2CD12BB71D90475500B49AD7 /* placeholder_cube_posY.png in Resources */,
+				2CD12BB41D90475500B49AD7 /* placeholder_cube_negY.png in Resources */,
 				186D2938196D9E4B00E004E0 /* FrankBold50_A8_icons.fnt in Resources */,
 				186943881B4ED0DA00B8776D /* Podfile in Resources */,
 				186D293B196D9E4B00E004E0 /* pins_example in Resources */,
+				2CD12BB81D90475500B49AD7 /* placeholder_cube_posZ.png in Resources */,
 				3A3A7DAC1D47715F00296F45 /* default_water_reflection_cube_map_negZ.png in Resources */,
 				3A3A7DAD1D47715F00296F45 /* default_water_reflection_cube_map_posX.png in Resources */,
 				18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */,
 				18A481761B7E1DD50038FB8A /* custom_annotation_image.png in Resources */,
 				E0B9CF9319F697090012D0B4 /* Images.xcassets in Resources */,
+				2CD12BB31D90475500B49AD7 /* placeholder_cube_negX.png in Resources */,
 				E096AE1D19F6713300C3D04A /* SplashScreen-1024x768.png in Resources */,
 				222E06991948B08B0004FFD9 /* InfoPlist.strings in Resources */,
 				3A3A7DAA1D47715F00296F45 /* default_water_reflection_cube_map_negX.png in Resources */,
 				18A481811B7E22CB0038FB8A /* AppleCustomAnnotationView.xib in Resources */,
+				2CD12BB61D90475500B49AD7 /* placeholder_cube_posX.png in Resources */,
 				222E069A1948B08B0004FFD9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F3B59B901D8ADBC80021493A /* embedded_manifest.bin in Resources */,
-				1882657D1C4CD74600EAF1F8 /* Textures in Resources */,
+				2CD12BB21D90475500B49AD7 /* EmbeddedTheme in Resources */,
 				3A3A7DAE1D47715F00296F45 /* default_water_reflection_cube_map_posY.png in Resources */,
 				222E069B1948B08B0004FFD9 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
