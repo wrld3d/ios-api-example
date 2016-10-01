@@ -188,4 +188,4 @@ The following step by step guide details the process for contributing to the iOS
 
 ## License
 
-The eeGeo 3D Maps API is released under the Eegeo Platform SDK Evaluation license. See [LICENSE.md](https://github.com/eegeo/ios-api-example/blob/master/LICENSE.md) for details.
+The eeGeo 3D Maps iOS API is released under Simplified BSD License. See [LICENSE.md](https://github.com/eegeo/ios-api-example/blob/master/LICENSE.md) for details.
