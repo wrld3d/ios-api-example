@@ -10,8 +10,6 @@
 		183ED1C11B4C378200B68A82 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183ED1BD1B4C378200B68A82 /* Main.m */; };
 		186943881B4ED0DA00B8776D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 186943861B4ED0DA00B8776D /* Podfile */; };
 		186D2936196D9E4B00E004E0 /* placeholder.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D34A194A057200FAA1B9 /* placeholder.pvr */; };
-		186D2937196D9E4B00E004E0 /* FrankBold50_A8_icons_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D343194A057200FAA1B9 /* FrankBold50_A8_icons_0.png */; };
-		186D2938196D9E4B00E004E0 /* FrankBold50_A8_icons.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D344194A057200FAA1B9 /* FrankBold50_A8_icons.fnt */; };
 		186D293B196D9E4B00E004E0 /* pins_example in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D348194A057200FAA1B9 /* pins_example */; };
 		1890C03F1B551C190037F289 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186943841B4ED01E00B8776D /* MapKit.framework */; };
 		1890C0471B5657BD0037F289 /* GoogleMapsContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890C0451B5657BD0037F289 /* GoogleMapsContainerViewController.m */; };
@@ -23,8 +21,6 @@
 		18A481831B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18A4817C1B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm */; };
 		18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A4817D1B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib */; };
 		18A87A041B83663900AAAC09 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A87A021B83663900AAAC09 /* MainViewController.m */; };
-		18F578031C2316BE007E1A1F /* DejaVuSansBold_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F578011C2316BE007E1A1F /* DejaVuSansBold_0.png */; };
-		18F578041C2316BE007E1A1F /* DejaVuSansBold.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */; };
 		222E068C1948B08B0004FFD9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF5D8641737F9A40049D787 /* CoreLocation.framework */; };
 		222E068D1948B08B0004FFD9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE48257168477CB0006E99B /* libz.dylib */; };
 		222E068E1948B08B0004FFD9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE48255168477A80006E99B /* MobileCoreServices.framework */; };
@@ -55,6 +51,10 @@
 		A1D56150BAD92A3D4CA2D5F8 /* libPods-eeGeoApiExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E14F9971CBF128659F200EDA /* libPods-eeGeoApiExample.a */; };
 		E096AE1D19F6713300C3D04A /* SplashScreen-1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = E096AE1B19F6713300C3D04A /* SplashScreen-1024x768.png */; };
 		E0B9CF9319F697090012D0B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E096AE1919F670F100C3D04A /* Images.xcassets */; };
+		E0CF7CAE1DFB23BA00F8DF93 /* Interiors in Resources */ = {isa = PBXBuildFile; fileRef = E0CF7CAA1DFB23BA00F8DF93 /* Interiors */; };
+		E0CF7CAF1DFB23BA00F8DF93 /* Labels in Resources */ = {isa = PBXBuildFile; fileRef = E0CF7CAB1DFB23BA00F8DF93 /* Labels */; };
+		E0CF7CB01DFB23BA00F8DF93 /* opensans_semibold_sdf_0.png in Resources */ = {isa = PBXBuildFile; fileRef = E0CF7CAC1DFB23BA00F8DF93 /* opensans_semibold_sdf_0.png */; };
+		E0CF7CB11DFB23BA00F8DF93 /* opensans_semibold_sdf.fnt in Resources */ = {isa = PBXBuildFile; fileRef = E0CF7CAD1DFB23BA00F8DF93 /* opensans_semibold_sdf.fnt */; };
 		F3B59B901D8ADBC80021493A /* embedded_manifest.bin in Resources */ = {isa = PBXBuildFile; fileRef = F3B59B8F1D8ADBC80021493A /* embedded_manifest.bin */; };
 /* End PBXBuildFile section */
 
@@ -81,12 +81,8 @@
 		18A4817D1B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EegeoCustomAnnotationView.xib; sourceTree = "<group>"; };
 		18A87A021B83663900AAAC09 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		18A87A051B83665900AAAC09 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		18D1D343194A057200FAA1B9 /* FrankBold50_A8_icons_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FrankBold50_A8_icons_0.png; sourceTree = "<group>"; };
-		18D1D344194A057200FAA1B9 /* FrankBold50_A8_icons.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FrankBold50_A8_icons.fnt; sourceTree = "<group>"; };
 		18D1D348194A057200FAA1B9 /* pins_example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pins_example; sourceTree = "<group>"; };
 		18D1D34A194A057200FAA1B9 /* placeholder.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = placeholder.pvr; sourceTree = "<group>"; };
-		18F578011C2316BE007E1A1F /* DejaVuSansBold_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DejaVuSansBold_0.png; sourceTree = "<group>"; };
-		18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DejaVuSansBold.fnt; sourceTree = "<group>"; };
 		1C38D7CDD1B632A7F282D1B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		222E06C91948B08B0004FFD9 /* eeGeoApiExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eeGeoApiExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD12BAB1D90475500B49AD7 /* EmbeddedTheme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmbeddedTheme; sourceTree = "<group>"; };
@@ -126,6 +122,10 @@
 		D6E66CEDF73EA4746BEDFCCC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E096AE1919F670F100C3D04A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E096AE1B19F6713300C3D04A /* SplashScreen-1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplashScreen-1024x768.png"; sourceTree = "<group>"; };
+		E0CF7CAA1DFB23BA00F8DF93 /* Interiors */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Interiors; sourceTree = "<group>"; };
+		E0CF7CAB1DFB23BA00F8DF93 /* Labels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Labels; sourceTree = "<group>"; };
+		E0CF7CAC1DFB23BA00F8DF93 /* opensans_semibold_sdf_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensans_semibold_sdf_0.png; sourceTree = "<group>"; };
+		E0CF7CAD1DFB23BA00F8DF93 /* opensans_semibold_sdf.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = opensans_semibold_sdf.fnt; sourceTree = "<group>"; };
 		E14F9971CBF128659F200EDA /* libPods-eeGeoApiExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eeGeoApiExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE2AEAA4A1A71DF68413712 /* Pods-eeGeoApiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eeGeoApiExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-eeGeoApiExample/Pods-eeGeoApiExample.release.xcconfig"; sourceTree = "<group>"; };
 		EEF1AD4DC705AFF2ADBB59BD /* Pods-SDKSamplesAppCpp11.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSamplesAppCpp11.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDKSamplesAppCpp11/Pods-SDKSamplesAppCpp11.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,8 +174,6 @@
 			children = (
 				E096AE1B19F6713300C3D04A /* SplashScreen-1024x768.png */,
 				18D1D34A194A057200FAA1B9 /* placeholder.pvr */,
-				18D1D343194A057200FAA1B9 /* FrankBold50_A8_icons_0.png */,
-				18D1D344194A057200FAA1B9 /* FrankBold50_A8_icons.fnt */,
 			);
 			name = platform_assets;
 			sourceTree = "<group>";
@@ -259,6 +257,10 @@
 		7EE4825B16847E7C0006E99B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E0CF7CAA1DFB23BA00F8DF93 /* Interiors */,
+				E0CF7CAB1DFB23BA00F8DF93 /* Labels */,
+				E0CF7CAC1DFB23BA00F8DF93 /* opensans_semibold_sdf_0.png */,
+				E0CF7CAD1DFB23BA00F8DF93 /* opensans_semibold_sdf.fnt */,
 				2CD12BAB1D90475500B49AD7 /* EmbeddedTheme */,
 				2CD12BAC1D90475500B49AD7 /* placeholder_cube_negX.png */,
 				2CD12BAD1D90475500B49AD7 /* placeholder_cube_negY.png */,
@@ -272,8 +274,6 @@
 				3A3A7DA71D47715F00296F45 /* default_water_reflection_cube_map_posX.png */,
 				3A3A7DA81D47715F00296F45 /* default_water_reflection_cube_map_posY.png */,
 				3A3A7DA91D47715F00296F45 /* default_water_reflection_cube_map_posZ.png */,
-				18F578011C2316BE007E1A1F /* DejaVuSansBold_0.png */,
-				18F578021C2316BE007E1A1F /* DejaVuSansBold.fnt */,
 				F3B59B8F1D8ADBC80021493A /* embedded_manifest.bin */,
 				18A481741B7E1DD50038FB8A /* custom_annotation_image.png */,
 				18D1D348194A057200FAA1B9 /* pins_example */,
@@ -352,31 +352,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				186D2936196D9E4B00E004E0 /* placeholder.pvr in Resources */,
-				18F578031C2316BE007E1A1F /* DejaVuSansBold_0.png in Resources */,
-				186D2937196D9E4B00E004E0 /* FrankBold50_A8_icons_0.png in Resources */,
 				3A3A7DAF1D47715F00296F45 /* default_water_reflection_cube_map_posZ.png in Resources */,
 				3A3A7DAB1D47715F00296F45 /* default_water_reflection_cube_map_negY.png in Resources */,
-				18F578041C2316BE007E1A1F /* DejaVuSansBold.fnt in Resources */,
 				2CD12BB51D90475500B49AD7 /* placeholder_cube_negZ.png in Resources */,
 				2CD12BB71D90475500B49AD7 /* placeholder_cube_posY.png in Resources */,
 				2CD12BB41D90475500B49AD7 /* placeholder_cube_negY.png in Resources */,
-				186D2938196D9E4B00E004E0 /* FrankBold50_A8_icons.fnt in Resources */,
 				186943881B4ED0DA00B8776D /* Podfile in Resources */,
 				186D293B196D9E4B00E004E0 /* pins_example in Resources */,
 				2CD12BB81D90475500B49AD7 /* placeholder_cube_posZ.png in Resources */,
 				3A3A7DAC1D47715F00296F45 /* default_water_reflection_cube_map_negZ.png in Resources */,
+				E0CF7CB01DFB23BA00F8DF93 /* opensans_semibold_sdf_0.png in Resources */,
 				3A3A7DAD1D47715F00296F45 /* default_water_reflection_cube_map_posX.png in Resources */,
 				18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */,
+				E0CF7CAE1DFB23BA00F8DF93 /* Interiors in Resources */,
 				18A481761B7E1DD50038FB8A /* custom_annotation_image.png in Resources */,
 				E0B9CF9319F697090012D0B4 /* Images.xcassets in Resources */,
 				2CD12BB31D90475500B49AD7 /* placeholder_cube_negX.png in Resources */,
 				E096AE1D19F6713300C3D04A /* SplashScreen-1024x768.png in Resources */,
+				E0CF7CAF1DFB23BA00F8DF93 /* Labels in Resources */,
 				222E06991948B08B0004FFD9 /* InfoPlist.strings in Resources */,
 				3A3A7DAA1D47715F00296F45 /* default_water_reflection_cube_map_negX.png in Resources */,
 				18A481811B7E22CB0038FB8A /* AppleCustomAnnotationView.xib in Resources */,
 				2CD12BB61D90475500B49AD7 /* placeholder_cube_posX.png in Resources */,
 				222E069A1948B08B0004FFD9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F3B59B901D8ADBC80021493A /* embedded_manifest.bin in Resources */,
+				E0CF7CB11DFB23BA00F8DF93 /* opensans_semibold_sdf.fnt in Resources */,
 				2CD12BB21D90475500B49AD7 /* EmbeddedTheme in Resources */,
 				3A3A7DAE1D47715F00296F45 /* default_water_reflection_cube_map_posY.png in Resources */,
 				222E069B1948B08B0004FFD9 /* MainStoryboard_iPad.storyboard in Resources */,
