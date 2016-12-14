@@ -48,6 +48,10 @@
 		3A3A7DAD1D47715F00296F45 /* default_water_reflection_cube_map_posX.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A7DA71D47715F00296F45 /* default_water_reflection_cube_map_posX.png */; };
 		3A3A7DAE1D47715F00296F45 /* default_water_reflection_cube_map_posY.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A7DA81D47715F00296F45 /* default_water_reflection_cube_map_posY.png */; };
 		3A3A7DAF1D47715F00296F45 /* default_water_reflection_cube_map_posZ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3A7DA91D47715F00296F45 /* default_water_reflection_cube_map_posZ.png */; };
+		7EB203281E0190B4002F2BE4 /* pin_sheet_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB203241E0190B4002F2BE4 /* pin_sheet_0.png */; };
+		7EB203291E0190B4002F2BE4 /* pin_sheet_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB203251E0190B4002F2BE4 /* pin_sheet_0@2x.png */; };
+		7EB2032A1E0190B4002F2BE4 /* pin_sheet_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB203261E0190B4002F2BE4 /* pin_sheet_0@3x.png */; };
+		7EB2032B1E0190B4002F2BE4 /* pin_sheet.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EB203271E0190B4002F2BE4 /* pin_sheet.json */; };
 		A1D56150BAD92A3D4CA2D5F8 /* libPods-eeGeoApiExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E14F9971CBF128659F200EDA /* libPods-eeGeoApiExample.a */; };
 		E096AE1D19F6713300C3D04A /* SplashScreen-1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = E096AE1B19F6713300C3D04A /* SplashScreen-1024x768.png */; };
 		E0B9CF9319F697090012D0B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E096AE1919F670F100C3D04A /* Images.xcassets */; };
@@ -98,6 +102,10 @@
 		3A3A7DA71D47715F00296F45 /* default_water_reflection_cube_map_posX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_water_reflection_cube_map_posX.png; sourceTree = "<group>"; };
 		3A3A7DA81D47715F00296F45 /* default_water_reflection_cube_map_posY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_water_reflection_cube_map_posY.png; sourceTree = "<group>"; };
 		3A3A7DA91D47715F00296F45 /* default_water_reflection_cube_map_posZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_water_reflection_cube_map_posZ.png; sourceTree = "<group>"; };
+		7EB203241E0190B4002F2BE4 /* pin_sheet_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_sheet_0.png; sourceTree = "<group>"; };
+		7EB203251E0190B4002F2BE4 /* pin_sheet_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_sheet_0@2x.png"; sourceTree = "<group>"; };
+		7EB203261E0190B4002F2BE4 /* pin_sheet_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_sheet_0@3x.png"; sourceTree = "<group>"; };
+		7EB203271E0190B4002F2BE4 /* pin_sheet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pin_sheet.json; sourceTree = "<group>"; };
 		7EE481EA16836F370006E99B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7EE481EC16836F370006E99B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7EE481EE16836F370006E99B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -262,6 +270,10 @@
 				E0CF7CAC1DFB23BA00F8DF93 /* opensans_semibold_sdf_0.png */,
 				E0CF7CAD1DFB23BA00F8DF93 /* opensans_semibold_sdf.fnt */,
 				2CD12BAB1D90475500B49AD7 /* EmbeddedTheme */,
+				7EB203241E0190B4002F2BE4 /* pin_sheet_0.png */,
+				7EB203251E0190B4002F2BE4 /* pin_sheet_0@2x.png */,
+				7EB203261E0190B4002F2BE4 /* pin_sheet_0@3x.png */,
+				7EB203271E0190B4002F2BE4 /* pin_sheet.json */,
 				2CD12BAC1D90475500B49AD7 /* placeholder_cube_negX.png */,
 				2CD12BAD1D90475500B49AD7 /* placeholder_cube_negY.png */,
 				2CD12BAE1D90475500B49AD7 /* placeholder_cube_negZ.png */,
@@ -358,6 +370,7 @@
 				2CD12BB71D90475500B49AD7 /* placeholder_cube_posY.png in Resources */,
 				2CD12BB41D90475500B49AD7 /* placeholder_cube_negY.png in Resources */,
 				186943881B4ED0DA00B8776D /* Podfile in Resources */,
+				7EB203291E0190B4002F2BE4 /* pin_sheet_0@2x.png in Resources */,
 				186D293B196D9E4B00E004E0 /* pins_example in Resources */,
 				2CD12BB81D90475500B49AD7 /* placeholder_cube_posZ.png in Resources */,
 				3A3A7DAC1D47715F00296F45 /* default_water_reflection_cube_map_negZ.png in Resources */,
@@ -365,10 +378,12 @@
 				3A3A7DAD1D47715F00296F45 /* default_water_reflection_cube_map_posX.png in Resources */,
 				18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */,
 				E0CF7CAE1DFB23BA00F8DF93 /* Interiors in Resources */,
+				7EB2032B1E0190B4002F2BE4 /* pin_sheet.json in Resources */,
 				18A481761B7E1DD50038FB8A /* custom_annotation_image.png in Resources */,
 				E0B9CF9319F697090012D0B4 /* Images.xcassets in Resources */,
 				2CD12BB31D90475500B49AD7 /* placeholder_cube_negX.png in Resources */,
 				E096AE1D19F6713300C3D04A /* SplashScreen-1024x768.png in Resources */,
+				7EB203281E0190B4002F2BE4 /* pin_sheet_0.png in Resources */,
 				E0CF7CAF1DFB23BA00F8DF93 /* Labels in Resources */,
 				222E06991948B08B0004FFD9 /* InfoPlist.strings in Resources */,
 				3A3A7DAA1D47715F00296F45 /* default_water_reflection_cube_map_negX.png in Resources */,
@@ -379,6 +394,7 @@
 				E0CF7CB11DFB23BA00F8DF93 /* opensans_semibold_sdf.fnt in Resources */,
 				2CD12BB21D90475500B49AD7 /* EmbeddedTheme in Resources */,
 				3A3A7DAE1D47715F00296F45 /* default_water_reflection_cube_map_posY.png in Resources */,
+				7EB2032A1E0190B4002F2BE4 /* pin_sheet_0@3x.png in Resources */,
 				222E069B1948B08B0004FFD9 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
