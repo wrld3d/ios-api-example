@@ -16,6 +16,7 @@
     - [EGMapAPI](#egmapapi)
         - [Annotations](#annotations)
         - [Themes](#themes)
+- [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -36,6 +37,8 @@ This section will walk you through the process of getting up and running quickly
 3. Install the eeGeo pod, and other app dependencies by running `pod install` from the repo root.
 4. Obtain an [eeGeo API key](https://www.eegeo.com/developers/apikeys) and place it in the [eeGeoApiExample-Info.plist](https://github.com/eegeo/ios-api-example/blob/master/ExampleApp/eeGeoApiExample-Info.plist#L6) file.
 5. Open, build, and run **eeGeoApiExample.xcworkspace** in Xcode.
+
+**Note:** Run `pod update` followed by `pod install` to update your eeGeo pod to the latest version if you have already setup your pods as above.
 
 ### CocoaPods
 
@@ -174,6 +177,13 @@ EGMapTheme* mapTheme = [[[EGMapTheme alloc] initWithSeason: EGMapThemeSeasonSumm
 Many other presets are available, allowing developers to create a distinctive and unique style for their maps.
 
 ![Four different seasons, weathers, and times of day](http://cdn2.eegeo.com/wp-content/uploads/2016/03/eegeo-four-seasons-themes.jpg)
+
+## Troubleshooting
+
+If you encounter any crashes or asserts during runtime, especially with a clean install, make sure you have the latest eeGeo pod by running the following:
+
+1. `pod update` - This might take a while
+2. `pod install` - To setup the latest pod
 
 ## Contributing 
 
