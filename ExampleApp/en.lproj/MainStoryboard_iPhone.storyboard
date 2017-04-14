@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="yHO-V7-KUS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="ehP-i0-H1Z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,40 +20,7 @@
                     <view key="view" contentMode="scaleToFill" id="tsU-Lu-3SO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ade-dI-bqV">
-                                <rect key="frame" x="16" y="828" width="130" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="UA6-BQ-lFw"/>
-                                    <constraint firstAttribute="height" constant="44" id="xLd-ce-3kg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="cameraHome:" destination="DIw-PZ-sBR" eventType="touchUpInside" id="5Bb-sY-vC0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFP-ey-6ep">
-                                <rect key="frame" x="154" y="641" width="130" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Frame Bounds">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="frameBoundary:" destination="DIw-PZ-sBR" eventType="touchUpInside" id="iod-yM-P3Y"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="LFP-ey-6ep" firstAttribute="leading" secondItem="Ade-dI-bqV" secondAttribute="trailing" constant="8" symbolic="YES" id="1vw-5e-AKZ"/>
-                            <constraint firstItem="LFP-ey-6ep" firstAttribute="top" secondItem="Ade-dI-bqV" secondAttribute="top" id="B0s-Jg-ayd"/>
-                            <constraint firstItem="Ade-dI-bqV" firstAttribute="top" secondItem="0Je-yO-5SK" secondAttribute="bottom" constant="205" id="C8C-VX-IGo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LFP-ey-6ep" secondAttribute="trailing" constant="20" id="h3i-U3-VOD"/>
-                            <constraint firstItem="Ade-dI-bqV" firstAttribute="leading" secondItem="tsU-Lu-3SO" secondAttribute="leadingMargin" id="wQr-Gs-WY5"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -76,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Wo-oCy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="sCJ-AS-Owr" kind="embed" identifier="MapContainerEmbedSegue" id="0fz-iM-Q3r"/>
@@ -85,7 +51,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gEI-89-AIE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuA-gY-InX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +65,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pfx-tf-Rcw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ysI-b0-eFK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -108,24 +73,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTs-1f-zcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-199" y="-463"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="RDX-qG-qmg">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yHO-V7-KUS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PKx-2S-8B9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ehP-i0-H1Z" kind="relationship" relationship="rootViewController" id="Nts-Tl-iTx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HOY-O9-abZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1211" y="-555"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
