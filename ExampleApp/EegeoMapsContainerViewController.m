@@ -117,22 +117,6 @@
                                                  repeats:YES];
 }
 
--(void)goHome
-{
-    if(self.eegeoMapApi != nil)
-    {
-        [self setLocation:YES];
-    }
-}
-
--(void)fitToDefaultBounds
-{
-    if(self.eegeoMapApi != nil)
-    {
-        [self setCoordinateBounds];
-    }
-}
-
 - (void)handleMapAvailable
 {
     [self setLocation:NO];

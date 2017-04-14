@@ -11,8 +11,6 @@
 
 - (void)dealloc
 {
-    [self.titleBar release];
-    
     [super dealloc];
 }
 
@@ -50,9 +48,6 @@
     m_pCurrentMapViewController.view.frame = m_pMapContainer.view.frame;
     [m_pMapContainer.view addSubview:m_pCurrentMapViewController.view];
     [m_pCurrentMapViewController didMoveToParentViewController:m_pMapContainer];
-    
-    //self.titleBar.title = mapName;
-    [self.navigationItem setTitle:mapName];
 }
 
 - (UIViewController<MapContainerDelegate>*)viewControllerWithName:(NSString*)name

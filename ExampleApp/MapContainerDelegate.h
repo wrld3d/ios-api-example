@@ -4,8 +4,4 @@
 
 @protocol MapContainerDelegate
 
--(void)goHome;
-
--(void)fitToDefaultBounds;
-
 @end

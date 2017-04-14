@@ -4,8 +4,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
-
-@property (strong, nonatomic) IBOutlet UINavigationItem* titleBar;
+@interface MainViewController : UIViewController
 
 @end
