@@ -12,15 +12,7 @@
 		186D2936196D9E4B00E004E0 /* placeholder.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D34A194A057200FAA1B9 /* placeholder.pvr */; };
 		186D293B196D9E4B00E004E0 /* pins_example in Resources */ = {isa = PBXBuildFile; fileRef = 18D1D348194A057200FAA1B9 /* pins_example */; };
 		1890C03F1B551C190037F289 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186943841B4ED01E00B8776D /* MapKit.framework */; };
-		1890C0471B5657BD0037F289 /* GoogleMapsContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890C0451B5657BD0037F289 /* GoogleMapsContainerViewController.m */; };
-		1890C04F1B5670C60037F289 /* AppleMapsContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890C04D1B5670C60037F289 /* AppleMapsContainerViewController.m */; };
 		1890C0541B5671B80037F289 /* EegeoMapsContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890C0521B5671B80037F289 /* EegeoMapsContainerViewController.m */; };
-		18A481761B7E1DD50038FB8A /* custom_annotation_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A481741B7E1DD50038FB8A /* custom_annotation_image.png */; };
-		18A4817F1B7E22CB0038FB8A /* AppleCustomAnnotationView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18A481791B7E22CB0038FB8A /* AppleCustomAnnotationView.mm */; };
-		18A481811B7E22CB0038FB8A /* AppleCustomAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A4817A1B7E22CB0038FB8A /* AppleCustomAnnotationView.xib */; };
-		18A481831B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18A4817C1B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm */; };
-		18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A4817D1B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib */; };
-		18A87A041B83663900AAAC09 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A87A021B83663900AAAC09 /* MainViewController.m */; };
 		222E068C1948B08B0004FFD9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF5D8641737F9A40049D787 /* CoreLocation.framework */; };
 		222E068D1948B08B0004FFD9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE48257168477CB0006E99B /* libz.dylib */; };
 		222E068E1948B08B0004FFD9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE48255168477A80006E99B /* MobileCoreServices.framework */; };
@@ -70,21 +62,8 @@
 		18574CFA1B8491EB002EDABB /* MapContainerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapContainerDelegate.h; sourceTree = "<group>"; };
 		186943841B4ED01E00B8776D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		186943861B4ED0DA00B8776D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1890C0451B5657BD0037F289 /* GoogleMapsContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsContainerViewController.m; sourceTree = "<group>"; };
-		1890C0481B5657D00037F289 /* GoogleMapsContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapsContainerViewController.h; sourceTree = "<group>"; };
-		1890C04D1B5670C60037F289 /* AppleMapsContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleMapsContainerViewController.m; sourceTree = "<group>"; };
-		1890C0501B5670D30037F289 /* AppleMapsContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleMapsContainerViewController.h; sourceTree = "<group>"; };
 		1890C0511B56718A0037F289 /* EegeoMapsContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EegeoMapsContainerViewController.h; sourceTree = "<group>"; };
 		1890C0521B5671B80037F289 /* EegeoMapsContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EegeoMapsContainerViewController.m; sourceTree = "<group>"; };
-		18A481741B7E1DD50038FB8A /* custom_annotation_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custom_annotation_image.png; sourceTree = "<group>"; };
-		18A481781B7E22CB0038FB8A /* AppleCustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleCustomAnnotationView.h; sourceTree = "<group>"; };
-		18A481791B7E22CB0038FB8A /* AppleCustomAnnotationView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppleCustomAnnotationView.mm; sourceTree = "<group>"; };
-		18A4817A1B7E22CB0038FB8A /* AppleCustomAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppleCustomAnnotationView.xib; sourceTree = "<group>"; };
-		18A4817B1B7E22CB0038FB8A /* EegeoCustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EegeoCustomAnnotationView.h; sourceTree = "<group>"; };
-		18A4817C1B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EegeoCustomAnnotationView.mm; sourceTree = "<group>"; };
-		18A4817D1B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EegeoCustomAnnotationView.xib; sourceTree = "<group>"; };
-		18A87A021B83663900AAAC09 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		18A87A051B83665900AAAC09 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		18D1D348194A057200FAA1B9 /* pins_example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pins_example; sourceTree = "<group>"; };
 		18D1D34A194A057200FAA1B9 /* placeholder.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = placeholder.pvr; sourceTree = "<group>"; };
 		1C38D7CDD1B632A7F282D1B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,19 +143,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18A481771B7E22CB0038FB8A /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-				18A481781B7E22CB0038FB8A /* AppleCustomAnnotationView.h */,
-				18A481791B7E22CB0038FB8A /* AppleCustomAnnotationView.mm */,
-				18A4817A1B7E22CB0038FB8A /* AppleCustomAnnotationView.xib */,
-				18A4817B1B7E22CB0038FB8A /* EegeoCustomAnnotationView.h */,
-				18A4817C1B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm */,
-				18A4817D1B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib */,
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
 		18D1D363194A0EA000FAA1B9 /* platform_assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,14 +198,7 @@
 		7EE481F216836F370006E99B /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				18A481771B7E22CB0038FB8A /* CustomViews */,
-				18A87A051B83665900AAAC09 /* MainViewController.h */,
-				18A87A021B83663900AAAC09 /* MainViewController.m */,
 				18574CFA1B8491EB002EDABB /* MapContainerDelegate.h */,
-				1890C0481B5657D00037F289 /* GoogleMapsContainerViewController.h */,
-				1890C0451B5657BD0037F289 /* GoogleMapsContainerViewController.m */,
-				1890C0501B5670D30037F289 /* AppleMapsContainerViewController.h */,
-				1890C04D1B5670C60037F289 /* AppleMapsContainerViewController.m */,
 				1890C0511B56718A0037F289 /* EegeoMapsContainerViewController.h */,
 				1890C0521B5671B80037F289 /* EegeoMapsContainerViewController.m */,
 				E096AE1919F670F100C3D04A /* Images.xcassets */,
@@ -287,7 +246,6 @@
 				3A3A7DA81D47715F00296F45 /* default_water_reflection_cube_map_posY.png */,
 				3A3A7DA91D47715F00296F45 /* default_water_reflection_cube_map_posZ.png */,
 				F3B59B8F1D8ADBC80021493A /* embedded_manifest.bin */,
-				18A481741B7E1DD50038FB8A /* custom_annotation_image.png */,
 				18D1D348194A057200FAA1B9 /* pins_example */,
 				18D1D363194A0EA000FAA1B9 /* platform_assets */,
 			);
@@ -340,6 +298,11 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = eeGeo;
+				TargetAttributes = {
+					222E06471948B08B0004FFD9 = {
+						DevelopmentTeam = QBCVJ28BRW;
+					};
+				};
 			};
 			buildConfigurationList = 7EE481E016836F360006E99B /* Build configuration list for PBXProject "eeGeoApiExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -376,10 +339,8 @@
 				3A3A7DAC1D47715F00296F45 /* default_water_reflection_cube_map_negZ.png in Resources */,
 				E0CF7CB01DFB23BA00F8DF93 /* opensans_semibold_sdf_0.png in Resources */,
 				3A3A7DAD1D47715F00296F45 /* default_water_reflection_cube_map_posX.png in Resources */,
-				18A481851B7E22CB0038FB8A /* EegeoCustomAnnotationView.xib in Resources */,
 				E0CF7CAE1DFB23BA00F8DF93 /* Interiors in Resources */,
 				7EB2032B1E0190B4002F2BE4 /* pin_sheet.json in Resources */,
-				18A481761B7E1DD50038FB8A /* custom_annotation_image.png in Resources */,
 				E0B9CF9319F697090012D0B4 /* Images.xcassets in Resources */,
 				2CD12BB31D90475500B49AD7 /* placeholder_cube_negX.png in Resources */,
 				E096AE1D19F6713300C3D04A /* SplashScreen-1024x768.png in Resources */,
@@ -387,7 +348,6 @@
 				E0CF7CAF1DFB23BA00F8DF93 /* Labels in Resources */,
 				222E06991948B08B0004FFD9 /* InfoPlist.strings in Resources */,
 				3A3A7DAA1D47715F00296F45 /* default_water_reflection_cube_map_negX.png in Resources */,
-				18A481811B7E22CB0038FB8A /* AppleCustomAnnotationView.xib in Resources */,
 				2CD12BB61D90475500B49AD7 /* placeholder_cube_posX.png in Resources */,
 				222E069A1948B08B0004FFD9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F3B59B901D8ADBC80021493A /* embedded_manifest.bin in Resources */,
@@ -429,7 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F3153A495EC66721793B3C14 /* [CP] Embed Pods Frameworks */ = {
@@ -454,13 +414,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1890C04F1B5670C60037F289 /* AppleMapsContainerViewController.m in Sources */,
 				1890C0541B5671B80037F289 /* EegeoMapsContainerViewController.m in Sources */,
-				18A87A041B83663900AAAC09 /* MainViewController.m in Sources */,
 				183ED1C11B4C378200B68A82 /* Main.m in Sources */,
-				18A481831B7E22CB0038FB8A /* EegeoCustomAnnotationView.mm in Sources */,
-				1890C0471B5657BD0037F289 /* GoogleMapsContainerViewController.m in Sources */,
-				18A4817F1B7E22CB0038FB8A /* AppleCustomAnnotationView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,12 +461,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QBCVJ28BRW;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleApp/eeGeoApiExample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ExampleApp/eeGeoApiExample-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				LIBRARY_SEARCH_PATHS = "$(inherited)  ";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(inherited)",
@@ -535,12 +491,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QBCVJ28BRW;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleApp/eeGeoApiExample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ExampleApp/eeGeoApiExample-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				LIBRARY_SEARCH_PATHS = "$(inherited)  ";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(inherited)",
