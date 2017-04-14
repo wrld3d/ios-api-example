@@ -75,48 +75,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juI-Hi-PjM">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="I0j-7O-KfJ"/>
-                                    <barButtonItem style="plain" id="CRN-uX-mp0">
-                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" momentary="YES" id="0jx-D4-a9N">
-                                            <rect key="frame" x="186" y="6" width="173" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <segments>
-                                                <segment title="Home"/>
-                                                <segment title="Fit to bounds"/>
-                                            </segments>
-                                            <connections>
-                                                <action selector="optionSelected:" destination="ehP-i0-H1Z" eventType="valueChanged" id="eud-1z-ORq"/>
-                                            </connections>
-                                        </segmentedControl>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Wo-oCy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Wo-oCy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="sCJ-AS-Owr" kind="embed" identifier="MapContainerEmbedSegue" id="0fz-iM-Q3r"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="juI-Hi-PjM" firstAttribute="top" secondItem="ceQ-Wo-oCy" secondAttribute="bottom" id="92O-35-9vv"/>
-                            <constraint firstItem="juI-Hi-PjM" firstAttribute="bottom" secondItem="Fo6-vf-FSY" secondAttribute="top" id="Fex-OF-lCd"/>
-                            <constraint firstItem="ceQ-Wo-oCy" firstAttribute="top" secondItem="ARc-OF-cJu" secondAttribute="bottom" id="JSC-EP-igm"/>
-                            <constraint firstAttribute="trailing" secondItem="ceQ-Wo-oCy" secondAttribute="trailing" id="Prw-6y-FJc"/>
-                            <constraint firstItem="juI-Hi-PjM" firstAttribute="leading" secondItem="QDS-fK-0J9" secondAttribute="leading" id="XF1-EX-Hkd"/>
-                            <constraint firstItem="juI-Hi-PjM" firstAttribute="trailing" secondItem="ceQ-Wo-oCy" secondAttribute="trailing" id="jM5-Gy-0WA"/>
-                            <constraint firstItem="ceQ-Wo-oCy" firstAttribute="leading" secondItem="juI-Hi-PjM" secondAttribute="leading" id="qw2-u2-1Fv"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gEI-89-AIE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuA-gY-InX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-679" y="-555"/>
+            <point key="canvasLocation" x="-679.5" y="-555.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AcN-pa-AMh">
@@ -127,7 +100,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pfx-tf-Rcw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ysI-b0-eFK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

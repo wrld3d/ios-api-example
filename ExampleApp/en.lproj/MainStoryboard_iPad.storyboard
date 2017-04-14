@@ -41,42 +41,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-nG-58L">
-                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EPp-9d-HyX"/>
-                                    <barButtonItem style="plain" id="fft-P4-S34">
-                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" momentary="YES" id="3Pq-XV-Gve">
-                                            <rect key="frame" x="578" y="6" width="170" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <segments>
-                                                <segment title="Home"/>
-                                                <segment title="Fit to bounds"/>
-                                            </segments>
-                                            <connections>
-                                                <action selector="optionSelected:" destination="7GB-P8-alG" eventType="valueChanged" id="Pix-Oj-YZ7"/>
-                                            </connections>
-                                        </segmentedControl>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1e-Iq-X2M">
-                                <rect key="frame" x="0.0" y="64" width="768" height="916"/>
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1e-Iq-X2M">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="G2L-kd-r1B" kind="embed" identifier="MapContainerEmbedSegue" id="Ojr-o4-De9"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="0TB-nG-58L" firstAttribute="top" secondItem="o1e-Iq-X2M" secondAttribute="bottom" id="Aa1-FN-7jx"/>
-                            <constraint firstItem="o1e-Iq-X2M" firstAttribute="leading" secondItem="0TB-nG-58L" secondAttribute="leading" id="DP7-Y1-BP5"/>
-                            <constraint firstItem="0TB-nG-58L" firstAttribute="bottom" secondItem="QUq-gK-unJ" secondAttribute="top" id="Oo1-NC-LRH"/>
-                            <constraint firstItem="o1e-Iq-X2M" firstAttribute="trailing" secondItem="0TB-nG-58L" secondAttribute="trailing" id="PUz-Xb-8zR"/>
-                            <constraint firstItem="o1e-Iq-X2M" firstAttribute="top" secondItem="wea-IM-YBd" secondAttribute="bottom" id="nvZ-fD-fQZ"/>
-                            <constraint firstItem="o1e-Iq-X2M" firstAttribute="leading" secondItem="ZnY-qR-pMN" secondAttribute="leading" id="oaH-1d-poG"/>
-                            <constraint firstAttribute="trailing" secondItem="0TB-nG-58L" secondAttribute="trailing" id="pMm-mk-CH5"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X1a-oi-VWb"/>
                 </viewController>
@@ -93,7 +66,7 @@
                         <viewControllerLayoutGuide type="bottom" id="SOX-Vo-tAi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pDn-4A-cT0">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="916"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
