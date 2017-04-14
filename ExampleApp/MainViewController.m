@@ -12,7 +12,6 @@
 - (void)dealloc
 {
     [self.titleBar release];
-    [self.mapNames release];
     
     [super dealloc];
 }
@@ -22,10 +21,8 @@
     [super viewDidLoad];
     
     m_pCurrentMapViewController = nil;
-
-    self.mapNames = @[@"eeGeo 3D Maps", @"Apple Maps", @"Google Maps"];
     
-    [self loadMapWithName: self.mapNames[0]];
+    [self loadMapWithName: @"eeGeo 3D Maps"];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -58,42 +55,9 @@
     [self.navigationItem setTitle:mapName];
 }
 
-- (IBAction)optionSelected:(UISegmentedControl*)sender
-{
-    switch(sender.selectedSegmentIndex)
-    {
-        case 0: [m_pCurrentMapViewController goHome]; break;
-        case 1: [m_pCurrentMapViewController fitToDefaultBounds];break;
-    }
-}
-
 - (UIViewController<MapContainerDelegate>*)viewControllerWithName:(NSString*)name
 {
     return [self.storyboard instantiateViewControllerWithIdentifier:name];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.mapNames count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell_id"];
-
-    if (cell == nil)
-    {
-       cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"] autorelease];
-    }
-    
-    cell.textLabel.text = self.mapNames[indexPath.row];
-    
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self loadMapWithName: self.mapNames[indexPath.row]];
 }
 
 @end

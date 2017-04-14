@@ -6,12 +6,6 @@
 
 @interface MainViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
-- (IBAction)changeMap:(UIBarButtonItem*)sender;
-
-- (IBAction)optionSelected:(UISegmentedControl*)sender;
-
 @property (strong, nonatomic) IBOutlet UINavigationItem* titleBar;
-
-@property (strong, nonatomic) NSArray* mapNames;
 
 @end
