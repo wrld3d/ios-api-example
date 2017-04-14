@@ -1,7 +1,6 @@
 // Copyright eeGeo Ltd (2012-2014), All Rights Reserved
 
 #import "MainViewController.h"
-#import "FPPopoverController.h"
 #import "MapContainerDelegate.h"
 
 @implementation MainViewController
@@ -68,22 +67,6 @@
     }
 }
 
-- (IBAction)changeMap:(UIBarButtonItem*)sender
-{
-    UIView* btnView = [sender valueForKey:@"view"];
-    UITableViewController *controller = [[[UITableViewController alloc] init] autorelease];
-    controller.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    controller.tableView.delegate = self;
-    controller.tableView.dataSource = self;
-    FPPopoverController* popover = [[FPPopoverController alloc] initWithViewController:controller];
-    popover.delegate = self;
-    popover.border = NO;
-    popover.tint = FPPopoverWhiteTint;
-    popover.arrowDirection = UIMenuControllerArrowDown;
-    popover.contentSize = CGSizeMake(200,200);
-    [popover presentPopoverFromView:btnView];
-}
-
 - (UIViewController<MapContainerDelegate>*)viewControllerWithName:(NSString*)name
 {
     return [self.storyboard instantiateViewControllerWithIdentifier:name];
@@ -111,11 +94,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self loadMapWithName: self.mapNames[indexPath.row]];
-}
-
-- (void)popoverControllerDidDismissPopover:(FPPopoverController *)popoverController
-{
-    [popoverController release];
 }
 
 @end

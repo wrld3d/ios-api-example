@@ -3,9 +3,8 @@
 #pragma once
 
 #import <UIKit/UIKit.h>
-#import "FPPopoverController.h"
 
-@interface MainViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, FPPopoverControllerDelegate>
+@interface MainViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 - (IBAction)changeMap:(UIBarButtonItem*)sender;
 

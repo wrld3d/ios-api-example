@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="PCg-eo-03K">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="PCg-eo-03K">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <development version="5000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Eegeo Maps Container View Controller-->
@@ -15,9 +18,9 @@
                         <viewControllerLayoutGuide type="bottom" id="dcY-4i-TwF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o1A-8d-eVl">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -35,21 +38,16 @@
                         <viewControllerLayoutGuide type="bottom" id="QUq-gK-unJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZnY-qR-pMN">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TB-nG-58L">
-                                <rect key="frame" x="0.0" y="724" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
                                 <items>
-                                    <barButtonItem title="Maps" id="j16-C2-OqL">
-                                        <connections>
-                                            <action selector="changeMap:" destination="7GB-P8-alG" id="e2y-50-wlY"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="EPp-9d-HyX"/>
                                     <barButtonItem style="plain" id="fft-P4-S34">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" momentary="YES" id="3Pq-XV-Gve">
-                                            <rect key="frame" x="834" y="0.0" width="170" height="32"/>
+                                            <rect key="frame" x="578" y="6" width="170" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Home"/>
@@ -63,13 +61,13 @@
                                 </items>
                             </toolbar>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1e-Iq-X2M">
-                                <rect key="frame" x="0.0" y="64" width="1024" height="660"/>
+                                <rect key="frame" x="0.0" y="64" width="768" height="916"/>
                                 <connections>
                                     <segue destination="G2L-kd-r1B" kind="embed" identifier="MapContainerEmbedSegue" id="Ojr-o4-De9"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0TB-nG-58L" firstAttribute="top" secondItem="o1e-Iq-X2M" secondAttribute="bottom" id="Aa1-FN-7jx"/>
                             <constraint firstItem="o1e-Iq-X2M" firstAttribute="leading" secondItem="0TB-nG-58L" secondAttribute="leading" id="DP7-Y1-BP5"/>
@@ -95,57 +93,14 @@
                         <viewControllerLayoutGuide type="bottom" id="SOX-Vo-tAi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pDn-4A-cT0">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="660"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kY-Vd-rlf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1165" y="-873"/>
-        </scene>
-        <!--Apple Maps Container View Controller-->
-        <scene sceneID="HiO-R6-u6r">
-            <objects>
-                <viewController storyboardIdentifier="Apple Maps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6tu-QG-mU2" customClass="AppleMapsContainerViewController" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="oze-7J-RYb">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </mapView>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nFy-to-lLR" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pn9-it-0Oq">
-                    <rect key="frame" x="0.0" y="0.0" width="72" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-            </objects>
-            <point key="canvasLocation" x="-187" y="43"/>
-        </scene>
-        <!--Google Maps Container View Controller-->
-        <scene sceneID="LBk-FS-PjO">
-            <objects>
-                <viewController storyboardIdentifier="Google Maps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vDW-tT-CCL" customClass="GoogleMapsContainerViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Z4F-aa-2Xy"/>
-                        <viewControllerLayoutGuide type="bottom" id="Kx5-p2-avR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bap-R0-mc4">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mpA-83-pUA" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1243" y="43"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NAJ-y7-4L8">
@@ -168,7 +123,7 @@
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

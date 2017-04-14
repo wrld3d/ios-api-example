@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yHO-V7-KUS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="yHO-V7-KUS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <development version="5100" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Eegeo Maps Container View Controller-->
@@ -16,18 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="0Je-yO-5SK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsU-Lu-3SO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ade-dI-bqV">
-                                <rect key="frame" x="16" y="641" width="130" height="44"/>
+                                <rect key="frame" x="16" y="828" width="130" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="UA6-BQ-lFw"/>
                                     <constraint firstAttribute="height" constant="44" id="xLd-ce-3kg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="cameraHome:" destination="DIw-PZ-sBR" eventType="touchUpInside" id="5Bb-sY-vC0"/>
@@ -37,14 +40,14 @@
                                 <rect key="frame" x="154" y="641" width="130" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Frame Bounds">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="frameBoundary:" destination="DIw-PZ-sBR" eventType="touchUpInside" id="iod-yM-P3Y"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LFP-ey-6ep" firstAttribute="leading" secondItem="Ade-dI-bqV" secondAttribute="trailing" constant="8" symbolic="YES" id="1vw-5e-AKZ"/>
                             <constraint firstItem="LFP-ey-6ep" firstAttribute="top" secondItem="Ade-dI-bqV" secondAttribute="top" id="B0s-Jg-ayd"/>
@@ -69,21 +72,16 @@
                         <viewControllerLayoutGuide type="bottom" id="Fo6-vf-FSY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QDS-fK-0J9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juI-Hi-PjM">
-                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Maps" id="4un-NF-2cS">
-                                        <connections>
-                                            <action selector="changeMap:" destination="ehP-i0-H1Z" id="8WM-ce-Zlp"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="I0j-7O-KfJ"/>
                                     <barButtonItem style="plain" id="CRN-uX-mp0">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" momentary="YES" id="0jx-D4-a9N">
-                                            <rect key="frame" x="141" y="1" width="173" height="32"/>
+                                            <rect key="frame" x="186" y="6" width="173" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Home"/>
@@ -97,13 +95,13 @@
                                 </items>
                             </toolbar>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-Wo-oCy">
-                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <connections>
                                     <segue destination="sCJ-AS-Owr" kind="embed" identifier="MapContainerEmbedSegue" id="0fz-iM-Q3r"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="juI-Hi-PjM" firstAttribute="top" secondItem="ceQ-Wo-oCy" secondAttribute="bottom" id="92O-35-9vv"/>
                             <constraint firstItem="juI-Hi-PjM" firstAttribute="bottom" secondItem="Fo6-vf-FSY" secondAttribute="top" id="Fex-OF-lCd"/>
@@ -129,90 +127,14 @@
                         <viewControllerLayoutGuide type="bottom" id="pfx-tf-Rcw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ysI-b0-eFK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTs-1f-zcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-199" y="-463"/>
-        </scene>
-        <!--Apple Maps Container View Controller-->
-        <scene sceneID="Ddn-3S-dhX">
-            <objects>
-                <viewController storyboardIdentifier="Apple Maps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="axb-Hz-CMz" customClass="AppleMapsContainerViewController" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ePd-Pn-xwn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </mapView>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a4Z-vq-g4Y" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Awn-Ej-Boa">
-                    <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-            </objects>
-            <point key="canvasLocation" x="-615" y="39"/>
-        </scene>
-        <!--Google Maps Container View Controller-->
-        <scene sceneID="Zpz-LB-89t">
-            <objects>
-                <viewController storyboardIdentifier="Google Maps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bAD-v7-s6x" customClass="GoogleMapsContainerViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hpj-T8-buO"/>
-                        <viewControllerLayoutGuide type="bottom" id="f0i-mb-Gev"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dAB-f5-7ws">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52s-xQ-C1u">
-                                <rect key="frame" x="16" y="641" width="130" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="Wxq-ud-ZJS"/>
-                                    <constraint firstAttribute="height" constant="44" id="io9-eu-8cw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cameraHome:" destination="bAD-v7-s6x" eventType="touchUpInside" id="Mud-Ea-Fgc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVT-Ll-3q6">
-                                <rect key="frame" x="154" y="641" width="130" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Frame Bounds">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="frameBoundary:" destination="bAD-v7-s6x" eventType="touchUpInside" id="za5-rK-PCu"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bVT-Ll-3q6" firstAttribute="top" secondItem="52s-xQ-C1u" secondAttribute="top" id="A28-KP-UMF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bVT-Ll-3q6" secondAttribute="trailing" constant="20" id="Gsw-AU-HnY"/>
-                            <constraint firstItem="bVT-Ll-3q6" firstAttribute="leading" secondItem="52s-xQ-C1u" secondAttribute="trailing" constant="8" symbolic="YES" id="Maf-6n-WT2"/>
-                            <constraint firstItem="52s-xQ-C1u" firstAttribute="top" secondItem="f0i-mb-Gev" secondAttribute="bottom" constant="205" id="k9e-OW-e2q"/>
-                            <constraint firstItem="52s-xQ-C1u" firstAttribute="leading" secondItem="dAB-f5-7ws" secondAttribute="leadingMargin" id="tWL-UM-SUq"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FsQ-8J-97r" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-953" y="39"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RDX-qG-qmg">
@@ -236,6 +158,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
 </document>
