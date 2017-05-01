@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A1C032F65C1B3733427692380E996E8A53E7F86F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C8F867A8DDFFEE5ACCF3761283F9412F20631448" : 9223372036854775807,
+    "A1C032F65C1B3733427692380E996E8A53E7F86F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "72B11463-C8FE-44A1-BDED-A695F485E5BD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C8F867A8DDFFEE5ACCF3761283F9412F20631448" : "",
+    "A1C032F65C1B3733427692380E996E8A53E7F86F" : "ios-api-example\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "api-samples",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "api-samples.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:eegeo\/ios-api-example.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1C032F65C1B3733427692380E996E8A53E7F86F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:eegeo\/ios-api-development.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C8F867A8DDFFEE5ACCF3761283F9412F20631448"
+    }
+  ]
+}

@@ -1,9 +1,10 @@
-target :eeGeoApiExample do
+platform :ios, "8.0"
 
-	platform :ios, "7.0"
+target 'ApiSamples' do
 
-	pod 'eeGeo'
-	pod 'GoogleMaps', '1.10.1'
-	pod 'FPPopover', '1.4.1'
+	project 'api-samples'
+
+	pod 'Wrld'
+
 	
 end
