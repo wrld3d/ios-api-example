@@ -1,7 +1,9 @@
+#pragma once
 #import <UIKit/UIKit.h>
+#import "SampleInfo.h"
 
 @interface SamplesContainerViewController : UIViewController
 
-@property (nonatomic) NSString *sampleToLoad;
+@property (nonatomic) SampleInfo *sampleToLoad;
 
 @end

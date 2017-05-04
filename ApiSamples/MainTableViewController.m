@@ -1,5 +1,6 @@
 #import "MainTableViewController.h"
 #import "SamplesContainerViewController.h"
+#import "SampleInfo.h"
 
 NSString *const SegueTableToSample = @"TableToSampleSegue";
 
@@ -12,7 +13,9 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.exampleNames = @[@"BasicMap", @"MovingCamera"];
+    self.samples = @[[SampleInfo infoForSample:@"BasicMap" title:@"Embed a 3D map" subtitle:@"How to embed a 3D map view for iOS"],
+                     [SampleInfo infoForSample:@"MovingCamera" title:@"Move the camera" subtitle:@"Simple camera movement"]];
+    
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
 }
@@ -30,15 +33,16 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.exampleNames count];
+    return [self.samples count];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExampleCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     
-    cell.textLabel.text = self.exampleNames[indexPath.row];
+    SampleInfo* sampleInfo = [self.samples objectAtIndex:indexPath.row];
+    cell.textLabel.text = sampleInfo.title;
+    cell.detailTextLabel.text = sampleInfo.subtitle;
     
     return cell;
 }
@@ -47,8 +51,9 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     if ([segue.identifier isEqualToString:SegueTableToSample]) {
         if ([sender isKindOfClass:[UITableViewCell class]]) {
             UITableViewCell *senderCell = sender;
+            NSIndexPath* indexPath = [self.tableView indexPathForCell:senderCell];
             SamplesContainerViewController *destinationVC = [segue destinationViewController];
-            destinationVC.sampleToLoad = senderCell.textLabel.text;
+            destinationVC.sampleToLoad = [self.samples objectAtIndex:indexPath.row];
         }
     }
 }

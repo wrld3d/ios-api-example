@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E0A5253A1EB73A7600504831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A5252B1EB73A7600504831 /* AppDelegate.m */; };
+		D0AAB6441EBB331E00384605 /* Wrld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAB6431EBB331E00384605 /* Wrld.framework */; };
+		D0AAB6451EBB331E00384605 /* Wrld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAB6431EBB331E00384605 /* Wrld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
+		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		E0A5253B1EB73A7600504831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252C1EB73A7600504831 /* Assets.xcassets */; };
 		E0A5253C1EB73A7600504831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252D1EB73A7600504831 /* Main.storyboard */; };
 		E0A5253D1EB73A7600504831 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252F1EB73A7600504831 /* Info.plist */; };
@@ -16,18 +19,16 @@
 		E0A525411EB73A7600504831 /* MovingCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525371EB73A7600504831 /* MovingCamera.m */; };
 		E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525391EB73A7600504831 /* SamplesContainerViewController.m */; };
 		E0A525441EB73AF900504831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525431EB73AF900504831 /* main.m */; };
-		E0A5255F1EB73D1000504831 /* Wrld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A525521EB73BAA00504831 /* Wrld.framework */; };
-		E0A525601EB73D1000504831 /* Wrld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0A525521EB73BAA00504831 /* Wrld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E0A525611EB73D1000504831 /* Embed Frameworks */ = {
+		D0AAB6461EBB331E00384605 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E0A525601EB73D1000504831 /* Wrld.framework in Embed Frameworks */,
+				D0AAB6451EBB331E00384605 /* Wrld.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,9 +36,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D0AAB6431EBB331E00384605 /* Wrld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wrld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
+		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
 		E01489CE1EB73A23002B60DC /* ApiSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A5252A1EB73A7600504831 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E0A5252B1EB73A7600504831 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E0A5252C1EB73A7600504831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0A5252E1EB73A7600504831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0A5252F1EB73A7600504831 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0A5255F1EB73D1000504831 /* Wrld.framework in Frameworks */,
+				D0AAB6441EBB331E00384605 /* Wrld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 		E01489C51EB73A23002B60DC = {
 			isa = PBXGroup;
 			children = (
+				D0AAB6431EBB331E00384605 /* Wrld.framework */,
 				E0A525291EB73A7600504831 /* ApiSamples */,
 				E01489CF1EB73A23002B60DC /* Products */,
 				E0A525511EB73BAA00504831 /* Frameworks */,
@@ -97,12 +102,14 @@
 			isa = PBXGroup;
 			children = (
 				E0A5252A1EB73A7600504831 /* AppDelegate.h */,
-				E0A5252B1EB73A7600504831 /* AppDelegate.m */,
+				D0AAB6481EBB4A6F00384605 /* AppDelegate.m */,
 				E0A5252C1EB73A7600504831 /* Assets.xcassets */,
 				E0A5252D1EB73A7600504831 /* Main.storyboard */,
 				E0A5252F1EB73A7600504831 /* Info.plist */,
 				E0A525311EB73A7600504831 /* MainTableViewController.h */,
 				E0A525321EB73A7600504831 /* MainTableViewController.m */,
+				D0AAB6471EBB37C500384605 /* SampleInfo.h */,
+				D0AAB64A1EBB4BD400384605 /* SampleInfo.m */,
 				E0A525331EB73A7600504831 /* Samples */,
 				E0A525381EB73A7600504831 /* SamplesContainerViewController.h */,
 				E0A525391EB73A7600504831 /* SamplesContainerViewController.m */,
@@ -142,7 +149,7 @@
 				E01489CA1EB73A23002B60DC /* Sources */,
 				E01489CB1EB73A23002B60DC /* Frameworks */,
 				E01489CC1EB73A23002B60DC /* Resources */,
-				E0A525611EB73D1000504831 /* Embed Frameworks */,
+				D0AAB6461EBB331E00384605 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,8 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */,
+				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
-				E0A5253A1EB73A7600504831 /* AppDelegate.m in Sources */,
+				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				E0A525401EB73A7600504831 /* BasicMap.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
 				E0A525411EB73A7600504831 /* MovingCamera.m in Sources */,
