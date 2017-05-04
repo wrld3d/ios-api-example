@@ -1,6 +1,6 @@
 #pragma once
 #import <UIKit/UIKit.h>
 
-@interface MovingCamera : UIViewController
+@interface MoveCamera : UIViewController
 
 @end

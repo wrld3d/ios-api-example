@@ -17,7 +17,7 @@
 		E0A5253D1EB73A7600504831 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252F1EB73A7600504831 /* Info.plist */; };
 		E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525321EB73A7600504831 /* MainTableViewController.m */; };
 		E0A525401EB73A7600504831 /* BasicMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525351EB73A7600504831 /* BasicMap.m */; };
-		E0A525411EB73A7600504831 /* MovingCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525371EB73A7600504831 /* MovingCamera.m */; };
+		E0A525411EB73A7600504831 /* MoveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525371EB73A7600504831 /* MoveCamera.m */; };
 		E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525391EB73A7600504831 /* SamplesContainerViewController.m */; };
 		E0A525441EB73AF900504831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525431EB73AF900504831 /* main.m */; };
 /* End PBXBuildFile section */
@@ -52,8 +52,8 @@
 		E0A525321EB73A7600504831 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		E0A525341EB73A7600504831 /* BasicMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMap.h; sourceTree = "<group>"; };
 		E0A525351EB73A7600504831 /* BasicMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMap.m; sourceTree = "<group>"; };
-		E0A525361EB73A7600504831 /* MovingCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingCamera.h; sourceTree = "<group>"; };
-		E0A525371EB73A7600504831 /* MovingCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingCamera.m; sourceTree = "<group>"; };
+		E0A525361EB73A7600504831 /* MoveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveCamera.h; sourceTree = "<group>"; };
+		E0A525371EB73A7600504831 /* MoveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveCamera.m; sourceTree = "<group>"; };
 		E0A525381EB73A7600504831 /* SamplesContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesContainerViewController.h; sourceTree = "<group>"; };
 		E0A525391EB73A7600504831 /* SamplesContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesContainerViewController.m; sourceTree = "<group>"; };
 		E0A525431EB73AF900504831 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ApiSamples/main.m; sourceTree = SOURCE_ROOT; };
@@ -126,8 +126,8 @@
 			children = (
 				E0A525341EB73A7600504831 /* BasicMap.h */,
 				E0A525351EB73A7600504831 /* BasicMap.m */,
-				E0A525361EB73A7600504831 /* MovingCamera.h */,
-				E0A525371EB73A7600504831 /* MovingCamera.m */,
+				E0A525361EB73A7600504831 /* MoveCamera.h */,
+				E0A525371EB73A7600504831 /* MoveCamera.m */,
 				D0AAB64C1EBB5C1000384605 /* FrameCamera.h */,
 				D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */,
 			);
@@ -224,7 +224,7 @@
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
 				E0A525401EB73A7600504831 /* BasicMap.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
-				E0A525411EB73A7600504831 /* MovingCamera.m in Sources */,
+				E0A525411EB73A7600504831 /* MoveCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
