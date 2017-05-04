@@ -47,6 +47,12 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:SegueTableToSample sender:cell];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:SegueTableToSample]) {
         if ([sender isKindOfClass:[UITableViewCell class]]) {
