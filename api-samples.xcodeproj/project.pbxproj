@@ -11,6 +11,7 @@
 		D0AAB6451EBB331E00384605 /* Wrld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAB6431EBB331E00384605 /* Wrld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
+		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
 		E0A5253B1EB73A7600504831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252C1EB73A7600504831 /* Assets.xcassets */; };
 		E0A5253C1EB73A7600504831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252D1EB73A7600504831 /* Main.storyboard */; };
 		E0A5253D1EB73A7600504831 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252F1EB73A7600504831 /* Info.plist */; };
@@ -40,6 +41,8 @@
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
+		D0AAB64C1EBB5C1000384605 /* FrameCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameCamera.h; sourceTree = "<group>"; };
+		D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameCamera.m; sourceTree = "<group>"; };
 		E01489CE1EB73A23002B60DC /* ApiSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A5252A1EB73A7600504831 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0A5252C1EB73A7600504831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				E0A525351EB73A7600504831 /* BasicMap.m */,
 				E0A525361EB73A7600504831 /* MovingCamera.h */,
 				E0A525371EB73A7600504831 /* MovingCamera.m */,
+				D0AAB64C1EBB5C1000384605 /* FrameCamera.h */,
+				D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
+				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
 				E0A525401EB73A7600504831 /* BasicMap.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
 				E0A525411EB73A7600504831 /* MovingCamera.m in Sources */,
