@@ -14,6 +14,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     [super viewDidLoad];
     
     self.samples = @[[SampleInfo infoForSample:@"BasicMap" title:@"Embed a 3D map" subtitle:@"How to embed a 3D map view for iOS"],
+                     [SampleInfo infoForSample:@"StartingLocation" title:@"Set start location" subtitle:@"Setting the start location of the map"],
                      [SampleInfo infoForSample:@"MoveCamera" title:@"Move the camera" subtitle:@"Simple camera movement"],
                      [SampleInfo infoForSample:@"FrameCamera" title:@"Frame an area" subtitle:@"Move the map camera to frame an area"]];
     
