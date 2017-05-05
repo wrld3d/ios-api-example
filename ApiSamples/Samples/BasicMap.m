@@ -4,10 +4,20 @@
 
 @implementation BasicMap
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    WRLDMapView *mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
+    CGRect viewBounds = self.view.bounds;
+    
+    CGFloat top = 96;
+    CGFloat border = 32;
+    viewBounds.size.width -= 2*border;
+    viewBounds.size.height -= top + border;
+    viewBounds.origin.x += border;
+    viewBounds.origin.y += top;
+    
+    WRLDMapView *mapView = [[WRLDMapView alloc] initWithFrame:viewBounds];
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
