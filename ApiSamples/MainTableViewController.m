@@ -1,6 +1,7 @@
 #import "MainTableViewController.h"
 #import "SamplesContainerViewController.h"
 #import "SampleInfo.h"
+#import "Samples/SampleClasses.h"
 
 NSString *const SegueTableToSample = @"TableToSampleSegue";
 
@@ -13,11 +14,31 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.samples = @[[SampleInfo infoForSample:@"BasicMap" title:@"Embed a 3D map" subtitle:@"How to embed a 3D map view for iOS"],
-                     [SampleInfo infoForSample:@"StartingLocation" title:@"Set start location" subtitle:@"Setting the start location of the map"],
-                     [SampleInfo infoForSample:@"MoveCamera" title:@"Move the camera" subtitle:@"Simple camera movement"],
-                     [SampleInfo infoForSample:@"AnimateCamera" title:@"Animate the camera" subtitle:@"Move the camera with animation"],
-                     [SampleInfo infoForSample:@"FrameCamera" title:@"Frame an area" subtitle:@"Move the map camera to frame an area"]];
+    self.samples = @[
+        [SampleInfo infoForSample:NSStringFromClass ([BasicMap class])
+                            title:@"Embed a 3D map"
+                         subtitle:@"How to embed a 3D map view for iOS"],
+        
+        [SampleInfo infoForSample:NSStringFromClass ([StartingLocation class])
+                            title:@"Set start location"
+                         subtitle:@"Setting the start location of the map"],
+        
+        [SampleInfo infoForSample:NSStringFromClass ([MoveCamera class])
+                            title:@"Move the camera"
+                         subtitle:@"Simple camera movement"],
+        
+        [SampleInfo infoForSample:NSStringFromClass ([AnimateCamera class])
+                            title:@"Animate the camera"
+                         subtitle:@"Move the camera with animation"],
+        
+        [SampleInfo infoForSample:NSStringFromClass ([FrameCamera class])
+                            title:@"Frame an area"
+                         subtitle:@"Move the map camera to frame an area"],
+        
+        [SampleInfo infoForSample:NSStringFromClass ([MapSceneLoadedNotification class])
+                            title:@"Map scene loaded notification"
+                         subtitle:@"Receive notification that the loading of map resources for the initial scene has completed"]
+        ];
     
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];

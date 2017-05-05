@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0AAB6441EBB331E00384605 /* Wrld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAB6431EBB331E00384605 /* Wrld.framework */; };
-		D0AAB6451EBB331E00384605 /* Wrld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0AAB6431EBB331E00384605 /* Wrld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
 		D0AAB6511EBB6C6100384605 /* StartingLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6501EBB6C6100384605 /* StartingLocation.m */; };
 		D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */; };
+		E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C051EBB8E7200DD387F /* SamplesMessage.m */; };
+		E0A48C091EBB927600DD387F /* MapSceneLoadedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */; };
+		E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C0A1EBB95BF00DD387F /* BasicMap.m */; };
+		E0A48C0D1EBB987000DD387F /* Wrld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0A48C0C1EBB987000DD387F /* Wrld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0A5253B1EB73A7600504831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252C1EB73A7600504831 /* Assets.xcassets */; };
 		E0A5253C1EB73A7600504831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252D1EB73A7600504831 /* Main.storyboard */; };
 		E0A5253D1EB73A7600504831 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252F1EB73A7600504831 /* Info.plist */; };
 		E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525321EB73A7600504831 /* MainTableViewController.m */; };
-		E0A525401EB73A7600504831 /* BasicMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525351EB73A7600504831 /* BasicMap.m */; };
 		E0A525411EB73A7600504831 /* MoveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525371EB73A7600504831 /* MoveCamera.m */; };
 		E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525391EB73A7600504831 /* SamplesContainerViewController.m */; };
 		E0A525441EB73AF900504831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525431EB73AF900504831 /* main.m */; };
@@ -31,7 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D0AAB6451EBB331E00384605 /* Wrld.framework in Embed Frameworks */,
+				E0A48C0D1EBB987000DD387F /* Wrld.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +40,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D0AAB6431EBB331E00384605 /* Wrld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wrld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
@@ -50,6 +50,13 @@
 		D0AAB6521EBB6FA600384605 /* AnimateCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateCamera.h; sourceTree = "<group>"; };
 		D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateCamera.m; sourceTree = "<group>"; };
 		E01489CE1EB73A23002B60DC /* ApiSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A48C041EBB8E7200DD387F /* SamplesMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesMessage.h; sourceTree = "<group>"; };
+		E0A48C051EBB8E7200DD387F /* SamplesMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesMessage.m; sourceTree = "<group>"; };
+		E0A48C071EBB927600DD387F /* MapSceneLoadedNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSceneLoadedNotification.h; sourceTree = "<group>"; };
+		E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSceneLoadedNotification.m; sourceTree = "<group>"; };
+		E0A48C0A1EBB95BF00DD387F /* BasicMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMap.m; sourceTree = "<group>"; };
+		E0A48C0C1EBB987000DD387F /* Wrld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wrld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleClasses.h; sourceTree = "<group>"; };
 		E0A5252A1EB73A7600504831 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0A5252C1EB73A7600504831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0A5252E1EB73A7600504831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,15 +64,11 @@
 		E0A525311EB73A7600504831 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		E0A525321EB73A7600504831 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		E0A525341EB73A7600504831 /* BasicMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMap.h; sourceTree = "<group>"; };
-		E0A525351EB73A7600504831 /* BasicMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMap.m; sourceTree = "<group>"; };
 		E0A525361EB73A7600504831 /* MoveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveCamera.h; sourceTree = "<group>"; };
 		E0A525371EB73A7600504831 /* MoveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveCamera.m; sourceTree = "<group>"; };
 		E0A525381EB73A7600504831 /* SamplesContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesContainerViewController.h; sourceTree = "<group>"; };
 		E0A525391EB73A7600504831 /* SamplesContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesContainerViewController.m; sourceTree = "<group>"; };
 		E0A525431EB73AF900504831 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ApiSamples/main.m; sourceTree = SOURCE_ROOT; };
-		E0A525521EB73BAA00504831 /* Wrld.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Wrld.framework; path = "../../../../Library/Developer/Xcode/DerivedData/development-ehhpetyjtvmmdnhjplfuswvgxsqk/Build/Products/Debug-iphoneos/Wrld.framework"; sourceTree = "<group>"; };
-		E0A525541EB73BD300504831 /* libPods-WrldSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-WrldSdk.a"; path = "../../../../Library/Developer/Xcode/DerivedData/development-ehhpetyjtvmmdnhjplfuswvgxsqk/Build/Products/Debug-iphoneos/libPods-WrldSdk.a"; sourceTree = "<group>"; };
-		E0A525561EB73BE000504831 /* libwrld_cpp_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwrld_cpp_sdk.a; path = "../../../../Library/Developer/Xcode/DerivedData/development-ehhpetyjtvmmdnhjplfuswvgxsqk/Build/Products/Debug-iphoneos/wrld_cpp_sdk/libwrld_cpp_sdk.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AAB6441EBB331E00384605 /* Wrld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +85,6 @@
 		E01489C51EB73A23002B60DC = {
 			isa = PBXGroup;
 			children = (
-				D0AAB6431EBB331E00384605 /* Wrld.framework */,
 				E0A525291EB73A7600504831 /* ApiSamples */,
 				E01489CF1EB73A23002B60DC /* Products */,
 				E0A525511EB73BAA00504831 /* Frameworks */,
@@ -110,6 +111,8 @@
 		E0A525291EB73A7600504831 /* ApiSamples */ = {
 			isa = PBXGroup;
 			children = (
+				E0A48C041EBB8E7200DD387F /* SamplesMessage.h */,
+				E0A48C051EBB8E7200DD387F /* SamplesMessage.m */,
 				E0A5252A1EB73A7600504831 /* AppDelegate.h */,
 				D0AAB6481EBB4A6F00384605 /* AppDelegate.m */,
 				E0A5252C1EB73A7600504831 /* Assets.xcassets */,
@@ -130,8 +133,9 @@
 		E0A525331EB73A7600504831 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */,
+				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
 				E0A525341EB73A7600504831 /* BasicMap.h */,
-				E0A525351EB73A7600504831 /* BasicMap.m */,
 				D0AAB64F1EBB6C4B00384605 /* StartingLocation.h */,
 				D0AAB6501EBB6C6100384605 /* StartingLocation.m */,
 				E0A525361EB73A7600504831 /* MoveCamera.h */,
@@ -140,6 +144,8 @@
 				D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */,
 				D0AAB64C1EBB5C1000384605 /* FrameCamera.h */,
 				D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */,
+				E0A48C071EBB927600DD387F /* MapSceneLoadedNotification.h */,
+				E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -147,9 +153,7 @@
 		E0A525511EB73BAA00504831 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0A525561EB73BE000504831 /* libwrld_cpp_sdk.a */,
-				E0A525541EB73BD300504831 /* libPods-WrldSdk.a */,
-				E0A525521EB73BAA00504831 /* Wrld.framework */,
+				E0A48C0C1EBB987000DD387F /* Wrld.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,13 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0AAB6511EBB6C6100384605 /* StartingLocation.m in Sources */,
+				E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */,
+				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
 				E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */,
+				E0A48C091EBB927600DD387F /* MapSceneLoadedNotification.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
-				E0A525401EB73A7600504831 /* BasicMap.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
 				E0A525411EB73A7600504831 /* MoveCamera.m in Sources */,
 			);
