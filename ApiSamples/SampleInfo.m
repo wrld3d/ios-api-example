@@ -2,6 +2,20 @@
 
 @implementation SampleInfo
 
+
++ (instancetype)infoForSample:(Class)sampleClass;
+{
+    NSString* className = NSStringFromClass(sampleClass);
+    NSString* titleKey = [NSString stringWithFormat:@"SampleTitle_%@", className];
+    NSString* descKey = [NSString stringWithFormat:@"SampleDescription_%@", className];
+    
+    
+    return [[self alloc] initWithSampleClass:className
+                                       title:NSLocalizedString(titleKey, nil)
+                                    subtitle:NSLocalizedString(descKey, nil)];
+}
+
+
 + (instancetype)infoForSample:(NSString*)className
                         title:(NSString*)title
                      subtitle:(NSString*)subtitle

@@ -15,29 +15,12 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     [super viewDidLoad];
     
     self.samples = @[
-        [SampleInfo infoForSample:NSStringFromClass ([BasicMap class])
-                            title:@"Embed a 3D map"
-                         subtitle:@"How to embed a 3D map view for iOS"],
-        
-        [SampleInfo infoForSample:NSStringFromClass ([StartingLocation class])
-                            title:@"Set start location"
-                         subtitle:@"Setting the start location of the map"],
-        
-        [SampleInfo infoForSample:NSStringFromClass ([MoveCamera class])
-                            title:@"Move the camera"
-                         subtitle:@"Simple camera movement"],
-        
-        [SampleInfo infoForSample:NSStringFromClass ([AnimateCamera class])
-                            title:@"Animate the camera"
-                         subtitle:@"Move the camera with animation"],
-        
-        [SampleInfo infoForSample:NSStringFromClass ([FrameCamera class])
-                            title:@"Frame an area"
-                         subtitle:@"Move the map camera to frame an area"],
-        
-        [SampleInfo infoForSample:NSStringFromClass ([MapSceneLoadedNotification class])
-                            title:@"Map scene loaded notification"
-                         subtitle:@"Receive notification that the loading of map resources for the initial scene has completed"]
+        [SampleInfo infoForSample:[BasicMap class]],
+        [SampleInfo infoForSample:[StartingLocation class]],
+        [SampleInfo infoForSample:[MoveCamera class]],
+        [SampleInfo infoForSample:[AnimateCamera class]],
+        [SampleInfo infoForSample:[FrameCamera class]],
+        [SampleInfo infoForSample:[MapSceneLoadedNotification class]],
         ];
     
     
@@ -67,6 +50,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     SampleInfo* sampleInfo = [self.samples objectAtIndex:indexPath.row];
     cell.textLabel.text = sampleInfo.title;
     cell.detailTextLabel.text = sampleInfo.subtitle;
+    cell.detailTextLabel.numberOfLines = 0;
     
     return cell;
 }
@@ -75,6 +59,19 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
 {
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
     [self performSegueWithIdentifier:SegueTableToSample sender:cell];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SampleInfo* sampleInfo = [self.samples objectAtIndex:indexPath.row];
+    
+    CGFloat margin = tableView.layoutMargins.left + tableView.layoutMargins.right;
+    
+    CGRect rect = [sampleInfo.subtitle boundingRectWithSize:CGSizeMake(CGRectGetWidth(tableView.bounds) - margin, CGFLOAT_MAX)
+                                                    options:NSStringDrawingUsesLineFragmentOrigin
+                                                 attributes:@{}
+                                                    context:nil];
+    return rect.size.height + 30;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

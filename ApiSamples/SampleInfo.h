@@ -7,6 +7,8 @@
 @property (nonatomic) NSString* title;
 @property (nonatomic) NSString* subtitle;
 
++ (instancetype)infoForSample:(Class)sampleClass;
+
 + (instancetype)infoForSample:(NSString*)className
                         title:(NSString*)title
                      subtitle:(NSString*)subtitle;
