@@ -20,6 +20,8 @@
     self.layer.cornerRadius = 8.0;
     self.layer.masksToBounds = YES;
     
+    self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
     return self;
 }
 
