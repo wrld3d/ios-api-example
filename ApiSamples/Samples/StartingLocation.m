@@ -2,7 +2,7 @@
 @import Wrld;
 
 
-@interface StartingLocation () <WRLDMapViewDelegate>
+@interface StartingLocation ()
 
 @property (nonatomic) WRLDMapView *mapView;
 
@@ -10,16 +10,19 @@
 
 @implementation StartingLocation
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
     
     _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    [self.view addSubview:_mapView];
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(40.703492, -74.013961)
+                        zoomLevel:15
+                         animated:NO];
     
-    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(40.703492, -74.013961)];
+    [self.view addSubview:_mapView];
 }
 
 @end

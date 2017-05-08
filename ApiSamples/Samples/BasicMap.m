@@ -2,6 +2,13 @@
 #import "SamplesMessage.h"
 @import Wrld;
 
+
+@interface BasicMap ()
+
+@property (nonatomic) WRLDMapView *mapView;
+
+@end
+
 @implementation BasicMap
 
 - (void)viewDidLoad
@@ -17,11 +24,15 @@
     viewBounds.origin.x += border;
     viewBounds.origin.y += top;
     
-    WRLDMapView *mapView = [[WRLDMapView alloc] initWithFrame:viewBounds];
+    _mapView = [[WRLDMapView alloc] initWithFrame:viewBounds];
     
-    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    [self.view addSubview:mapView];
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)
+                        zoomLevel:15
+                         animated:NO];
+    
+    [self.view addSubview:_mapView];
     
     [SamplesMessage showWithMessage:@"Welcome to WRLD maps"];
 }

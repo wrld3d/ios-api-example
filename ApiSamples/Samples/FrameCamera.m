@@ -2,20 +2,39 @@
 @import Wrld;
 
 
+@interface FrameCamera ()
+
+@property (nonatomic) WRLDMapView *mapView;
+
+@end
+
 @implementation FrameCamera
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    WRLDMapView *mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
+    _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
     
-    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    [self.view addSubview:mapView];
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)
+                        zoomLevel:15
+                         animated:NO];
     
+    [self.view addSubview:_mapView];
+    
+    [NSTimer scheduledTimerWithTimeInterval:3
+                                     target:self
+                                   selector:@selector(onDelay:)
+                                   userInfo:nil
+                                    repeats:FALSE];
+}
+
+- (void)onDelay:(NSTimer *)timer
+{
     WRLDCoordinateBounds bounds = WRLDCoordinateBoundsMake(CLLocationCoordinate2DMake(37.786647, -122.407015), CLLocationCoordinate2DMake(37.798886, -122.395116));
-    
-    [mapView setCoordinateBounds:bounds animated:YES];
+    [_mapView setCoordinateBounds:bounds animated:YES];
 }
 
 @end

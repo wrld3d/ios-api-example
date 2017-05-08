@@ -2,7 +2,10 @@
 #import "SamplesMessage.h"
 @import Wrld;
 
+
 @interface MapSceneLoadedNotification () <WRLDMapViewDelegate>
+
+@property (nonatomic) WRLDMapView *mapView;
 
 @end
 
@@ -12,12 +15,16 @@
 {
     [super viewDidLoad];
     
-    WRLDMapView *mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
+    _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
     
-    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    mapView.delegate = self;
+    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _mapView.delegate = self;
     
-    [self.view addSubview:mapView];
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)
+                        zoomLevel:15
+                         animated:NO];
+    
+    [self.view addSubview:_mapView];
 }
 
 #pragma mark - AppMapViewDelegate implementation

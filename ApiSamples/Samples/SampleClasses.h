@@ -6,3 +6,4 @@
 #import "AnimateCamera.h"
 #import "FrameCamera.h"
 #import "MapSceneLoadedNotification.h"
+#import "AddMarker.h"
