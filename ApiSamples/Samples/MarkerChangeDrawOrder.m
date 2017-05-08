@@ -44,7 +44,7 @@
     markerB.title = @"Marker B";
     markerB.drawOrder = lowPriorityDrawOrder;
     
-    [_mapView addMarkers: @[markerA, markerB]];
+    [_mapView addMarkers:@[markerA, markerB]];
     
     [NSTimer scheduledTimerWithTimeInterval:2
                                      target:self

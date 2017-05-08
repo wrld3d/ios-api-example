@@ -27,9 +27,9 @@
     [self.view addSubview:_mapView];
 }
 
-#pragma mark - AppMapViewDelegate implementation
+#pragma mark - WRLDMapViewDelegate implementation
 
--(void)initialMapSceneLoaded:(WRLDMapView *)mapView
+- (void)initialMapSceneLoaded:(WRLDMapView *)mapView
 {
     [SamplesMessage showWithMessage:@"Initial map scene loaded"];
 }

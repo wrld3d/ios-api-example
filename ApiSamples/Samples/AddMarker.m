@@ -26,7 +26,7 @@
     
     WRLDMarker* marker = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)];
     marker.title = @"This is a marker";
-    [_mapView addMarker: marker];
+    [_mapView addMarker:marker];
 }
 
 @end

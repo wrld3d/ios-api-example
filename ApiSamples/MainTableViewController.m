@@ -22,6 +22,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[FrameCamera class]],
         [SampleInfo infoForSample:[MapSceneLoadedNotification class]],
         [SampleInfo infoForSample:[AddMarker class]],
+        [SampleInfo infoForSample:[MarkerTappedNotification class]],
         [SampleInfo infoForSample:[MarkerChangeDrawOrder class]]
     ];
     
