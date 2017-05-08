@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C11EC09F3E0070ACDD /* AddMarker.m */; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
@@ -61,6 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		521807C01EC09F3E0070ACDD /* AddMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMarker.h; sourceTree = "<group>"; };
+		521807C11EC09F3E0070ACDD /* AddMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMarker.m; sourceTree = "<group>"; };
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
@@ -211,8 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */,
-				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
 				E0A525341EB73A7600504831 /* BasicMap.h */,
+				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
 				D0AAB64F1EBB6C4B00384605 /* StartingLocation.h */,
 				D0AAB6501EBB6C6100384605 /* StartingLocation.m */,
 				E0A525361EB73A7600504831 /* MoveCamera.h */,
@@ -223,6 +226,8 @@
 				D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */,
 				E0A48C071EBB927600DD387F /* MapSceneLoadedNotification.h */,
 				E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */,
+				521807C01EC09F3E0070ACDD /* AddMarker.h */,
+				521807C11EC09F3E0070ACDD /* AddMarker.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
 				E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */,
 				E0A48C091EBB927600DD387F /* MapSceneLoadedNotification.m in Sources */,
+				521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
@@ -583,6 +589,7 @@
 				E03E76001EBCC598004FBD8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
