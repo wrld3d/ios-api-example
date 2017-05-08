@@ -22,7 +22,8 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[FrameCamera class]],
         [SampleInfo infoForSample:[MapSceneLoadedNotification class]],
         [SampleInfo infoForSample:[AddMarker class]],
-        ];
+        [SampleInfo infoForSample:[MarkerChangeDrawOrder class]]
+    ];
     
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
