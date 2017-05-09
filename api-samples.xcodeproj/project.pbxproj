@@ -15,6 +15,12 @@
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
 		D0AAB6511EBB6C6100384605 /* StartingLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6501EBB6C6100384605 /* StartingLocation.m */; };
 		D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */; };
+		D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6681EC1C18000384605 /* MarkerChangeText.m */; };
+		D0AAB66C1EC1CF1500384605 /* MarkerChangeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB66B1EC1CF1500384605 /* MarkerChangeLocation.m */; };
+		D0AAB66F1EC1D19D00384605 /* MarkerCustomIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB66E1EC1D19D00384605 /* MarkerCustomIcon.m */; };
+		D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6711EC1E05400384605 /* MarkerWithAbsoluteAltitude.m */; };
+		D0AAB6751EC1F5BB00384605 /* MarkerWithElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6741EC1F5BB00384605 /* MarkerWithElevation.m */; };
+		D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6761EC1FA3500384605 /* AddIndoorMarker.m */; };
 		E03E75EF1EBCC598004FBD8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E03E75EE1EBCC598004FBD8B /* main.m */; };
 		E03E75F21EBCC598004FBD8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E03E75F11EBCC598004FBD8B /* AppDelegate.m */; };
 		E03E75F51EBCC598004FBD8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03E75F41EBCC598004FBD8B /* ViewController.m */; };
@@ -79,6 +85,18 @@
 		D0AAB6501EBB6C6100384605 /* StartingLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingLocation.m; sourceTree = "<group>"; };
 		D0AAB6521EBB6FA600384605 /* AnimateCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateCamera.h; sourceTree = "<group>"; };
 		D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateCamera.m; sourceTree = "<group>"; };
+		D0AAB6671EC1C15F00384605 /* MarkerChangeText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerChangeText.h; sourceTree = "<group>"; };
+		D0AAB6681EC1C18000384605 /* MarkerChangeText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerChangeText.m; sourceTree = "<group>"; };
+		D0AAB66A1EC1CEFF00384605 /* MarkerChangeLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerChangeLocation.h; sourceTree = "<group>"; };
+		D0AAB66B1EC1CF1500384605 /* MarkerChangeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerChangeLocation.m; sourceTree = "<group>"; };
+		D0AAB66D1EC1D18800384605 /* MarkerCustomIcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerCustomIcon.h; sourceTree = "<group>"; };
+		D0AAB66E1EC1D19D00384605 /* MarkerCustomIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerCustomIcon.m; sourceTree = "<group>"; };
+		D0AAB6701EC1E03C00384605 /* MarkerWithAbsoluteAltitude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerWithAbsoluteAltitude.h; sourceTree = "<group>"; };
+		D0AAB6711EC1E05400384605 /* MarkerWithAbsoluteAltitude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerWithAbsoluteAltitude.m; sourceTree = "<group>"; };
+		D0AAB6731EC1F53F00384605 /* MarkerWithElevation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerWithElevation.h; sourceTree = "<group>"; };
+		D0AAB6741EC1F5BB00384605 /* MarkerWithElevation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerWithElevation.m; sourceTree = "<group>"; };
+		D0AAB6761EC1FA3500384605 /* AddIndoorMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddIndoorMarker.m; sourceTree = "<group>"; };
+		D0AAB6781EC1FA4200384605 /* AddIndoorMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddIndoorMarker.h; sourceTree = "<group>"; };
 		E01489CE1EB73A23002B60DC /* ApiSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03E75EB1EBCC598004FBD8B /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03E75EE1EBCC598004FBD8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -234,6 +252,18 @@
 				E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */,
 				521807C01EC09F3E0070ACDD /* AddMarker.h */,
 				521807C11EC09F3E0070ACDD /* AddMarker.m */,
+				D0AAB66D1EC1D18800384605 /* MarkerCustomIcon.h */,
+				D0AAB66E1EC1D19D00384605 /* MarkerCustomIcon.m */,
+				D0AAB6731EC1F53F00384605 /* MarkerWithElevation.h */,
+				D0AAB6741EC1F5BB00384605 /* MarkerWithElevation.m */,
+				D0AAB6701EC1E03C00384605 /* MarkerWithAbsoluteAltitude.h */,
+				D0AAB6711EC1E05400384605 /* MarkerWithAbsoluteAltitude.m */,
+				D0AAB6781EC1FA4200384605 /* AddIndoorMarker.h */,
+				D0AAB6761EC1FA3500384605 /* AddIndoorMarker.m */,
+				D0AAB6671EC1C15F00384605 /* MarkerChangeText.h */,
+				D0AAB6681EC1C18000384605 /* MarkerChangeText.m */,
+				D0AAB66A1EC1CEFF00384605 /* MarkerChangeLocation.h */,
+				D0AAB66B1EC1CF1500384605 /* MarkerChangeLocation.m */,
 				521807C71EC0B75B0070ACDD /* MarkerTappedNotification.h */,
 				521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */,
 				521807C41EC0B1670070ACDD /* MarkerChangeDrawOrder.h */,
@@ -358,16 +388,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0AAB6511EBB6C6100384605 /* StartingLocation.m in Sources */,
+				D0AAB66C1EC1CF1500384605 /* MarkerChangeLocation.m in Sources */,
 				E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */,
+				D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */,
 				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
 				E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */,
 				521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */,
 				E0A48C091EBB927600DD387F /* MapSceneLoadedNotification.m in Sources */,
+				D0AAB66F1EC1D19D00384605 /* MarkerCustomIcon.m in Sources */,
 				521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
+				D0AAB6751EC1F5BB00384605 /* MarkerWithElevation.m in Sources */,
+				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
+				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
 				521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */,
