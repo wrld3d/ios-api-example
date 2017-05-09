@@ -30,6 +30,10 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView setUserInteractionEnabled:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -62,6 +66,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
 {
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
     [self performSegueWithIdentifier:SegueTableToSample sender:cell];
+    [tableView setUserInteractionEnabled:NO];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
