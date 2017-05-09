@@ -15,3 +15,4 @@
 #import "MarkerWithAbsoluteAltitude.h"
 #import "MarkerWithElevation.h"
 #import "AddIndoorMarker.h"
+#import "AddIndoorControl.h"
