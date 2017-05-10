@@ -41,6 +41,7 @@
 		E0A525411EB73A7600504831 /* MoveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525371EB73A7600504831 /* MoveCamera.m */; };
 		E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525391EB73A7600504831 /* SamplesContainerViewController.m */; };
 		E0A525441EB73AF900504831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525431EB73AF900504831 /* main.m */; };
+		F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBFFD1EC34716006E4D0C /* AddCustomIndoorControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -132,6 +133,8 @@
 		E0A525381EB73A7600504831 /* SamplesContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesContainerViewController.h; sourceTree = "<group>"; };
 		E0A525391EB73A7600504831 /* SamplesContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesContainerViewController.m; sourceTree = "<group>"; };
 		E0A525431EB73AF900504831 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ApiSamples/main.m; sourceTree = SOURCE_ROOT; };
+		F3DDBFFC1EC34716006E4D0C /* AddCustomIndoorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomIndoorControl.h; sourceTree = "<group>"; };
+		F3DDBFFD1EC34716006E4D0C /* AddCustomIndoorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomIndoorControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +288,8 @@
 				521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */,
 				2C27ECFD1EC220FF00A9E677 /* AddIndoorControl.h */,
 				2C27ECFE1EC220FF00A9E677 /* AddIndoorControl.m */,
+				F3DDBFFC1EC34716006E4D0C /* AddCustomIndoorControl.h */,
+				F3DDBFFD1EC34716006E4D0C /* AddCustomIndoorControl.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -435,7 +440,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		74B2D72EAD3CB34B5F6F68A9 /* [CP] Check Pods Manifest.lock */ = {
@@ -450,7 +455,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		83052C3E0FC1D368D804FD0E /* [CP] Copy Pods Resources */ = {
@@ -519,6 +524,7 @@
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
 				D0AAB6751EC1F5BB00384605 /* MarkerWithElevation.m in Sources */,
+				F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,

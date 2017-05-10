@@ -16,3 +16,4 @@
 #import "MarkerWithElevation.h"
 #import "AddIndoorMarker.h"
 #import "AddIndoorControl.h"
+#import "AddCustomIndoorControl.h"
