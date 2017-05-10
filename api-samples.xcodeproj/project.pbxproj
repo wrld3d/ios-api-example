@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C27ECFB1EC2124100A9E677 /* WrldWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C27ECFA1EC2124100A9E677 /* WrldWidgets.framework */; };
-		2C27ECFC1EC2124100A9E677 /* WrldWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C27ECFA1EC2124100A9E677 /* WrldWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C27ECFE1EC220FF00A9E677 /* AddIndoorControl.m */; };
 		521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C11EC09F3E0070ACDD /* AddMarker.m */; };
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
+		8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
@@ -24,16 +23,13 @@
 		D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6711EC1E05400384605 /* MarkerWithAbsoluteAltitude.m */; };
 		D0AAB6751EC1F5BB00384605 /* MarkerWithElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6741EC1F5BB00384605 /* MarkerWithElevation.m */; };
 		D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6761EC1FA3500384605 /* AddIndoorMarker.m */; };
+		D816100B01BF49FFC5903DA1 /* Pods_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C77593C15EA7D89AD77295F /* Pods_HelloWorld.framework */; };
 		E03E75EF1EBCC598004FBD8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E03E75EE1EBCC598004FBD8B /* main.m */; };
 		E03E75F21EBCC598004FBD8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E03E75F11EBCC598004FBD8B /* AppDelegate.m */; };
 		E03E75F51EBCC598004FBD8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03E75F41EBCC598004FBD8B /* ViewController.m */; };
 		E03E75F81EBCC598004FBD8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03E75F61EBCC598004FBD8B /* Main.storyboard */; };
 		E03E75FA1EBCC598004FBD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03E75F91EBCC598004FBD8B /* Assets.xcassets */; };
 		E03E75FD1EBCC598004FBD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03E75FB1EBCC598004FBD8B /* LaunchScreen.storyboard */; };
-		E03E76041EBCC82D004FBD8B /* Wrld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A48C0C1EBB987000DD387F /* Wrld.framework */; };
-		E03E76051EBCC82D004FBD8B /* Wrld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0A48C0C1EBB987000DD387F /* Wrld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E03E76111EBCEC05004FBD8B /* Wrld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A48C0C1EBB987000DD387F /* Wrld.framework */; };
-		E03E76121EBCEC05004FBD8B /* Wrld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0A48C0C1EBB987000DD387F /* Wrld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C051EBB8E7200DD387F /* SamplesMessage.m */; };
 		E0A48C091EBB927600DD387F /* MapSceneLoadedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */; };
 		E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C0A1EBB95BF00DD387F /* BasicMap.m */; };
@@ -54,8 +50,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E03E76051EBCC82D004FBD8B /* Wrld.framework in Embed Frameworks */,
-				2C27ECFC1EC2124100A9E677 /* WrldWidgets.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +60,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E03E76121EBCEC05004FBD8B /* Wrld.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,15 +67,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C27ECFA1EC2124100A9E677 /* WrldWidgets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WrldWidgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2421BE34EEAE71A620738985 /* Pods-ApiSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		2C27ECFD1EC220FF00A9E677 /* AddIndoorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddIndoorControl.h; sourceTree = "<group>"; };
 		2C27ECFE1EC220FF00A9E677 /* AddIndoorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddIndoorControl.m; sourceTree = "<group>"; };
+		2C77593C15EA7D89AD77295F /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA7660678AF660EF0300FDE /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		521807C01EC09F3E0070ACDD /* AddMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMarker.h; sourceTree = "<group>"; };
 		521807C11EC09F3E0070ACDD /* AddMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMarker.m; sourceTree = "<group>"; };
 		521807C41EC0B1670070ACDD /* MarkerChangeDrawOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerChangeDrawOrder.h; sourceTree = "<group>"; };
 		521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerChangeDrawOrder.m; sourceTree = "<group>"; };
 		521807C71EC0B75B0070ACDD /* MarkerTappedNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerTappedNotification.h; sourceTree = "<group>"; };
 		521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerTappedNotification.m; sourceTree = "<group>"; };
+		96C9B4744696165DA6CB24EE /* Pods-ApiSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.release.xcconfig"; sourceTree = "<group>"; };
+		A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		E0A48C071EBB927600DD387F /* MapSceneLoadedNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSceneLoadedNotification.h; sourceTree = "<group>"; };
 		E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSceneLoadedNotification.m; sourceTree = "<group>"; };
 		E0A48C0A1EBB95BF00DD387F /* BasicMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMap.m; sourceTree = "<group>"; };
-		E0A48C0C1EBB987000DD387F /* Wrld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wrld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleClasses.h; sourceTree = "<group>"; };
 		E0A48C3F1EBC81C500DD387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
 		E0A48C411EBC81C500DD387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
@@ -142,8 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03E76041EBCC82D004FBD8B /* Wrld.framework in Frameworks */,
-				2C27ECFB1EC2124100A9E677 /* WrldWidgets.framework in Frameworks */,
+				8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03E76111EBCEC05004FBD8B /* Wrld.framework in Frameworks */,
+				D816100B01BF49FFC5903DA1 /* Pods_HelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,11 +157,11 @@
 		E01489C51EB73A23002B60DC = {
 			isa = PBXGroup;
 			children = (
-				2C27ECFA1EC2124100A9E677 /* WrldWidgets.framework */,
 				E0A525291EB73A7600504831 /* ApiSamples */,
 				E03E75EC1EBCC598004FBD8B /* HelloWorld */,
 				E01489CF1EB73A23002B60DC /* Products */,
 				E0A525511EB73BAA00504831 /* Frameworks */,
+				E07D4BECC8A6548E9EADBFBB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,7 +194,6 @@
 				E03E75F91EBCC598004FBD8B /* Assets.xcassets */,
 				E03E75FB1EBCC598004FBD8B /* LaunchScreen.storyboard */,
 				E03E75FE1EBCC598004FBD8B /* Info.plist */,
-				E0A48C0C1EBB987000DD387F /* Wrld.framework */,
 				E03E75ED1EBCC598004FBD8B /* Supporting Files */,
 			);
 			path = HelloWorld;
@@ -210,6 +205,17 @@
 				E03E75EE1EBCC598004FBD8B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E07D4BECC8A6548E9EADBFBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2421BE34EEAE71A620738985 /* Pods-ApiSamples.debug.xcconfig */,
+				96C9B4744696165DA6CB24EE /* Pods-ApiSamples.release.xcconfig */,
+				3AA7660678AF660EF0300FDE /* Pods-HelloWorld.debug.xcconfig */,
+				CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E0A48C3D1EBC81C500DD387F /* Base.lproj */ = {
@@ -286,6 +292,8 @@
 		E0A525511EB73BAA00504831 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */,
+				2C77593C15EA7D89AD77295F /* Pods_HelloWorld.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,10 +305,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E01489E51EB73A23002B60DC /* Build configuration list for PBXNativeTarget "ApiSamples" */;
 			buildPhases = (
+				74B2D72EAD3CB34B5F6F68A9 /* [CP] Check Pods Manifest.lock */,
 				E01489CA1EB73A23002B60DC /* Sources */,
 				E01489CB1EB73A23002B60DC /* Frameworks */,
 				E01489CC1EB73A23002B60DC /* Resources */,
 				D0AAB6461EBB331E00384605 /* Embed Frameworks */,
+				42F70B9FB6DFE9B3A68FE216 /* [CP] Embed Pods Frameworks */,
+				83052C3E0FC1D368D804FD0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,10 +326,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E03E76011EBCC598004FBD8B /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
+				4B365C7B5CE53CF69F903B44 /* [CP] Check Pods Manifest.lock */,
 				E03E75E71EBCC598004FBD8B /* Sources */,
 				E03E75E81EBCC598004FBD8B /* Frameworks */,
 				E03E75E91EBCC598004FBD8B /* Resources */,
 				E03E76131EBCEC06004FBD8B /* Embed Frameworks */,
+				94432418B6954B7AEF88C2E1 /* [CP] Embed Pods Frameworks */,
+				9F1B8927A1CE28CBAA65EC73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,6 +406,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42F70B9FB6DFE9B3A68FE216 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B365C7B5CE53CF69F903B44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74B2D72EAD3CB34B5F6F68A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83052C3E0FC1D368D804FD0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94432418B6954B7AEF88C2E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1B8927A1CE28CBAA65EC73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E01489CA1EB73A23002B60DC /* Sources */ = {
@@ -565,6 +672,7 @@
 		};
 		E01489E61EB73A23002B60DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2421BE34EEAE71A620738985 /* Pods-ApiSamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QBCVJ28BRW;
@@ -579,6 +687,7 @@
 		};
 		E01489E71EB73A23002B60DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C9B4744696165DA6CB24EE /* Pods-ApiSamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QBCVJ28BRW;
@@ -593,6 +702,7 @@
 		};
 		E03E75FF1EBCC598004FBD8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA7660678AF660EF0300FDE /* Pods-HelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QBCVJ28BRW;
@@ -608,6 +718,7 @@
 		};
 		E03E76001EBCC598004FBD8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QBCVJ28BRW;

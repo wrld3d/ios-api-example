@@ -1,4 +1,5 @@
 #import "ViewController.h"
+@import Wrld;
 
 @interface ViewController ()
 
@@ -8,7 +9,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    // force linkage with Wrld.framework
+    [WRLDMapView class];
 }
 
 
