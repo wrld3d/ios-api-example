@@ -1,5 +1,5 @@
 PODS:
-  - WRLD (0.0.2)
+  - WRLD (0.0.149)
 
 DEPENDENCIES:
   - WRLD (from `./WRLD.podspec`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :podspec: "./WRLD.podspec"
 
 SPEC CHECKSUMS:
-  WRLD: a16d62aa88695d9032f99e4f0202be6eea5b2ac1
+  WRLD: 901fb3e868abb06d08d1c8d8f48566275ad41ef3
 
 PODFILE CHECKSUM: 386b582307ec105b8bad92834eb9de92fd962ab1
 

@@ -4,11 +4,8 @@
 
 Pod::Spec.new do |s|
 
-  semanticVersion = '0.0.2'
-  buildNumber = '146'
-
   s.name             = 'WRLD'
-  s.version          = semanticVersion
+  s.version          = '0.0.149'
   s.summary          = 'Dynamic 3D maps for iOS'
 
   s.description      = 'Display 3D outdoor and indoor maps and markers using OpenGL'
@@ -20,7 +17,7 @@ Pod::Spec.new do |s|
   s.social_media_url  = 'https://twitter.com/eegeo'
 
   s.source = {
-    :http => "https://s3.amazonaws.com/eegeo-static/wrld-ios-sdk/builds/test/wrld-ios-sdk-v#{s.version.to_s}%2b#{buildNumber.to_s}.zip",
+    :http => "https://s3.amazonaws.com/eegeo-static/wrld-ios-sdk/builds/test/wrld-ios-sdk-v#{s.version.to_s}.zip",
     :flatten => true
   }
 
