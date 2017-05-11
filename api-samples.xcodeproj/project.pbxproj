@@ -31,7 +31,7 @@
 		E03E75FA1EBCC598004FBD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03E75F91EBCC598004FBD8B /* Assets.xcassets */; };
 		E03E75FD1EBCC598004FBD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03E75FB1EBCC598004FBD8B /* LaunchScreen.storyboard */; };
 		E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C051EBB8E7200DD387F /* SamplesMessage.m */; };
-		E0A48C091EBB927600DD387F /* MapSceneLoadedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */; };
+		E0A48C091EBB927600DD387F /* InitialStreamingCompleteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */; };
 		E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C0A1EBB95BF00DD387F /* BasicMap.m */; };
 		E0A48C421EBC81C500DD387F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0A48C3E1EBC81C500DD387F /* Localizable.strings */; };
 		E0A48C431EBC81C500DD387F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A48C401EBC81C500DD387F /* Main.storyboard */; };
@@ -117,8 +117,8 @@
 		E03E75FE1EBCC598004FBD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0A48C041EBB8E7200DD387F /* SamplesMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesMessage.h; sourceTree = "<group>"; };
 		E0A48C051EBB8E7200DD387F /* SamplesMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesMessage.m; sourceTree = "<group>"; };
-		E0A48C071EBB927600DD387F /* MapSceneLoadedNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSceneLoadedNotification.h; sourceTree = "<group>"; };
-		E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSceneLoadedNotification.m; sourceTree = "<group>"; };
+		E0A48C071EBB927600DD387F /* InitialStreamingCompleteNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialStreamingCompleteNotification.h; sourceTree = "<group>"; };
+		E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialStreamingCompleteNotification.m; sourceTree = "<group>"; };
 		E0A48C0A1EBB95BF00DD387F /* BasicMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMap.m; sourceTree = "<group>"; };
 		E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleClasses.h; sourceTree = "<group>"; };
 		E0A48C3F1EBC81C500DD387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Localizable.strings; sourceTree = "<group>"; };
@@ -271,8 +271,8 @@
 				D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */,
 				D0AAB64C1EBB5C1000384605 /* FrameCamera.h */,
 				D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */,
-				E0A48C071EBB927600DD387F /* MapSceneLoadedNotification.h */,
-				E0A48C081EBB927600DD387F /* MapSceneLoadedNotification.m */,
+				E0A48C071EBB927600DD387F /* InitialStreamingCompleteNotification.h */,
+				E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */,
 				521807C01EC09F3E0070ACDD /* AddMarker.h */,
 				521807C11EC09F3E0070ACDD /* AddMarker.m */,
 				D0AAB66D1EC1D18800384605 /* MarkerCustomIcon.h */,
@@ -522,7 +522,7 @@
 				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
 				E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */,
 				521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */,
-				E0A48C091EBB927600DD387F /* MapSceneLoadedNotification.m in Sources */,
+				E0A48C091EBB927600DD387F /* InitialStreamingCompleteNotification.m in Sources */,
 				D0AAB66F1EC1D19D00384605 /* MarkerCustomIcon.m in Sources */,
 				521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,

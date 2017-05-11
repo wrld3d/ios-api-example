@@ -36,7 +36,7 @@
 
 #pragma mark - WRLDMapViewDelegate implementation
 
-- (void)didTapMarker:(WRLDMarker *)marker
+- (void)mapView:(WRLDMapView *)mapView didTapMarker:(WRLDMarker *)marker
 {
     NSString *message = [NSString stringWithFormat:@"'%@' [%f, %f]", marker.title, marker.coordinate.latitude, marker.coordinate.longitude];
     [SamplesMessage showWithMessage:message

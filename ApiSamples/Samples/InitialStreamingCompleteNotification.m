@@ -1,15 +1,15 @@
-#import "MapSceneLoadedNotification.h"
+#import "InitialStreamingCompleteNotification.h"
 #import "SamplesMessage.h"
 @import Wrld;
 
 
-@interface MapSceneLoadedNotification () <WRLDMapViewDelegate>
+@interface InitialStreamingCompleteNotification () <WRLDMapViewDelegate>
 
 @property (nonatomic) WRLDMapView *mapView;
 
 @end
 
-@implementation MapSceneLoadedNotification
+@implementation InitialStreamingCompleteNotification
 
 - (void)viewDidLoad
 {
@@ -29,7 +29,7 @@
 
 #pragma mark - WRLDMapViewDelegate implementation
 
-- (void)initialMapSceneLoaded:(WRLDMapView *)mapView
+- (void)mapViewDidFinishLoadingInitialMap:(WRLDMapView *)mapView
 {
     [SamplesMessage showWithMessage:@"Initial map scene loaded"];
 }
