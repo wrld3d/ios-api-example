@@ -44,6 +44,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     [self.tableView setUserInteractionEnabled:YES];
 }
 

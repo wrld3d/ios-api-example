@@ -66,7 +66,7 @@
         [mainWindow addSubview:label];
         
         [UIView animateWithDuration: 1.0
-                              delay: duration ? duration.doubleValue : 5.0
+                              delay: duration != nil ? duration.doubleValue : 5.0
                             options: UIViewAnimationOptionCurveEaseOut
                          animations: ^ {
                              label.alpha = 0.0;
