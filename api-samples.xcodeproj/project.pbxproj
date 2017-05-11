@@ -42,6 +42,7 @@
 		E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525391EB73A7600504831 /* SamplesContainerViewController.m */; };
 		E0A525441EB73AF900504831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525431EB73AF900504831 /* main.m */; };
 		F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBFFD1EC34716006E4D0C /* AddCustomIndoorControl.m */; };
+		F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FFE6B41EC4AB6100E3057B /* SamplesNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,6 +136,8 @@
 		E0A525431EB73AF900504831 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ApiSamples/main.m; sourceTree = SOURCE_ROOT; };
 		F3DDBFFC1EC34716006E4D0C /* AddCustomIndoorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomIndoorControl.h; sourceTree = "<group>"; };
 		F3DDBFFD1EC34716006E4D0C /* AddCustomIndoorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomIndoorControl.m; sourceTree = "<group>"; };
+		F3FFE6B31EC4AB6100E3057B /* SamplesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesNavigationController.h; sourceTree = "<group>"; };
+		F3FFE6B41EC4AB6100E3057B /* SamplesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +251,8 @@
 				E0A525381EB73A7600504831 /* SamplesContainerViewController.h */,
 				E0A525391EB73A7600504831 /* SamplesContainerViewController.m */,
 				E01489D11EB73A23002B60DC /* Supporting Files */,
+				F3FFE6B31EC4AB6100E3057B /* SamplesNavigationController.h */,
+				F3FFE6B41EC4AB6100E3057B /* SamplesNavigationController.m */,
 			);
 			path = ApiSamples;
 			sourceTree = "<group>";
@@ -527,6 +532,7 @@
 				F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
+				F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,

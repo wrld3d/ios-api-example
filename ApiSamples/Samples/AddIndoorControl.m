@@ -31,4 +31,9 @@
     [self.view addSubview:_indoorControlView];
 }
 
+- (BOOL) shouldAutorotate
+{
+    return false;
+}
+
 @end

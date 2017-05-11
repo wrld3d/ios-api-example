@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="rLm-R1-YlC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="rLm-R1-YlC">
     <dependencies>
         <deployment identifier="iOS"/>
         <development version="7000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
     </dependencies>
     <scenes>
         <!--Main Table View Controller-->
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1013.6" y="-6.746626686656672"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Samples Navigation Controller-->
         <scene sceneID="cUU-h5-mPP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rLm-R1-YlC" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rLm-R1-YlC" customClass="SamplesNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Nt-VS-ZXy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
