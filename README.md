@@ -24,13 +24,13 @@ You should see the following two schemes in the project: [HelloWorld](https://gi
 ### CocoaPods
 CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like the WRLD iOS API in your projects. If you're already familiar with CocoaPods, [skip ahead](#set-your-wrld-api-key). For more information about CocoaPods, including installation instructions, see the [CocoaPods guide](https://guides.cocoapods.org/).
 
-The [WRLD iOS API CocoaPod](https://cocoapods.org/pods/wrld) can be used by your project by including the 'wrld' pod in your Podfile. This saves having to manually configure and maintain an Xcode project which includes the API.
+The [WRLD iOS API CocoaPod](https://cocoapods.org/pods/wrld) can be used by your project by including the 'WRLD' pod in your Podfile. This saves having to manually configure and maintain an Xcode project which includes the API.
 
 #### Podfiles
 A minimal Podfile looks like this:
 ```ruby
 target 'MyApp' do
-  pod 'wrld'
+  pod 'WRLD'
 end
 ```
 
