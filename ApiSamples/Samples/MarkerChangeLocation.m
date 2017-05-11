@@ -39,12 +39,12 @@
     
     [NSTimer scheduledTimerWithTimeInterval:2
                                      target:self
-                                   selector:@selector(onDelay:)
+                                   selector:@selector(toggleLocation:)
                                    userInfo:marker
                                     repeats:YES];
 }
 
-- (void)onDelay:(NSTimer *)timer
+- (void)toggleLocation:(NSTimer *)timer
 {
     WRLDMarker* marker = timer.userInfo;
     marker.coordinate = locationToggle ? initialMarkerLocation : alteredMarkerLocation;

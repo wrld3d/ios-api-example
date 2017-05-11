@@ -39,15 +39,12 @@
     
     [NSTimer scheduledTimerWithTimeInterval:2
                                      target:self
-                                   selector:@selector(onDelay:)
+                                   selector:@selector(toggleText:)
                                    userInfo:marker
                                     repeats:YES];
-    
-    
-    
 }
 
-- (void)onDelay:(NSTimer *)timer
+- (void)toggleText:(NSTimer *)timer
 {
     WRLDMarker* marker = timer.userInfo;
     marker.title = titleToggle ? title1 : title2;

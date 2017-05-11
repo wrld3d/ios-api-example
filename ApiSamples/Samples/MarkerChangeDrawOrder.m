@@ -14,7 +14,6 @@
     NSInteger midPriorityDrawOrder;
     NSInteger lowPriorityDrawOrder;
     BOOL drawOrderToggle;
-    WRLDMarker *markerB;
 }
 
 - (void)viewDidLoad
@@ -40,7 +39,7 @@
     markerA.title = @"Marker A";
     markerA.drawOrder = midPriorityDrawOrder;
     
-    markerB = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(37.784560, -122.402016)];
+    WRLDMarker *markerB = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(37.784560, -122.402016)];
     markerB.title = @"Marker B";
     markerB.drawOrder = lowPriorityDrawOrder;
     
@@ -49,14 +48,15 @@
     [NSTimer scheduledTimerWithTimeInterval:2
                                      target:self
                                    selector:@selector(toggleDrawOrder:)
-                                   userInfo:nil
+                                   userInfo:markerB
                                     repeats:TRUE];
 }
 
 - (void)toggleDrawOrder:(NSTimer *)timer
 {
+    WRLDMarker* marker = timer.userInfo;
     drawOrderToggle = !drawOrderToggle;
-    markerB.drawOrder = drawOrderToggle ? highPriorityDrawOrder : lowPriorityDrawOrder;
+    marker.drawOrder = drawOrderToggle ? highPriorityDrawOrder : lowPriorityDrawOrder;
 }
 
 @end
