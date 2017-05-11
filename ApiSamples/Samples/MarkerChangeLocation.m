@@ -10,6 +10,7 @@
 
 @implementation MarkerChangeLocation
 {
+    NSTimer *myTimer;
     BOOL locationToggle;
     CLLocationCoordinate2D initialMarkerLocation;
     CLLocationCoordinate2D alteredMarkerLocation;
@@ -37,11 +38,18 @@
     marker.title = @"This is a moving marker";
     [_mapView addMarker:marker];
     
-    [NSTimer scheduledTimerWithTimeInterval:2
-                                     target:self
-                                   selector:@selector(toggleLocation:)
-                                   userInfo:marker
-                                    repeats:YES];
+    myTimer = [NSTimer scheduledTimerWithTimeInterval:2
+                                               target:self
+                                             selector:@selector(toggleLocation:)
+                                             userInfo:marker
+                                              repeats:YES];
+}
+    
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [myTimer invalidate];
+    myTimer = nil;
 }
 
 - (void)toggleLocation:(NSTimer *)timer

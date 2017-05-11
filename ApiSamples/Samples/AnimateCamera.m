@@ -28,7 +28,7 @@
                                      target:self
                                    selector:@selector(onDelay:)
                                    userInfo:nil
-                                    repeats:FALSE];
+                                    repeats:NO];
 }
 
 - (void)onDelay:(NSTimer *)timer

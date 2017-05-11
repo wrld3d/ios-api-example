@@ -10,6 +10,7 @@
 
 @implementation MarkerChangeText
 {
+    NSTimer *myTimer;
     BOOL titleToggle;
     NSString* title1;
     NSString* title2;
@@ -37,11 +38,18 @@
     marker.title = title1;
     [_mapView addMarker:marker];
     
-    [NSTimer scheduledTimerWithTimeInterval:2
-                                     target:self
-                                   selector:@selector(toggleText:)
-                                   userInfo:marker
-                                    repeats:YES];
+    myTimer = [NSTimer scheduledTimerWithTimeInterval:2
+                                               target:self
+                                             selector:@selector(toggleText:)
+                                             userInfo:marker
+                                              repeats:YES];
+}
+    
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [myTimer invalidate];
+    myTimer = nil;
 }
 
 - (void)toggleText:(NSTimer *)timer

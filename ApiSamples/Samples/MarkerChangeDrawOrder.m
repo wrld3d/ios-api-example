@@ -10,10 +10,11 @@
 
 @implementation MarkerChangeDrawOrder
 {
+    NSTimer *myTimer;
+    BOOL drawOrderToggle;
     NSInteger highPriorityDrawOrder;
     NSInteger midPriorityDrawOrder;
     NSInteger lowPriorityDrawOrder;
-    BOOL drawOrderToggle;
 }
 
 - (void)viewDidLoad
@@ -45,11 +46,18 @@
     
     [_mapView addMarkers:@[markerA, markerB]];
     
-    [NSTimer scheduledTimerWithTimeInterval:2
-                                     target:self
-                                   selector:@selector(toggleDrawOrder:)
-                                   userInfo:markerB
-                                    repeats:TRUE];
+    myTimer = [NSTimer scheduledTimerWithTimeInterval:2
+                                               target:self
+                                             selector:@selector(toggleDrawOrder:)
+                                             userInfo:markerB
+                                              repeats:YES];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [myTimer invalidate];
+    myTimer = nil;
 }
 
 - (void)toggleDrawOrder:(NSTimer *)timer
