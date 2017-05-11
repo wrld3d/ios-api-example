@@ -4,8 +4,8 @@
 
 Pod::Spec.new do |s|
 
-  semanticVersion = '0.0.1-alpha.1'
-  buildNumber = '142'
+  semanticVersion = '0.0.2'
+  buildNumber = '146'
 
   s.name             = 'WRLD'
   s.version          = semanticVersion
