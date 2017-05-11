@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint Wrld-iOS-SDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint WRLD.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Wrld-iOS-SDK'
+  s.name             = 'WRLD'
   #s.version          = '##WRLD_IOS_SDK_VERSION##'
   s.version          = '0.0.1.test.06'
   s.summary          = 'Dynamic 3D maps for iOS'

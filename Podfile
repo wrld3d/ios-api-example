@@ -7,7 +7,7 @@ target 'ApiSamples' do
 
 	project 'api-samples'
 
-	pod 'Wrld-iOS-SDK', :podspec => './Wrld-iOS-SDK.podspec'
+	pod 'WRLD', :podspec => './WRLD.podspec'
 	
 end
 
@@ -16,6 +16,6 @@ target 'HelloWorld' do
 
 	project 'api-samples'
 
-	pod 'Wrld-iOS-SDK', :podspec => './Wrld-iOS-SDK.podspec'
+	pod 'WRLD', :podspec => './WRLD.podspec'
 	
 end
