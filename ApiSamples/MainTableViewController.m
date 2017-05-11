@@ -71,6 +71,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     cell.textLabel.text = sampleInfo.title;
     cell.detailTextLabel.text = sampleInfo.subtitle;
     cell.detailTextLabel.numberOfLines = 0;
+    cell.clipsToBounds = YES;
     
     return cell;
 }
@@ -88,7 +89,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     
     CGFloat margin = tableView.layoutMargins.left + tableView.layoutMargins.right;
     
-    CGRect rect = [sampleInfo.subtitle boundingRectWithSize:CGSizeMake(CGRectGetWidth(tableView.bounds) - margin, CGFLOAT_MAX)
+    CGRect rect = [sampleInfo.subtitle boundingRectWithSize:CGSizeMake(CGRectGetWidth(tableView.bounds) - margin - 16, CGFLOAT_MAX)
                                                     options:NSStringDrawingUsesLineFragmentOrigin
                                                  attributes:@{}
                                                     context:nil];
