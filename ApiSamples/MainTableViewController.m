@@ -34,8 +34,12 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[MarkerChangeDrawOrder class]]
     ];
     
-    
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
+    self.title = @"WRLD iOS API Samples";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Samples" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.00 green:113.0/255 blue:188.0/255 alpha:1.0];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated
