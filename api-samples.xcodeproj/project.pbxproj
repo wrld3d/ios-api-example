@@ -686,6 +686,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ApiSamples/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wrld.api-samples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -701,6 +702,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ApiSamples/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wrld.api-samples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -716,7 +718,7 @@
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wrld.hello-world";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -732,7 +734,7 @@
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wrld.hello-world";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
