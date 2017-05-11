@@ -1,5 +1,6 @@
 #import "ViewController.h"
 @import Wrld;
+@import WrldWidgets;
 
 @interface ViewController ()
 
@@ -10,8 +11,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // force linkage with Wrld.framework
+    // force linkage with Wrld.framework and WrldWidgets.framework
     [WRLDMapView class];
+    [WRLDIndoorControlView class];
 }
 
 
