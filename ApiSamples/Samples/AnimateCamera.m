@@ -33,7 +33,7 @@
 
 - (void)onDelay:(NSTimer *)timer
 {
-    WRLDMapCamera* camera = [WRLDMapCamera cameraLookingAtCenterCoordinate:CLLocationCoordinate2DMake(37.802, -122.405783) fromDistance:1000 pitch:30 heading:270];
+    WRLDMapCamera* camera = [WRLDMapCamera cameraLookingAtCenterCoordinate:CLLocationCoordinate2DMake(37.802, -122.4058) fromDistance:500 pitch:30 heading:270];
     [_mapView setCamera:camera duration:5];
 }
 

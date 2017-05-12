@@ -33,9 +33,8 @@
 
 - (void)onDelay:(NSTimer *)timer
 {
-    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.802, -122.405783)
-                        zoomLevel:15
-                        direction:90
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.7952, -122.4028)
+                        zoomLevel:18
                          animated:YES];
 }
 
