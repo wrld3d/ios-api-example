@@ -44,7 +44,7 @@ This section will walk you through the process of getting up and running quickly
 
 CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like the eeGeo 3D Maps API in your projects. If you're already familiar with CocoaPods, [skip ahead](#wrld-api-key). For more information about CocoaPods, including installation instructions, see the [CocoaPods guide](https://guides.cocoapods.org/).
 
-The [WRLD 3D Maps API CocoaPod](https://cocoapods.org/pods/wrld) can be used by your project by including the 'WRLD' pod in your Podfile. This saves having to manually configure and maintain an XCode project which includes the API.
+The [WRLD 3D Maps API CocoaPod](https://cocoapods.org/pods/eeGeo) can be used by your project by including the 'eeGeo' pod in your Podfile. This saves having to manually configure and maintain an XCode project which includes the API.
 
 #### Podfiles
 
@@ -52,7 +52,7 @@ A minimal Podfile looks like this:
 
 ```ruby
 target 'MyApp' do
-  pod 'WRLD'
+  pod 'eeGeo'
 end
 ```
 
@@ -63,13 +63,13 @@ target :eeGeoApiExample do
 
     platform :ios, "7.0"
 
-    pod 'WRLD'
+    pod 'eeGeo'
     pod 'GoogleMaps', '1.10.1'
     pod 'FPPopover', '1.4.1'
     
 end
 ```
-This Podfile contains the WRLD pod, as well as other dependencies required for the app. Notice that we do not specify a version for the WRLD pod; this means that the app will get the latest WRLD API version when running **pod update**.
+This Podfile contains the eeGeo pod, as well as other dependencies required for the app. Notice that we do not specify a version for the eeGeo pod; this means that the app will get the latest WRLD API version when running **pod update**.
 
 
 ### WRLD API Key 
