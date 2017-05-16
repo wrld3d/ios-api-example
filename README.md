@@ -5,65 +5,44 @@
 # WRLD iOS API Samples
 Samples demonstrating how to use the WRLD iOS API to display beautiful, interactive 3D maps on iOS devices.
 
-## Building and running the samples
+## Getting started
 
 ### Prerequisites
-* Latest Xcode (Tested 7.x and 8.x)
-* [CocoaPods](https://guides.cocoapods.org/using/getting-started.html)
+* Xcode (version 8.1 or later)
+* CocoaPods - see the [installation guide](https://guides.cocoapods.org/using/getting-started.html#installation)
+* Obtain a [WRLD API key](https://www.wrld3d.com/developers/apikeys)
 
-### Setup
-1.  Clone or download snapshot of this repo.
-2.  Install dependencies by running `pod install` from the root of the repo.
-3.  Obtain a [WRLD API key](https://www.wrld3d.com/developers/apikeys) and place it in the appropriate **Info.plist** file. This is described in the ['Set your WRLD API key'](#set-your-wrld-api-key) step below.
-4.  Open, build, and run **api-samples.xcworkspace** in Xcode.
+### Installing
+1. In root of repo, run ```pod install``` to setup dependencies using [CocoaPods](https://cocoapods.org).
+2. ```open api-samples.xcworkspace``` to open the generated Xcode workspace.
+3. Place your [WRLD API key](https://www.wrld3d.com/developers/apikeys) key in the **Info.plist** file for each example app. See ['Set your WRLD API key'](#set-your-wrld-api-key) below for details.
 
-You should see the following two schemes in the project: [HelloWorld](https://github.com/wrld3d/ios-api-example/tree/master/HelloWorld) and [ApiSamples](https://github.com/wrld3d/ios-api-example/tree/master/ApiSamples).
+You will see two schemes in the project:
+* HelloWorld - this is a minimal app, demonstrating how to drop a WRLDMapView into your app using Interface Builder.
+* ApiSamples - this app contains a collection of samples, each illustrating an individual API feature.
 
-**Note:** Run `pod update` followed by `pod install` to update the pod to the latest version if you have already setup your pod as above.
-
-### CocoaPods
-CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like the WRLD iOS API in your projects. If you're already familiar with CocoaPods, [skip ahead](#set-your-wrld-api-key). For more information about CocoaPods, including installation instructions, see the [CocoaPods guide](https://guides.cocoapods.org/).
-
-The [WRLD iOS API CocoaPod](https://cocoapods.org/pods/wrld) can be used by your project by including the 'WRLD' pod in your Podfile. This saves having to manually configure and maintain an Xcode project which includes the API.
-
-#### Podfiles
-A minimal Podfile looks like this:
-```ruby
-target 'MyApp' do
-  pod 'WRLD'
-end
-```
-
-This Podfile contains the WRLD pod, as well as other dependencies required for the app. Notice that we do not specify a version for the WRLD pod; this means that the app will get the latest WRLD API version when running **pod update**.
+Select the active scheme for the app you want to build in Xcode, then build and run the app.
 
 ### Set your WRLD API key
-In order to use the WRLD iOS API, you must sign up for a free developer account at https://www.wrld3d.com/developers. After signing up, you'll be able to create an [API key](https://www.wrld3d.com/developers/apikeys) for your apps. 
+In order to run these samples, you need to sign up for a free developer account at https://www.wrld3d.com/developers. Then create an [API key](https://www.wrld3d.com/developers/apikeys) to use in your apps. 
 
-After signing up for a developer account and creating an API key, add it to either or both the HelloWorld [plist file](https://github.com/wrld3d/ios-api-example/blob/master/HelloWorld/Info.plist#L47) and the ApiSamples [plist file](https://github.com/wrld3d/ios-api-example/blob/master/ApiSamples/Info.plist#L47).
+These example apps read the API key from their Info.plist file. Set the value of the 'WrldApiKey' entry with the API key that you have just created.
+
+See:
+* https://github.com/wrld3d/ios-api-example/blob/master/HelloWorld/Info.plist#L47
+* https://github.com/wrld3d/ios-api-example/blob/master/ApiSamples/Info.plist#L47
 
 If you are creating a new app, or integrating WRLD 3D Maps into an existing app, the API key should be present in the main bundle info dictionary for the key "WrldApiKey" at the time the [WRLDMapView](https://github.com/wrld3d/ios-api/blob/master/src/private/WRLDMapView.mm) is created.
-
-### HelloWorld
-The [HelloWorld](https://github.com/wrld3d/ios-api-example/tree/master/HelloWorld) example is a basic app displaying a WRLD map. It demonstates how to integrate WRLD maps into your existing iOS application.
-
-#### Build and run
-To build it, select the "HelloWorld" scheme, "Product->Scheme->HelloWorld" and run, "Product->Run". If you have a debuggable iOS device attached, or if you are running a simulator, you can debug or run the app with the standard Xcode tools.
-
-For a step-by-step instructions which shows how to create a basic app from scratch, see [our walkthrough documentation](https://docs.wrld3d.com/ios/latest/docs/api/Walkthrough/).
-
-### ApiSamples
-The [ApiSamples](https://github.com/wrld3d/ios-api-example/tree/master/ApiSamples) app contains a collection of examples, each illustrating an individual API feature.
-
-#### Build and run
-To build the examples, select the "ApiSamples" scheme, "Product->Scheme->ApiSamples" and run, "Product->Run".
 
 ## Further information
 See our [API docs](https://docs.wrld3d.com/ios/latest/docs/api/) for detailed class documentation and other information.
 
+For a step-by-step instructions which shows how to create a basic app from scratch, see [our walkthrough documentation](https://docs.wrld3d.com/ios/latest/docs/api/Walkthrough/).
+
 Questions, comments, or problems? All feedback is welcome -- just [create an issue](https://github.com/wrld3d/ios-api-example/issues).
 
 ## WRLD iOS SDK
-These samples make use of the WRLDS iOS SDK, available via [CocoaPods](https://cocoapods.org/pods/wrld). 
+These samples use the WRLD iOS SDK, available via [CocoaPods](https://cocoapods.org/pods/WRLD). 
 
 The source for the SDK is available at https://github.com/wrld3d/ios-api
 
