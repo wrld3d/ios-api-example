@@ -2,7 +2,6 @@
 #import "SamplesContainerViewController.h"
 #import "SampleInfo.h"
 #import "Samples/SampleClasses.h"
-#import "Samples/ExitIndoorMap.h"
 
 NSString *const SegueTableToSample = @"TableToSampleSegue";
 

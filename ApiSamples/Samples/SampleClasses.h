@@ -5,6 +5,7 @@
 #import "MoveCamera.h"
 #import "AnimateCamera.h"
 #import "FrameCamera.h"
+#import "ExitIndoorMap.h"
 #import "InitialStreamingCompleteNotification.h"
 #import "AddMarker.h"
 #import "MarkerCustomIcon.h"
