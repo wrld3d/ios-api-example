@@ -1,37 +1,23 @@
-#import "BasicMap.h"
+#import "ViewController.h"
 #import "SamplesMessage.h"
 @import Wrld;
 
-
-@interface BasicMap ()
-
-@property (nonatomic) WRLDMapView *mapView;
-
-@end
-
-@implementation BasicMap
+@implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    CGRect viewBounds = self.view.bounds;
+    WRLDMapView *mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
     
-    CGFloat border = 32;
-    viewBounds.size.width -= 2 * border;
-    viewBounds.size.height -= 2 * border;
-    viewBounds.origin.x += border;
-    viewBounds.origin.y += border;
+    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    _mapView = [[WRLDMapView alloc] initWithFrame:viewBounds];
-    
-    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    
-    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)
+    // set the center of the map and the zoom level
+    [mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)
                         zoomLevel:15
                          animated:NO];
     
-    [self.view addSubview:_mapView];
+    [self.view addSubview:mapView];
     
     [SamplesMessage showWithMessage:@"Welcome to WRLD maps"];
 }
