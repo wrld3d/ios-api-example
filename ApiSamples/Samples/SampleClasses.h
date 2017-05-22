@@ -11,6 +11,8 @@
 #import "MarkerCustomIcon.h"
 #import "MarkerWithElevation.h"
 #import "MarkerWithAbsoluteAltitude.h"
+#import "ExitIndoorMap.h"
+#import "IndoorMapDisplayName.h"
 #import "AddIndoorMarker.h"
 #import "MarkerChangeText.h"
 #import "MarkerChangeLocation.h"

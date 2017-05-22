@@ -1,16 +1,16 @@
-#import "ExitIndoorMap.h"
-
+#import "IndoorMapDisplayName.h"
+#import "SamplesMessage.h"
 @import Wrld;
 
-@interface ExitIndoorMap () <WRLDIndoorMapDelegate>
+
+@interface IndoorMapDisplayName () <WRLDIndoorMapDelegate>
 
 @property (nonatomic) WRLDMapView *mapView;
 @property (nonatomic) UIButton *exitButton;
 
 @end
 
-
-@implementation ExitIndoorMap
+@implementation IndoorMapDisplayName
 
 - (void)viewDidLoad
 {
@@ -34,7 +34,6 @@
     _exitButton.frame = CGRectMake(3.0, 3.0, 90.0, 50.0);
     _exitButton.backgroundColor = [UIColor lightGrayColor];
     [self enableExitButton:NO];
-    
     [_mapView addSubview:_exitButton];
     
     [self.view addSubview:_mapView];
@@ -54,6 +53,13 @@
 
 - (void) didEnterIndoorMap
 {
+    WRLDIndoorMap* indoorMap = _mapView.activeIndoorMap;
+    
+    NSString *message = [NSString stringWithFormat:@"Entered Indoor Map: '%@'", indoorMap.name];
+    [SamplesMessage showWithMessage:message
+                        andDuration:[NSNumber numberWithInt:10]];
+    
+    
     [self enableExitButton:YES];
 }
 

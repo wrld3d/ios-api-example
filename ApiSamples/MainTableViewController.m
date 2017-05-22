@@ -3,6 +3,7 @@
 #import "SampleInfo.h"
 #import "Samples/SampleClasses.h"
 
+
 NSString *const SegueTableToSample = @"TableToSampleSegue";
 
 @interface MainTableViewController ()
@@ -21,7 +22,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[AnimateCamera class]],
         [SampleInfo infoForSample:[FrameCamera class]],
         [SampleInfo infoForSample:[ExitIndoorMap class]],
-        [SampleInfo infoForSample:[InitialStreamingCompleteNotification class]],
+        [SampleInfo infoForSample:[IndoorMapDisplayName class]],
         [SampleInfo infoForSample:[AddCustomIndoorControl class]],
         [SampleInfo infoForSample:[AddIndoorControl class]],
         [SampleInfo infoForSample:[AddMarker class]],
@@ -32,7 +33,8 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[MarkerChangeText class]],
         [SampleInfo infoForSample:[MarkerChangeLocation class]],
         [SampleInfo infoForSample:[MarkerTappedNotification class]],
-        [SampleInfo infoForSample:[MarkerChangeDrawOrder class]]
+        [SampleInfo infoForSample:[MarkerChangeDrawOrder class]],
+        [SampleInfo infoForSample:[InitialStreamingCompleteNotification class]]
     ];
     
     self.title = @"WRLD iOS API Samples";

@@ -1,7 +1,5 @@
 #import "AddCustomIndoorControl.h"
 @import Wrld;
-@import WrldWidgets;
-
 
 @interface AddCustomIndoorControl () <WRLDIndoorMapDelegate>
 
@@ -20,7 +18,7 @@
     
     _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(56.4599662, -2.9781313)
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.781871, -122.404812)
                         zoomLevel:17
                          animated:NO];
     

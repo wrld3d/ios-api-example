@@ -1,8 +1,8 @@
 /* No comment provided by engineer. */
-"SampleTitle_BasicMap" = "Embed a 3D map";
+"SampleTitle_ViewController" = "Embed a 3D map";
 
 /* No comment provided by engineer. */
-"SampleDescription_BasicMap" = "How to embed a 3D map in a view";
+"SampleDescription_ViewController" = "Display a 3d map in a view controller";
 
 /* No comment provided by engineer. */
 "SampleTitle_StartingLocation" = "Set start location";
@@ -33,6 +33,12 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_ExitIndoorMap" = "Exiting an indoor map";
+
+/* No comment provided by engineer. */
+"SampleTitle_IndoorMapDisplayName" = "Query the name of an indoor map";
+
+/* No comment provided by engineer. */
+"SampleDescription_IndoorMapDisplayName" = "After entering an indoor map, display its name";
 
 /* No comment provided by engineer. */
 "SampleTitle_InitialStreamingCompleteNotification" = "Map streaming completed notification";
