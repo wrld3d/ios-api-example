@@ -2,6 +2,7 @@
 #import "SamplesContainerViewController.h"
 #import "SampleInfo.h"
 #import "Samples/SampleClasses.h"
+#import "Samples/ExitIndoorMap.h"
 
 NSString *const SegueTableToSample = @"TableToSampleSegue";
 
@@ -20,6 +21,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[MoveCamera class]],
         [SampleInfo infoForSample:[AnimateCamera class]],
         [SampleInfo infoForSample:[FrameCamera class]],
+        [SampleInfo infoForSample:[ExitIndoorMap class]],
         [SampleInfo infoForSample:[InitialStreamingCompleteNotification class]],
         [SampleInfo infoForSample:[AddCustomIndoorControl class]],
         [SampleInfo infoForSample:[AddIndoorControl class]],
