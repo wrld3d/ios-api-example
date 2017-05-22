@@ -42,6 +42,8 @@
 		E0A525441EB73AF900504831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A525431EB73AF900504831 /* main.m */; };
 		E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DEEA3D1ED3155000B6BD9A /* IndoorMapDisplayName.m */; };
 		E0DEEA411ED316D000B6BD9A /* ExitIndoorMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DEEA401ED316D000B6BD9A /* ExitIndoorMap.m */; };
+		E0DEEA441ED327A600B6BD9A /* QueryCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DEEA431ED327A600B6BD9A /* QueryCamera.m */; };
+		E0DEEA471ED32D9000B6BD9A /* PickScreenPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DEEA461ED32D9000B6BD9A /* PickScreenPoint.m */; };
 		F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBFFD1EC34716006E4D0C /* AddCustomIndoorControl.m */; };
 		F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FFE6B41EC4AB6100E3057B /* SamplesNavigationController.m */; };
 /* End PBXBuildFile section */
@@ -139,6 +141,10 @@
 		E0DEEA3D1ED3155000B6BD9A /* IndoorMapDisplayName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndoorMapDisplayName.m; sourceTree = "<group>"; };
 		E0DEEA3F1ED316D000B6BD9A /* ExitIndoorMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExitIndoorMap.h; sourceTree = "<group>"; };
 		E0DEEA401ED316D000B6BD9A /* ExitIndoorMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExitIndoorMap.m; sourceTree = "<group>"; };
+		E0DEEA421ED327A600B6BD9A /* QueryCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryCamera.h; sourceTree = "<group>"; };
+		E0DEEA431ED327A600B6BD9A /* QueryCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryCamera.m; sourceTree = "<group>"; };
+		E0DEEA451ED32D9000B6BD9A /* PickScreenPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickScreenPoint.h; sourceTree = "<group>"; };
+		E0DEEA461ED32D9000B6BD9A /* PickScreenPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickScreenPoint.m; sourceTree = "<group>"; };
 		F3DDBFFC1EC34716006E4D0C /* AddCustomIndoorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCustomIndoorControl.h; sourceTree = "<group>"; };
 		F3DDBFFD1EC34716006E4D0C /* AddCustomIndoorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCustomIndoorControl.m; sourceTree = "<group>"; };
 		F3FFE6B31EC4AB6100E3057B /* SamplesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesNavigationController.h; sourceTree = "<group>"; };
@@ -276,6 +282,10 @@
 				D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */,
 				D0AAB64C1EBB5C1000384605 /* FrameCamera.h */,
 				D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */,
+				E0DEEA421ED327A600B6BD9A /* QueryCamera.h */,
+				E0DEEA431ED327A600B6BD9A /* QueryCamera.m */,
+				E0DEEA451ED32D9000B6BD9A /* PickScreenPoint.h */,
+				E0DEEA461ED32D9000B6BD9A /* PickScreenPoint.m */,
 				E0DEEA3F1ED316D000B6BD9A /* ExitIndoorMap.h */,
 				E0DEEA401ED316D000B6BD9A /* ExitIndoorMap.m */,
 				E0DEEA3C1ED3155000B6BD9A /* IndoorMapDisplayName.h */,
@@ -528,6 +538,7 @@
 				E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */,
 				D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */,
 				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
+				E0DEEA471ED32D9000B6BD9A /* PickScreenPoint.m in Sources */,
 				E0DEEA411ED316D000B6BD9A /* ExitIndoorMap.m in Sources */,
 				E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */,
 				521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */,
@@ -547,6 +558,7 @@
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
+				E0DEEA441ED327A600B6BD9A /* QueryCamera.m in Sources */,
 				521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */,
 				E0A525411EB73A7600504831 /* MoveCamera.m in Sources */,
 			);

@@ -29,6 +29,18 @@
 "SampleDescription_FrameCamera" = "Move the map camera to frame an area";
 
 /* No comment provided by engineer. */
+"SampleTitle_QueryCamera" = "Query camera location and altitude";
+
+/* No comment provided by engineer. */
+"SampleDescription_QueryCamera" = "Obtain the current camera center coordinate and altitude";
+
+/* No comment provided by engineer. */
+"SampleTitle_PickScreenPoint" = "Pick a point on the map";
+
+/* No comment provided by engineer. */
+"SampleDescription_PickScreenPoint" = "Obtain the coordinates of a point on the map that is tapped by the user";
+
+/* No comment provided by engineer. */
 "SampleTitle_ExitIndoorMap" = "Exit an indoor map";
 
 /* No comment provided by engineer. */

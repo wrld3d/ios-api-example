@@ -5,6 +5,8 @@
 #import "MoveCamera.h"
 #import "AnimateCamera.h"
 #import "FrameCamera.h"
+#import "QueryCamera.h"
+#import "PickScreenPoint.h"
 #import "ExitIndoorMap.h"
 #import "InitialStreamingCompleteNotification.h"
 #import "AddMarker.h"

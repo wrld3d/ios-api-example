@@ -21,6 +21,8 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[MoveCamera class]],
         [SampleInfo infoForSample:[AnimateCamera class]],
         [SampleInfo infoForSample:[FrameCamera class]],
+        [SampleInfo infoForSample:[QueryCamera class]],
+        [SampleInfo infoForSample:[PickScreenPoint class]],
         [SampleInfo infoForSample:[ExitIndoorMap class]],
         [SampleInfo infoForSample:[IndoorMapDisplayName class]],
         [SampleInfo infoForSample:[AddCustomIndoorControl class]],
