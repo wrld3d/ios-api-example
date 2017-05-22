@@ -16,15 +16,6 @@
 }
 
 
-+ (instancetype)infoForSample:(NSString*)className
-                        title:(NSString*)title
-                     subtitle:(NSString*)subtitle
-{
-    return [[self alloc] initWithSampleClass:className
-                                       title:title
-                                    subtitle:subtitle];
-}
-
 - (instancetype)initWithSampleClass:(NSString*)className
                               title:(NSString*)title
                            subtitle:(NSString*)subtitle

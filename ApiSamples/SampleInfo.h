@@ -9,9 +9,6 @@
 
 + (instancetype)infoForSample:(Class)sampleClass;
 
-+ (instancetype)infoForSample:(NSString*)className
-                        title:(NSString*)title
-                     subtitle:(NSString*)subtitle;
 
 @end
 
