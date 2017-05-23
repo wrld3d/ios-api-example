@@ -1,15 +1,15 @@
-#import "PickScreenPoint.h"
+#import "MapTappedNotification.h"
 #import "SamplesMessage.h"
 @import Wrld;
 
 
-@interface PickScreenPoint () <WRLDMapViewDelegate>
+@interface MapTappedNotification () <WRLDMapViewDelegate>
 
 @property (nonatomic) WRLDMapView *mapView;
 
 @end
 
-@implementation PickScreenPoint
+@implementation MapTappedNotification
 {
     WRLDMarker* marker;
 }

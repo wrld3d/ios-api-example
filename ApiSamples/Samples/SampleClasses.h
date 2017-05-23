@@ -6,7 +6,7 @@
 #import "AnimateCamera.h"
 #import "FrameCamera.h"
 #import "QueryCamera.h"
-#import "PickScreenPoint.h"
+#import "MapTappedNotification.h"
 #import "ExitIndoorMap.h"
 #import "InitialStreamingCompleteNotification.h"
 #import "AddMarker.h"
