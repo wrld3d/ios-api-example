@@ -25,15 +25,6 @@
     
     [self.view addSubview:_mapView];
 
-    [NSTimer scheduledTimerWithTimeInterval:3
-                                     target:self
-                                   selector:@selector(onDelay:)
-                                   userInfo:nil
-                                    repeats:NO];
-}
-
-- (void)onDelay:(NSTimer *)timer
-{
     WRLDMapCamera* camera = _mapView.camera;
     
     NSString *message = [NSString stringWithFormat:@"Camera center coordinate is [%f, %f]; altitude is %f m", camera.centerCoordinate.latitude, camera.centerCoordinate.longitude, camera.altitude];
@@ -41,10 +32,7 @@
     
     [SamplesMessage showWithMessage:message
                         andDuration:[NSNumber numberWithInt:10]];
-    
-
 }
-
 
 
 @end
