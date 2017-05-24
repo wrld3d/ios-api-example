@@ -5,12 +5,6 @@
 "SampleDescription_ViewController" = "Display a 3d map in a view controller";
 
 /* No comment provided by engineer. */
-"SampleTitle_StartingLocation" = "Set start location";
-
-/* No comment provided by engineer. */
-"SampleDescription_StartingLocation" = "Setting the start location of the map";
-
-/* No comment provided by engineer. */
 "SampleTitle_MoveCamera" = "Move the camera";
 
 /* No comment provided by engineer. */

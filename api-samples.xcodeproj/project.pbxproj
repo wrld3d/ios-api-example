@@ -15,7 +15,6 @@
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
-		D0AAB6511EBB6C6100384605 /* StartingLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6501EBB6C6100384605 /* StartingLocation.m */; };
 		D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */; };
 		D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6681EC1C18000384605 /* MarkerChangeText.m */; };
 		D0AAB66C1EC1CF1500384605 /* MarkerChangeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB66B1EC1CF1500384605 /* MarkerChangeLocation.m */; };
@@ -91,8 +90,6 @@
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
 		D0AAB64C1EBB5C1000384605 /* FrameCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameCamera.h; sourceTree = "<group>"; };
 		D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameCamera.m; sourceTree = "<group>"; };
-		D0AAB64F1EBB6C4B00384605 /* StartingLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingLocation.h; sourceTree = "<group>"; };
-		D0AAB6501EBB6C6100384605 /* StartingLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingLocation.m; sourceTree = "<group>"; };
 		D0AAB6521EBB6FA600384605 /* AnimateCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateCamera.h; sourceTree = "<group>"; };
 		D0AAB6531EBB6FCE00384605 /* AnimateCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateCamera.m; sourceTree = "<group>"; };
 		D0AAB6671EC1C15F00384605 /* MarkerChangeText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkerChangeText.h; sourceTree = "<group>"; };
@@ -274,8 +271,6 @@
 				E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */,
 				E0A525341EB73A7600504831 /* BasicMap.h */,
 				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
-				D0AAB64F1EBB6C4B00384605 /* StartingLocation.h */,
-				D0AAB6501EBB6C6100384605 /* StartingLocation.m */,
 				E0A525361EB73A7600504831 /* MoveCamera.h */,
 				E0A525371EB73A7600504831 /* MoveCamera.m */,
 				D0AAB6521EBB6FA600384605 /* AnimateCamera.h */,
@@ -533,7 +528,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AAB6511EBB6C6100384605 /* StartingLocation.m in Sources */,
 				D0AAB66C1EC1CF1500384605 /* MarkerChangeLocation.m in Sources */,
 				E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */,
 				D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */,

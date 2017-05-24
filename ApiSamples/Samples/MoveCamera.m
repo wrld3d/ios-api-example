@@ -35,7 +35,7 @@
 {
     [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.7952, -122.4028)
                         zoomLevel:18
-                         animated:YES];
+                         animated:NO];
 }
 
 @end
