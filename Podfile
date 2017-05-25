@@ -2,7 +2,7 @@ platform :ios, "8.0"
 
 use_frameworks!
 
-WRLDPodspecUrl='https://github.com/eegeo/ios-api/releases/download/v0.0.242/WRLD.podspec'
+WRLDPodspecUrl='https://github.com/eegeo/ios-api/releases/download/v0.0.251/WRLD.podspec'
 
 
 target 'ApiSamples' do
