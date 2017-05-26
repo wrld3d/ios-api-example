@@ -30,9 +30,14 @@
     [self.view addSubview:_mapView];
     [self.view addSubview:_indoorControlView];
     
-    WRLDMarker* marker = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(56.4599662, -2.9781313) inIndoorMap:@"westport_house" onFloor:0];
-    marker.title = @"Marker on ground floor";
-    [_mapView addMarker:marker];
+    const int numberOfFloors = 7;
+    
+    for (int floorId = 0; floorId < numberOfFloors; ++floorId)
+    {
+        WRLDMarker* marker = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(56.4599662, -2.9781313) inIndoorMap:@"westport_house" onFloor:floorId];
+        marker.title = [NSString stringWithFormat:@"Marker on floor %d", floorId];
+        [_mapView addMarker:marker];
+    }
 }
 
 @end
