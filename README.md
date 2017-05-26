@@ -9,8 +9,8 @@ Samples demonstrating how to use the WRLD iOS API to display beautiful, interact
 
 ### Prerequisites
 * Xcode (version 7.3 or later)
-* CocoaPods - see the [installation guide](https://guides.cocoapods.org/using/getting-started.html#installation)
-* Obtain a [WRLD API key](https://www.wrld3d.com/developers/apikeys)
+* [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation)
+* A [WRLD API key](https://www.wrld3d.com/developers/apikeys)
 
 ### Installing
 1. In root of repo, run ```pod install``` to setup dependencies using [CocoaPods](https://cocoapods.org).
