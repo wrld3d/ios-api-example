@@ -123,3 +123,9 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_AddPolygon" = "Display a polygon on the map";
+
+/* No comment provided by engineer. */
+"SampleTitle_AddPolygonWithInteriorPolygons" = "Add a polygon with interior polygons";
+
+/* No comment provided by engineer. */
+"SampleDescription_AddPolygonWithInteriorPolygons" = "Display a polygon on the map with interior polygons";
