@@ -1,0 +1,51 @@
+#import "PolygonWithElevation.h"
+@import Wrld;
+
+
+@interface PolygonWithElevation ()
+
+@property (nonatomic) WRLDMapView *mapView;
+
+@end
+
+@implementation PolygonWithElevation
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
+    
+    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(55.942953, -3.161405)
+                        zoomLevel:15
+                         animated:NO];
+    
+    [self.view addSubview:_mapView];
+    
+    CLLocationCoordinate2D coordinates[] = {
+        CLLocationCoordinate2DMake(55.945976, -3.162339),
+        CLLocationCoordinate2DMake(55.943671, -3.158673),
+        CLLocationCoordinate2DMake(55.941648, -3.159911),
+        CLLocationCoordinate2DMake(55.943248, -3.163275)
+    };
+    
+    NSUInteger count = sizeof(coordinates) / sizeof(CLLocationCoordinate2D);
+    
+    WRLDPolygon* polygon = [WRLDPolygon polygonWithCoordinates:coordinates count:count];
+    polygon.elevation = 200;
+    polygon.elevationMode = WRLDElevationModeHeightAboveSeaLevel;
+    
+    [_mapView addPolygon:polygon];
+    
+    WRLDPolygon* polygon2 = [WRLDPolygon polygonWithCoordinates:coordinates count:count];
+    
+    polygon2.color = [UIColor colorWithRed:1.0f green:0 blue:0 alpha:0.5f];
+    polygon2.elevation = 200;
+    polygon2.elevationMode = WRLDElevationModeHeightAboveGround;
+    
+    [_mapView addPolygon:polygon2];
+}
+
+@end

@@ -13,7 +13,8 @@
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
 		8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */; };
 		D04429411EDED5B500F5AEEE /* AddPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429401EDED5B500F5AEEE /* AddPolygon.m */; };
-		D04429441EDEDCBB00F5AEEE /* AddPolygonWithInteriorPolygons.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429431EDEDCBB00F5AEEE /* AddPolygonWithInteriorPolygons.m */; };
+		D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429431EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m */; };
+		D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429451EDEFCE800F5AEEE /* PolygonWithElevation.m */; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
@@ -89,8 +90,10 @@
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D044293F1EDED59800F5AEEE /* AddPolygon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPolygon.h; sourceTree = "<group>"; };
 		D04429401EDED5B500F5AEEE /* AddPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolygon.m; sourceTree = "<group>"; };
-		D04429421EDEDC9700F5AEEE /* AddPolygonWithInteriorPolygons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPolygonWithInteriorPolygons.h; sourceTree = "<group>"; };
-		D04429431EDEDCBB00F5AEEE /* AddPolygonWithInteriorPolygons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolygonWithInteriorPolygons.m; sourceTree = "<group>"; };
+		D04429421EDEDC9700F5AEEE /* PolygonWithInteriorPolygons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonWithInteriorPolygons.h; sourceTree = "<group>"; };
+		D04429431EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonWithInteriorPolygons.m; sourceTree = "<group>"; };
+		D04429451EDEFCE800F5AEEE /* PolygonWithElevation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonWithElevation.m; sourceTree = "<group>"; };
+		D04429471EDEFD0400F5AEEE /* PolygonWithElevation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonWithElevation.h; sourceTree = "<group>"; };
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
@@ -315,10 +318,12 @@
 				521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */,
 				D044293F1EDED59800F5AEEE /* AddPolygon.h */,
 				D04429401EDED5B500F5AEEE /* AddPolygon.m */,
-				D04429421EDEDC9700F5AEEE /* AddPolygonWithInteriorPolygons.h */,
-				D04429431EDEDCBB00F5AEEE /* AddPolygonWithInteriorPolygons.m */,
+				D04429421EDEDC9700F5AEEE /* PolygonWithInteriorPolygons.h */,
+				D04429431EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m */,
 				E0A48C071EBB927600DD387F /* InitialStreamingCompleteNotification.h */,
 				E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */,
+				D04429471EDEFD0400F5AEEE /* PolygonWithElevation.h */,
+				D04429451EDEFCE800F5AEEE /* PolygonWithElevation.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -549,7 +554,7 @@
 				E0A48C091EBB927600DD387F /* InitialStreamingCompleteNotification.m in Sources */,
 				D0AAB66F1EC1D19D00384605 /* MarkerCustomIcon.m in Sources */,
 				521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */,
-				D04429441EDEDCBB00F5AEEE /* AddPolygonWithInteriorPolygons.m in Sources */,
+				D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
@@ -562,6 +567,7 @@
 				F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
+				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
 				E0DEEA441ED327A600B6BD9A /* QueryCamera.m in Sources */,

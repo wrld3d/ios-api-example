@@ -125,7 +125,13 @@
 "SampleDescription_AddPolygon" = "Display a polygon on the map";
 
 /* No comment provided by engineer. */
-"SampleTitle_AddPolygonWithInteriorPolygons" = "Add a polygon with interior polygons";
+"SampleTitle_PolygonWithInteriorPolygons" = "Add a polygon with interior polygons";
 
 /* No comment provided by engineer. */
-"SampleDescription_AddPolygonWithInteriorPolygons" = "Display a polygon on the map with interior polygons";
+"SampleDescription_PolygonWithInteriorPolygons" = "Display a polygon on the map with interior polygons";
+
+/* No comment provided by engineer. */
+"SampleTitle_PolygonWithElevation" = "Add a polygon with elevation";
+
+/* No comment provided by engineer. */
+"SampleDescription_PolygonWithElevation" = "Display a polygon on the map at a height above the ground";

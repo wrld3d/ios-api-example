@@ -36,7 +36,8 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[MarkerTappedNotification class]],
         [SampleInfo infoForSample:[MarkerChangeDrawOrder class]],
         [SampleInfo infoForSample:[AddPolygon class]],
-        [SampleInfo infoForSample:[AddPolygonWithInteriorPolygons class]],
+        [SampleInfo infoForSample:[PolygonWithInteriorPolygons class]],
+        [SampleInfo infoForSample:[PolygonWithElevation class]],
         [SampleInfo infoForSample:[InitialStreamingCompleteNotification class]]
     ];
     

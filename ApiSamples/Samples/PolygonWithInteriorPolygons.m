@@ -1,14 +1,14 @@
-#import "AddPolygonWithInteriorPolygons.h"
+#import "PolygonWithInteriorPolygons.h"
 @import Wrld;
 
 
-@interface AddPolygonWithInteriorPolygons ()
+@interface PolygonWithInteriorPolygons ()
 
 @property (nonatomic) WRLDMapView *mapView;
 
 @end
 
-@implementation AddPolygonWithInteriorPolygons
+@implementation PolygonWithInteriorPolygons
 
 - (void)viewDidLoad
 {
