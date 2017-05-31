@@ -117,3 +117,9 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_MarkerChangeDrawOrder" = "Configure and alter the draw order of markers. Draw order determines precedence when markers overlap";
+
+/* No comment provided by engineer. */
+"SampleTitle_AddPolygon" = "Add a polygon";
+
+/* No comment provided by engineer. */
+"SampleDescription_AddPolygon" = "Display a polygon on the map";

@@ -21,3 +21,4 @@
 #import "MarkerChangeDrawOrder.h"
 #import "AddIndoorControl.h"
 #import "AddCustomIndoorControl.h"
+#import "AddPolygon.h"

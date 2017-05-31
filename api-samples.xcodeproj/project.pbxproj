@@ -12,6 +12,7 @@
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
 		8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */; };
+		D04429411EDED5B500F5AEEE /* AddPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429401EDED5B500F5AEEE /* AddPolygon.m */; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
@@ -85,6 +86,8 @@
 		96C9B4744696165DA6CB24EE /* Pods-ApiSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.release.xcconfig"; sourceTree = "<group>"; };
 		A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		D044293F1EDED59800F5AEEE /* AddPolygon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPolygon.h; sourceTree = "<group>"; };
+		D04429401EDED5B500F5AEEE /* AddPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolygon.m; sourceTree = "<group>"; };
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
@@ -309,6 +312,8 @@
 				521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */,
 				E0A48C071EBB927600DD387F /* InitialStreamingCompleteNotification.h */,
 				E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */,
+				D044293F1EDED59800F5AEEE /* AddPolygon.h */,
+				D04429401EDED5B500F5AEEE /* AddPolygon.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -544,6 +549,7 @@
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
 				D0AAB6751EC1F5BB00384605 /* MarkerWithElevation.m in Sources */,
 				F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */,
+				D04429411EDED5B500F5AEEE /* AddPolygon.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
