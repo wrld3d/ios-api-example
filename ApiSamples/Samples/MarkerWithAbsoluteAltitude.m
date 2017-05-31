@@ -26,7 +26,7 @@
     
     WRLDMarker* marker = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(37.802617, -122.405783)];
     marker.title = @"Telegraph Hill";
-    marker.elevationMode = WRLDMarkerElevationModeHeightAboveSeaLevel;
+    marker.elevationMode = WRLDElevationModeHeightAboveSeaLevel;
     marker.elevation = 80.7f;
     [_mapView addMarker:marker];
 }

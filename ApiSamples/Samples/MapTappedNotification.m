@@ -45,7 +45,7 @@
     }
     
     marker = [WRLDMarker markerAtCoordinate:coordinateWithAltitude.coordinate];
-    marker.elevationMode = WRLDMarkerElevationModeHeightAboveSeaLevel;
+    marker.elevationMode = WRLDElevationModeHeightAboveSeaLevel;
     marker.elevation = coordinateWithAltitude.altitude;
     [_mapView addMarker:marker];
 }
