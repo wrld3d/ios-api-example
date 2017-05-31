@@ -34,18 +34,13 @@
     NSUInteger count = sizeof(coordinates) / sizeof(CLLocationCoordinate2D);
     
     WRLDPolygon* polygon = [WRLDPolygon polygonWithCoordinates:coordinates count:count];
-    polygon.elevation = 200;
-    polygon.elevationMode = WRLDElevationModeHeightAboveSeaLevel;
-    
-    [_mapView addPolygon:polygon];
     
     WRLDPolygon* polygon2 = [WRLDPolygon polygonWithCoordinates:coordinates count:count];
     
     polygon2.color = [UIColor colorWithRed:1.0f green:0 blue:0 alpha:0.5f];
     polygon2.elevation = 200;
-    polygon2.elevationMode = WRLDElevationModeHeightAboveGround;
     
-    [_mapView addPolygon:polygon2];
+    [_mapView addPolygons:@[polygon, polygon2]];
 }
 
 @end
