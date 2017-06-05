@@ -21,8 +21,8 @@
     [super viewDidLoad];
     
     locationToggle = false;
-    initialMarkerLocation = CLLocationCoordinate2DMake(37.7858, -122.401);
-    alteredMarkerLocation = CLLocationCoordinate2DMake(37.7838, -122.403);
+    initialMarkerLocation = CLLocationCoordinate2DMake(37.784560, -122.402092);
+    alteredMarkerLocation = CLLocationCoordinate2DMake(37.783372, -122.400834);
     
     _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
     
@@ -34,7 +34,7 @@
     
     [self.view addSubview:_mapView];
     
-    WRLDMarker* marker = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)];
+    WRLDMarker* marker = [WRLDMarker markerAtCoordinate:initialMarkerLocation];
     marker.title = @"This is a moving marker";
     [_mapView addMarker:marker];
     

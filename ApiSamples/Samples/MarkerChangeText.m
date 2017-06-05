@@ -34,7 +34,7 @@
     
     [self.view addSubview:_mapView];
     
-    WRLDMarker* marker = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(37.7858, -122.401)];
+    WRLDMarker* marker = [WRLDMarker markerAtCoordinate:CLLocationCoordinate2DMake(37.784560, -122.402092)];
     marker.title = title1;
     [_mapView addMarker:marker];
     
