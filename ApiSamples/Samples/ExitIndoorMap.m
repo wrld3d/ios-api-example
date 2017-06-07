@@ -34,10 +34,10 @@
     _exitButton.frame = CGRectMake(3.0, 3.0, 90.0, 50.0);
     _exitButton.backgroundColor = [UIColor lightGrayColor];
     [self enableExitButton:NO];
-    
-    [_mapView addSubview:_exitButton];
-    
+
     [self.view addSubview:_mapView];
+    
+    [self.view addSubview:_exitButton];
     
     [_mapView setIndoorMapDelegate:self];
 }
