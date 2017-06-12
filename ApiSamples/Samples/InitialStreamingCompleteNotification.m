@@ -31,7 +31,7 @@
 
 - (void)mapViewDidFinishLoadingInitialMap:(WRLDMapView *)mapView
 {
-    [SamplesMessage showWithMessage:@"Initial map scene loaded"];
+    [SamplesMessage showWithMessage:@"Initial map streaming completed"];
 }
 
 @end
