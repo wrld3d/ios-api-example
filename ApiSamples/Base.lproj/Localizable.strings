@@ -125,6 +125,12 @@
 "SampleDescription_AddPolygon" = "Display a polygon on the map";
 
 /* No comment provided by engineer. */
+"SampleTitle_AddPolygonIndoors" = "Add a polygon to an indoor map";
+
+/* No comment provided by engineer. */
+"SampleDescription_AddPolygonIndoors" = "Display a polygon inside a building";
+
+/* No comment provided by engineer. */
 "SampleTitle_PolygonWithInteriorPolygons" = "Add a polygon with interior polygons";
 
 /* No comment provided by engineer. */
