@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = 093BFBDA1EEEC56C00A727B3 /* AddPolygonIndoors.m */; };
 		2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C27ECFE1EC220FF00A9E677 /* AddIndoorControl.m */; };
 		521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C11EC09F3E0070ACDD /* AddMarker.m */; };
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
@@ -74,6 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		093BFBD91EEEC56C00A727B3 /* AddPolygonIndoors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPolygonIndoors.h; sourceTree = "<group>"; };
+		093BFBDA1EEEC56C00A727B3 /* AddPolygonIndoors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolygonIndoors.m; sourceTree = "<group>"; };
 		2421BE34EEAE71A620738985 /* Pods-ApiSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.debug.xcconfig"; sourceTree = "<group>"; };
 		2C27ECFD1EC220FF00A9E677 /* AddIndoorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddIndoorControl.h; sourceTree = "<group>"; };
 		2C27ECFE1EC220FF00A9E677 /* AddIndoorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddIndoorControl.m; sourceTree = "<group>"; };
@@ -277,6 +280,8 @@
 		E0A525331EB73A7600504831 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				093BFBD91EEEC56C00A727B3 /* AddPolygonIndoors.h */,
+				093BFBDA1EEEC56C00A727B3 /* AddPolygonIndoors.m */,
 				E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */,
 				E0A525341EB73A7600504831 /* BasicMap.h */,
 				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
@@ -565,6 +570,7 @@
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
 				F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */,
+				093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,

@@ -22,5 +22,6 @@
 #import "AddIndoorControl.h"
 #import "AddCustomIndoorControl.h"
 #import "AddPolygon.h"
+#import "AddPolygonIndoors.h"
 #import "PolygonWithInteriorPolygons.h"
 #import "PolygonWithElevation.h"
