@@ -141,3 +141,27 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_PolygonWithElevation" = "Display a polygon on the map at a height above the ground";
+
+/* No comment provided by engineer. */
+"SampleTitle_BlueSphereChangeLocation" = "Change the location of the blue sphere";
+
+/* No comment provided by engineer. */
+"SampleDescription_BlueSphereChangeLocation" = "Move the blue sphere to a different point on the map";
+
+/* No comment provided by engineer. */
+"SampleTitle_BlueSphereChangeDirection" = "Change the direction of the blue sphere";
+
+/* No comment provided by engineer. */
+"SampleDescription_BlueSphereChangeDirection" = "Alter the direction the blue sphere is facing";
+
+/* No comment provided by engineer. */
+"SampleTitle_BlueSphereChangeElevation" = "Change the elevation of the blue sphere";
+
+/* No comment provided by engineer. */
+"SampleDescription_BlueSphereChangeElevation" = "Display a blue sphere on the map at a height above the ground";
+
+/* No comment provided by engineer. */
+"SampleTitle_BlueSphereIndoors" = "Move the blue sphere indoors";
+
+/* No comment provided by engineer. */
+"SampleDescription_BlueSphereIndoors" = "Display a blue sphere inside an indoor map";
