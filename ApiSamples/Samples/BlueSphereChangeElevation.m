@@ -46,6 +46,13 @@
                                               repeats:YES];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [myTimer invalidate];
+    myTimer = nil;
+}
+
 - (void)toggleElevation:(NSTimer *)timer
 {
     WRLDBlueSphere* bluesphere = timer.userInfo;

@@ -41,6 +41,13 @@
                                               repeats:YES];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [myTimer invalidate];
+    myTimer = nil;
+}
+
 - (void)rotateBlueSphere:(NSTimer *)timer
 {
     WRLDBlueSphere* bluesphere = timer.userInfo;
