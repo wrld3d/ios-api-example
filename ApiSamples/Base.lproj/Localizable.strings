@@ -165,3 +165,16 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_BlueSphereIndoors" = "Display a blue sphere inside an indoor map";
+
+/* No comment provided by engineer. */
+"SampleTitle_AddPolyline" = "Add a polyline";
+
+/* No comment provided by engineer. */
+"SampleDescription_AddPolyline" = "Display a polyline on the map";
+
+/* No comment provided by engineer. */
+"SampleTitle_AddPolylineIndoors" = "Add a polyline to an indoor map";
+
+/* No comment provided by engineer. */
+"SampleDescription_AddPolylineIndoors" = "Display a polyline inside a building";
+

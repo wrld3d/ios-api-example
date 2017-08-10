@@ -1,14 +1,14 @@
-#import "AddPolygon.h"
+#import "AddPolyline.h"
 @import Wrld;
 
 
-@interface AddPolygon ()
+@interface AddPolyline ()
 
 @property (nonatomic) WRLDMapView *mapView;
 
 @end
 
-@implementation AddPolygon
+@implementation AddPolyline
 
 - (void)viewDidLoad
 {
@@ -33,10 +33,10 @@
     
     NSUInteger count = sizeof(coordinates) / sizeof(CLLocationCoordinate2D);
     
-    WRLDPolygon* polygon = [WRLDPolygon polygonWithCoordinates:coordinates count:count];
-    polygon.color = [[UIColor blueColor] colorWithAlphaComponent:0.5];
+    WRLDPolyline* polyline = [WRLDPolyline polylineWithCoordinates:coordinates count:count];
+    polyline.color = [[UIColor redColor] colorWithAlphaComponent:0.5];
     
-    [_mapView addPolygon:polygon];
+    [_mapView addOverlay:polyline];
 }
 
 @end

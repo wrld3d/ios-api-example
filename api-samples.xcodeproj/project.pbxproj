@@ -37,6 +37,8 @@
 		E03E75F81EBCC598004FBD8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03E75F61EBCC598004FBD8B /* Main.storyboard */; };
 		E03E75FA1EBCC598004FBD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03E75F91EBCC598004FBD8B /* Assets.xcassets */; };
 		E03E75FD1EBCC598004FBD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03E75FB1EBCC598004FBD8B /* LaunchScreen.storyboard */; };
+		E04885961F39CC3D0031D631 /* AddPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = E04885941F39CC3D0031D631 /* AddPolyline.m */; };
+		E04885971F39CC3D0031D631 /* AddPolylineIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = E04885951F39CC3D0031D631 /* AddPolylineIndoors.m */; };
 		E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C051EBB8E7200DD387F /* SamplesMessage.m */; };
 		E0A48C091EBB927600DD387F /* InitialStreamingCompleteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */; };
 		E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C0A1EBB95BF00DD387F /* BasicMap.m */; };
@@ -139,6 +141,10 @@
 		E03E75F91EBCC598004FBD8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E03E75FC1EBCC598004FBD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E03E75FE1EBCC598004FBD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04885921F39CC3D0031D631 /* AddPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPolyline.h; sourceTree = "<group>"; };
+		E04885931F39CC3D0031D631 /* AddPolylineIndoors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPolylineIndoors.h; sourceTree = "<group>"; };
+		E04885941F39CC3D0031D631 /* AddPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolyline.m; sourceTree = "<group>"; };
+		E04885951F39CC3D0031D631 /* AddPolylineIndoors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolylineIndoors.m; sourceTree = "<group>"; };
 		E0A48C041EBB8E7200DD387F /* SamplesMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesMessage.h; sourceTree = "<group>"; };
 		E0A48C051EBB8E7200DD387F /* SamplesMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesMessage.m; sourceTree = "<group>"; };
 		E0A48C071EBB927600DD387F /* InitialStreamingCompleteNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialStreamingCompleteNotification.h; sourceTree = "<group>"; };
@@ -292,8 +298,6 @@
 		E0A525331EB73A7600504831 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
-				093BFBD91EEEC56C00A727B3 /* AddPolygonIndoors.h */,
-				093BFBDA1EEEC56C00A727B3 /* AddPolygonIndoors.m */,
 				E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */,
 				E0A525341EB73A7600504831 /* BasicMap.h */,
 				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
@@ -343,12 +347,18 @@
 				521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */,
 				D044293F1EDED59800F5AEEE /* AddPolygon.h */,
 				D04429401EDED5B500F5AEEE /* AddPolygon.m */,
+				093BFBD91EEEC56C00A727B3 /* AddPolygonIndoors.h */,
+				093BFBDA1EEEC56C00A727B3 /* AddPolygonIndoors.m */,
 				D04429421EDEDC9700F5AEEE /* PolygonWithInteriorPolygons.h */,
 				D04429431EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m */,
 				E0A48C071EBB927600DD387F /* InitialStreamingCompleteNotification.h */,
 				E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */,
 				D04429471EDEFD0400F5AEEE /* PolygonWithElevation.h */,
 				D04429451EDEFCE800F5AEEE /* PolygonWithElevation.m */,
+				E04885921F39CC3D0031D631 /* AddPolyline.h */,
+				E04885941F39CC3D0031D631 /* AddPolyline.m */,
+				E04885931F39CC3D0031D631 /* AddPolylineIndoors.h */,
+				E04885951F39CC3D0031D631 /* AddPolylineIndoors.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -569,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0AAB66C1EC1CF1500384605 /* MarkerChangeLocation.m in Sources */,
+				E04885971F39CC3D0031D631 /* AddPolylineIndoors.m in Sources */,
 				E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */,
 				D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */,
 				D07F7C241F30CA6600956ACE /* BlueSphereChangeLocation.m in Sources */,
@@ -601,6 +612,7 @@
 				D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
 				E0DEEA441ED327A600B6BD9A /* QueryCamera.m in Sources */,
+				E04885961F39CC3D0031D631 /* AddPolyline.m in Sources */,
 				521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */,
 				E0A525411EB73A7600504831 /* MoveCamera.m in Sources */,
 			);

@@ -55,6 +55,8 @@
                                                          count:count
                                               interiorPolygons:@[interiorPolygon1, interiorPolygon2]];
     
+    polygon.color = [[UIColor blueColor] colorWithAlphaComponent:0.5];
+    
     [_mapView addPolygon:polygon];
 }
 

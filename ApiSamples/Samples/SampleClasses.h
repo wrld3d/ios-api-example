@@ -29,3 +29,5 @@
 #import "BlueSphereChangeHeading.h"
 #import "BlueSphereChangeElevation.h"
 #import "BlueSphereIndoors.h"
+#import "AddPolyline.h"
+#import "AddPolylineIndoors.h"

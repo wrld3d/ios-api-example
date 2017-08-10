@@ -39,6 +39,8 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[AddPolygonIndoors class]],
         [SampleInfo infoForSample:[PolygonWithInteriorPolygons class]],
         [SampleInfo infoForSample:[PolygonWithElevation class]],
+        [SampleInfo infoForSample:[AddPolyline class]],
+        [SampleInfo infoForSample:[AddPolylineIndoors class]],
         [SampleInfo infoForSample:[BlueSphereChangeLocation class]],
         [SampleInfo infoForSample:[BlueSphereChangeHeading class]],
         [SampleInfo infoForSample:[BlueSphereChangeElevation class]],

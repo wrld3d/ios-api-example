@@ -1,16 +1,16 @@
-#import "AddPolygonIndoors.h"
+#import "AddPolylineIndoors.h"
 @import Wrld;
 @import WrldWidgets;
 
 
-@interface AddPolygonIndoors ()
+@interface AddPolylineIndoors ()
 
 @property (nonatomic) WRLDMapView *mapView;
 @property (nonatomic) WRLDIndoorControlView *indoorControlView;
 
 @end
 
-@implementation AddPolygonIndoors
+@implementation AddPolylineIndoors
 
 - (void)viewDidLoad
 {
@@ -31,8 +31,8 @@
     
     [self.view addSubview:_mapView];
     [self.view addSubview:_indoorControlView];
-
-    // the intercontinental hotel in SF has 5 floors. Let's add a polygon to each of them.
+    
+    // the intercontinental hotel in SF has 5 floors. Let's add a polyline to each of them.
     const int floorCount = 5;
     for(int floorIndex = 0; floorIndex < floorCount; floorIndex++)
     {
@@ -43,13 +43,13 @@
             CLLocationCoordinate2DMake(37.782012, -122.404491)
         };
         
-        WRLDPolygon* polygon = [WRLDPolygon polygonWithCoordinates: exteriorCoordinates
+        WRLDPolyline* polyline = [WRLDPolyline polylineWithCoordinates: exteriorCoordinates
                                                              count: sizeof(exteriorCoordinates) / sizeof(CLLocationCoordinate2D)
                                                        onIndoorMap: @"intercontinental_hotel_8628"
                                                            onFloor: floorIndex];
-        polygon.color = [[UIColor blueColor] colorWithAlphaComponent:0.5];
-        
-        [_mapView addPolygon:polygon];
+        polyline.color = [[UIColor redColor] colorWithAlphaComponent:0.5];
+
+        [_mapView addOverlay:polyline];
     }
 }
 

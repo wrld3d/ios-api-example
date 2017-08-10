@@ -34,10 +34,11 @@
     NSUInteger count = sizeof(coordinates) / sizeof(CLLocationCoordinate2D);
     
     WRLDPolygon* polygon = [WRLDPolygon polygonWithCoordinates:coordinates count:count];
+    polygon.color = [[UIColor blueColor] colorWithAlphaComponent:0.5];
     
     WRLDPolygon* polygon2 = [WRLDPolygon polygonWithCoordinates:coordinates count:count];
     
-    polygon2.color = [UIColor colorWithRed:1.0f green:0 blue:0 alpha:0.5f];
+    polygon2.color = [[UIColor redColor] colorWithAlphaComponent:0.5];
     polygon2.elevation = 200;
     
     [_mapView addPolygons:@[polygon, polygon2]];
