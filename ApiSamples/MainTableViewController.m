@@ -40,7 +40,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[PolygonWithInteriorPolygons class]],
         [SampleInfo infoForSample:[PolygonWithElevation class]],
         [SampleInfo infoForSample:[BlueSphereChangeLocation class]],
-        [SampleInfo infoForSample:[BlueSphereChangeDirection class]],
+        [SampleInfo infoForSample:[BlueSphereChangeHeading class]],
         [SampleInfo infoForSample:[BlueSphereChangeElevation class]],
         [SampleInfo infoForSample:[BlueSphereIndoors class]],
         [SampleInfo infoForSample:[InitialStreamingCompleteNotification class]]

@@ -13,7 +13,7 @@
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
 		8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */; };
-		D01B67551F31CC5100B164FB /* BlueSphereChangeDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeDirection.m */; };
+		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
 		D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B675A1F31D53800B164FB /* BlueSphereIndoors.m */; };
 		D04429411EDED5B500F5AEEE /* AddPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429401EDED5B500F5AEEE /* AddPolygon.m */; };
@@ -95,8 +95,8 @@
 		96C9B4744696165DA6CB24EE /* Pods-ApiSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.release.xcconfig"; sourceTree = "<group>"; };
 		A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
-		D01B67531F31CC1F00B164FB /* BlueSphereChangeDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeDirection.h; sourceTree = "<group>"; };
-		D01B67541F31CC5100B164FB /* BlueSphereChangeDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeDirection.m; sourceTree = "<group>"; };
+		D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeHeading.h; sourceTree = "<group>"; };
+		D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeHeading.m; sourceTree = "<group>"; };
 		D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeElevation.m; sourceTree = "<group>"; };
 		D01B67581F31D2D400B164FB /* BlueSphereChangeElevation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeElevation.h; sourceTree = "<group>"; };
 		D01B67591F31D52700B164FB /* BlueSphereIndoors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereIndoors.h; sourceTree = "<group>"; };
@@ -299,8 +299,8 @@
 				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
 				D07F7C251F30CC1100956ACE /* BlueSphereChangeLocation.h */,
 				D07F7C231F30CA6600956ACE /* BlueSphereChangeLocation.m */,
-				D01B67531F31CC1F00B164FB /* BlueSphereChangeDirection.h */,
-				D01B67541F31CC5100B164FB /* BlueSphereChangeDirection.m */,
+				D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */,
+				D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */,
 				D01B67581F31D2D400B164FB /* BlueSphereChangeElevation.h */,
 				D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */,
 				D01B67591F31D52700B164FB /* BlueSphereIndoors.h */,
@@ -587,7 +587,7 @@
 				D0AAB6751EC1F5BB00384605 /* MarkerWithElevation.m in Sources */,
 				F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */,
 				D04429411EDED5B500F5AEEE /* AddPolygon.m in Sources */,
-				D01B67551F31CC5100B164FB /* BlueSphereChangeDirection.m in Sources */,
+				D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */,
 				D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,

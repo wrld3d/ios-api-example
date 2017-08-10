@@ -1,17 +1,17 @@
-#import "BlueSphereChangeDirection.h"
+#import "BlueSphereChangeHeading.h"
 @import Wrld;
 
 
-@interface BlueSphereChangeDirection ()
+@interface BlueSphereChangeHeading ()
 
 @property (nonatomic) WRLDMapView *mapView;
 
 @end
 
-@implementation BlueSphereChangeDirection
+@implementation BlueSphereChangeHeading
 {
     NSTimer *myTimer;
-    float direction;
+    float heading;
 }
 
 - (void)viewDidLoad
@@ -32,7 +32,7 @@
     bluesphere = [_mapView blueSphere];
     [bluesphere setEnabled:YES];
     [bluesphere setCoordinate:CLLocationCoordinate2DMake(56.459721, -2.977541)
-                    direction:0];
+                    heading:0];
     
     myTimer = [NSTimer scheduledTimerWithTimeInterval:2
                                                target:self
@@ -51,7 +51,7 @@
 - (void)rotateBlueSphere:(NSTimer *)timer
 {
     WRLDBlueSphere* bluesphere = timer.userInfo;
-    bluesphere.direction += 45;
+    bluesphere.heading += 45;
 }
 
 @end

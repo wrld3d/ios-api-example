@@ -26,6 +26,6 @@
 #import "PolygonWithInteriorPolygons.h"
 #import "PolygonWithElevation.h"
 #import "BlueSphereChangeLocation.h"
-#import "BlueSphereChangeDirection.h"
+#import "BlueSphereChangeHeading.h"
 #import "BlueSphereChangeElevation.h"
 #import "BlueSphereIndoors.h"
