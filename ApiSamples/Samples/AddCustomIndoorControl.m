@@ -1,7 +1,7 @@
 #import "AddCustomIndoorControl.h"
 @import Wrld;
 
-@interface AddCustomIndoorControl () <WRLDIndoorMapDelegate>
+@interface AddCustomIndoorControl ()
 
 @property (nonatomic) WRLDMapView *mapView;
 @property (nonatomic) NSArray<UIButton *> *buttons;
@@ -34,7 +34,31 @@
     
     _buttons = buttons;
     
-    [_mapView setIndoorMapDelegate:self];
+    [self addObservers];
+}
+
+- (void) dealloc
+{
+    if (_mapView)
+    {
+        [self removeObservers];
+    }
+}
+
+- (void) addObservers
+{
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self selector:@selector(didEnterIndoorMap)
+                   name:WRLDMapViewDidEnterIndoorMapNotification object:_mapView];
+    [center addObserver:self selector:@selector(didExitIndoorMap)
+                   name:WRLDMapViewDidExitIndoorMapNotification object:_mapView];
+}
+
+- (void) removeObservers
+{
+    NSNotificationCenter* center = [NSNotificationCenter defaultCenter];
+    [center removeObserver:self name:WRLDMapViewDidEnterIndoorMapNotification object:_mapView];
+    [center removeObserver:self name:WRLDMapViewDidExitIndoorMapNotification object:_mapView];
 }
 
 - (UIButton*) addButton: (NSString*)title withIndex: (NSInteger)index andSelector: (SEL)selector
