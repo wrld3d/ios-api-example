@@ -119,6 +119,18 @@
 "SampleDescription_MarkerChangeDrawOrder" = "Configure and alter the draw order of markers. Draw order determines precedence when markers overlap";
 
 /* No comment provided by engineer. */
+"SampleTitle_PositionViewOnMap" = "Position a View on the map";
+
+/* No comment provided by engineer. */
+"SampleDescription_PositionViewOnMap" = "Use a positioner to locate a View at a point on the map";
+
+/* No comment provided by engineer. */
+"SampleTitle_PositionCodeCreatedViewOnMap" = "Position a code-created View on the map";
+
+/* No comment provided by engineer. */
+"SampleDescription_PositionCodeCreatedViewOnMap" = "Position a code-created View on the map and use a positioner to locate it";
+
+/* No comment provided by engineer. */
 "SampleTitle_AddPolygon" = "Add a polygon";
 
 /* No comment provided by engineer. */
