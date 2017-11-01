@@ -1,12 +1,12 @@
-#import "PositionViewPin.h"
+#import "PositionerCallout.h"
 
-@interface PositionViewPin ()
+@interface PositionerCallout ()
 @property (strong, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @end
 
-@implementation PositionViewPin
+@implementation PositionerCallout
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -33,7 +33,7 @@
 
 -(void)customInit
 {
-    [[NSBundle mainBundle] loadNibNamed:@"PositionViewPin" owner:self options:nil];
+    [[NSBundle mainBundle] loadNibNamed:@"PositionerCallout" owner:self options:nil];
     
     [self addSubview:self.mainView];
     

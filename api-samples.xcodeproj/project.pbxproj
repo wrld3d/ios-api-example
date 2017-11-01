@@ -13,8 +13,8 @@
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
 		8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */; };
-		A815479B1FA768100050F21E /* PositionViewPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = A815479A1FA768100050F21E /* PositionViewPin.xib */; };
-		A815479E1FA7747C0050F21E /* PositionViewPin.m in Sources */ = {isa = PBXBuildFile; fileRef = A815479D1FA7747C0050F21E /* PositionViewPin.m */; };
+		A815479B1FA768100050F21E /* PositionerCallout.xib in Resources */ = {isa = PBXBuildFile; fileRef = A815479A1FA768100050F21E /* PositionerCallout.xib */; };
+		A815479E1FA7747C0050F21E /* PositionerCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = A815479D1FA7747C0050F21E /* PositionerCallout.m */; };
 		A81ECBC91FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A81ECBC81FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m */; };
 		A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A88643AF1FA1FC3D001D65A0 /* PositionViewOnMap.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
@@ -100,9 +100,9 @@
 		521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerTappedNotification.m; sourceTree = "<group>"; };
 		96C9B4744696165DA6CB24EE /* Pods-ApiSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.release.xcconfig"; sourceTree = "<group>"; };
 		A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A815479A1FA768100050F21E /* PositionViewPin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositionViewPin.xib; sourceTree = "<group>"; };
-		A815479C1FA7747C0050F21E /* PositionViewPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PositionViewPin.h; sourceTree = "<group>"; };
-		A815479D1FA7747C0050F21E /* PositionViewPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PositionViewPin.m; sourceTree = "<group>"; };
+		A815479A1FA768100050F21E /* PositionerCallout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositionerCallout.xib; sourceTree = "<group>"; };
+		A815479C1FA7747C0050F21E /* PositionerCallout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PositionerCallout.h; sourceTree = "<group>"; };
+		A815479D1FA7747C0050F21E /* PositionerCallout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PositionerCallout.m; sourceTree = "<group>"; };
 		A81ECBC81FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PositionCodeCreatedViewOnMap.m; sourceTree = "<group>"; };
 		A81ECBCA1FA78561003CFF29 /* PositionCodeCreatedViewOnMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PositionCodeCreatedViewOnMap.h; sourceTree = "<group>"; };
 		A88643AF1FA1FC3D001D65A0 /* PositionViewOnMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionViewOnMap.m; sourceTree = "<group>"; };
@@ -372,9 +372,9 @@
 				E04885941F39CC3D0031D631 /* AddPolyline.m */,
 				E04885931F39CC3D0031D631 /* AddPolylineIndoors.h */,
 				E04885951F39CC3D0031D631 /* AddPolylineIndoors.m */,
-				A815479A1FA768100050F21E /* PositionViewPin.xib */,
-				A815479C1FA7747C0050F21E /* PositionViewPin.h */,
-				A815479D1FA7747C0050F21E /* PositionViewPin.m */,
+				A815479A1FA768100050F21E /* PositionerCallout.xib */,
+				A815479C1FA7747C0050F21E /* PositionerCallout.h */,
+				A815479D1FA7747C0050F21E /* PositionerCallout.m */,
 				A81ECBC81FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m */,
 				A81ECBCA1FA78561003CFF29 /* PositionCodeCreatedViewOnMap.h */,
 			);
@@ -483,7 +483,7 @@
 				E0A5253B1EB73A7600504831 /* Assets.xcassets in Resources */,
 				E0A48C431EBC81C500DD387F /* Main.storyboard in Resources */,
 				E0A48C421EBC81C500DD387F /* Localizable.strings in Resources */,
-				A815479B1FA768100050F21E /* PositionViewPin.xib in Resources */,
+				A815479B1FA768100050F21E /* PositionerCallout.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +625,7 @@
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
 				A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */,
 				F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */,
-				A815479E1FA7747C0050F21E /* PositionViewPin.m in Sources */,
+				A815479E1FA7747C0050F21E /* PositionerCallout.m in Sources */,
 				093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
