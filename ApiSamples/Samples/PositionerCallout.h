@@ -2,7 +2,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PositionViewPin : UIView
+@interface PositionerCallout : UIView
 
 -(void)setTitle:(NSString*)title;
 -(void)setDescription:(NSString*)description;

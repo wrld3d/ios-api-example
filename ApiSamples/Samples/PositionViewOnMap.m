@@ -1,16 +1,16 @@
 #import "PositionViewOnMap.h"
 #import "WRLDPositionerDelegate.h"
-#import "PositionViewPin.h"
+#import "PositionerCallout.h"
 @import Wrld;
 
 @interface PositionViewOnMap_PositionerChangedController : NSObject<WRLDPositionerDelegate>
 @property (nonatomic) WRLDPositioner *positioner;
-@property (nonatomic) PositionViewPin *calloutView;
+@property (nonatomic) PositionerCallout *calloutView;
 @end
 
 @implementation PositionViewOnMap_PositionerChangedController
 -(id)initWithPositioner: (WRLDPositioner*)positioner
-                   calloutView: (PositionViewPin *)calloutView
+                   calloutView: (PositionerCallout *)calloutView
 {
     _positioner = positioner;
     _calloutView = calloutView;
@@ -64,8 +64,8 @@
 
 @interface PositionViewOnMap ()
 @property (nonatomic) WRLDMapView *mapView;
-@property (nonatomic) PositionViewPin *calloutView;
-@property (nonatomic) UIButton *buttonView;
+@property (nonatomic) PositionerCallout *calloutView;
+@property (nonatomic) UIButton *collapseButton;
 @property BOOL mapCollapsed;
 -(void) onClickMapCollapse;
 @end
@@ -85,25 +85,27 @@
                          animated:NO];
     [self.view addSubview:_mapView];
         
-    _calloutView = [[PositionViewPin alloc] init];
+    _calloutView = [[PositionerCallout alloc] init];
     _calloutView.frame = CGRectMake(10, 10, 500, 200);
     [_mapView addSubview: _calloutView];
 
     WRLDPositioner* positioner = [WRLDPositioner positionerAtCoordinate:CLLocationCoordinate2DMake(37.802355, -122.405848)];
-    positioner.delegate = [[PositionViewOnMap_PositionerChangedController alloc] initWithPositioner: positioner calloutView: _calloutView];
+    positioner.delegate = [[PositionViewOnMap_PositionerChangedController alloc]
+                           initWithPositioner: positioner
+                           calloutView: _calloutView];
     [_mapView addPositioner:positioner];
     
-    _buttonView = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_buttonView.layer setMasksToBounds:YES];
-    [_buttonView.layer setCornerRadius:10.0f];
-    [_buttonView.layer setBackgroundColor:[UIColor whiteColor].CGColor];
-    [_buttonView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [_buttonView setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-    [_buttonView setTitle:@"Collapse" forState:UIControlStateNormal];
-    [_buttonView setUserInteractionEnabled:YES];
-    _buttonView.frame = CGRectMake(10, 10, 150, 60);
-    [_buttonView addTarget:self action:@selector(onClickMapCollapse) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview: _buttonView];
+    _collapseButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_collapseButton.layer setMasksToBounds:YES];
+    [_collapseButton.layer setCornerRadius:10.0f];
+    [_collapseButton.layer setBackgroundColor:[UIColor whiteColor].CGColor];
+    [_collapseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_collapseButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    [_collapseButton setTitle:@"Collapse" forState:UIControlStateNormal];
+    [_collapseButton setUserInteractionEnabled:YES];
+    _collapseButton.frame = CGRectMake(10, 10, 150, 60);
+    [_collapseButton addTarget:self action:@selector(onClickMapCollapse) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview: _collapseButton];
 }
 
 -(void) onClickMapCollapse
