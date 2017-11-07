@@ -19,6 +19,8 @@
 #import "MarkerChangeLocation.h"
 #import "MarkerTappedNotification.h"
 #import "MarkerChangeDrawOrder.h"
+#import "PositionViewOnMap.h"
+#import "PositionCodeCreatedViewOnMap.h"
 #import "AddIndoorControl.h"
 #import "AddCustomIndoorControl.h"
 #import "AddPolygon.h"

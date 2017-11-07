@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PositionerCallout">
+            <connections>
+                <outlet property="descriptionLabel" destination="Ets-l9-R0x" id="pP5-k2-Cbx"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="QTZ-Br-Ter"/>
+                <outlet property="titleLabel" destination="DtP-dy-o4a" id="09j-lW-8kG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Callout" translatesAutoresizingMaskIntoConstraints="NO" id="79X-Ob-jsY">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrld3d_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Iet-1T-47c">
+                    <rect key="frame" x="20" y="20" width="256" height="256"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Iet-1T-47c" secondAttribute="height" multiplier="256:256" id="t0M-N6-MEK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Layout created View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtP-dy-o4a">
+                    <rect key="frame" x="284" y="20" width="235.5" height="32.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ets-l9-R0x">
+                    <rect key="frame" x="284" y="60.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DtP-dy-o4a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="BOf-fi-abc"/>
+                <constraint firstAttribute="bottom" secondItem="79X-Ob-jsY" secondAttribute="bottom" id="BeB-rI-qfY"/>
+                <constraint firstItem="79X-Ob-jsY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E0x-dG-bzn"/>
+                <constraint firstAttribute="bottom" secondItem="Iet-1T-47c" secondAttribute="bottom" constant="44" id="Fg4-Tt-vQX"/>
+                <constraint firstItem="79X-Ob-jsY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ox5-aY-yM9"/>
+                <constraint firstItem="Ets-l9-R0x" firstAttribute="top" secondItem="DtP-dy-o4a" secondAttribute="bottom" constant="8" id="QJL-3o-RHB"/>
+                <constraint firstItem="Ets-l9-R0x" firstAttribute="leading" secondItem="Iet-1T-47c" secondAttribute="trailing" constant="8" id="dYY-MY-4VO"/>
+                <constraint firstItem="Iet-1T-47c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="fTt-Qh-rNr"/>
+                <constraint firstItem="DtP-dy-o4a" firstAttribute="leading" secondItem="Iet-1T-47c" secondAttribute="trailing" constant="8" id="hQD-91-Zxt"/>
+                <constraint firstAttribute="trailing" secondItem="79X-Ob-jsY" secondAttribute="trailing" id="mKW-2W-i5I"/>
+                <constraint firstItem="Iet-1T-47c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="zI2-Xm-RWe"/>
+            </constraints>
+            <point key="canvasLocation" x="628.5" y="121.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Callout" width="116" height="94"/>
+        <image name="wrld3d_blue" width="256" height="256"/>
+    </resources>
+</document>
