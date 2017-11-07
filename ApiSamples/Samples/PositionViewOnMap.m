@@ -1,23 +1,66 @@
 #import "PositionViewOnMap.h"
-#import "WRLDPositionerDelegate.h"
+#import "WRLDMapViewDelegate.h"
 #import "PositionerCallout.h"
+#import "WRLDViewAnchor.h"
 @import Wrld;
 
-@interface PositionViewOnMap_PositionerChangedController : NSObject<WRLDPositionerDelegate>
-@property (nonatomic) WRLDPositioner *positioner;
+@interface PositionViewOnMap () <WRLDMapViewDelegate>
+
+@property (nonatomic) WRLDMapView *mapView;
+
 @property (nonatomic) PositionerCallout *calloutView;
+@property (nonatomic) WRLDPositioner *positioner;
+
+@property (nonatomic) UIButton *collapseButton;
+@property BOOL mapCollapsed;
+
+-(void) onClickMapCollapse;
+
 @end
 
-@implementation PositionViewOnMap_PositionerChangedController
--(id)initWithPositioner: (WRLDPositioner*)positioner
-                   calloutView: (PositionerCallout *)calloutView
+@implementation PositionViewOnMap
+
+- (void)viewDidLoad
 {
-    _positioner = positioner;
-    _calloutView = calloutView;
-    return self;
+    [super viewDidLoad];
+    
+    _mapCollapsed = false;
+
+    _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
+    
+    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.802355, -122.405848)
+                        zoomLevel:15
+                         animated:NO];
+    
+    _mapView.delegate = self;
+    
+    [self.view addSubview:_mapView];
+        
+    _calloutView = [[PositionerCallout alloc] init];
+    _calloutView.frame = CGRectMake(10, 10, 500, 170);
+    [_mapView addSubview: _calloutView];
+
+    _positioner = [WRLDPositioner positionerAtCoordinate:CLLocationCoordinate2DMake(37.802355, -122.405848)];
+    [_mapView addPositioner:_positioner];
+    
+    _collapseButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_collapseButton addTarget:self action:@selector(onClickMapCollapse) forControlEvents:UIControlEventTouchUpInside];
+    [_collapseButton setTitle:@"Collapse" forState:UIControlStateNormal];
+    _collapseButton.frame = CGRectMake(10, 10, 150, 60);
+    _collapseButton.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:_collapseButton];
 }
 
-- (void) onPositionerChanged: (WRLDPositioner*)positioner
+-(void) onClickMapCollapse
+{
+    _mapCollapsed = !_mapCollapsed;
+    [_mapView setMapCollapsed:_mapCollapsed];
+}
+
+#pragma mark - WRLDMapViewDelegate implementation
+
+- (void)mapView:(WRLDMapView *)mapView positionerDidChange: (WRLDPositioner*)positioner
 {
     CGPoint *screenPoint = [positioner screenPointOrNull];
 
@@ -25,10 +68,8 @@
     {
         if(screenPoint != nil)
         {
-            CGRect frame = _calloutView.frame;
-            frame.origin.x = (screenPoint->x/[UIScreen mainScreen].scale) - 125;
-            frame.origin.y = (screenPoint->y/[UIScreen mainScreen].scale) - frame.size.height;
-            _calloutView.frame = frame;
+            CGPoint anchorUV = CGPointMake(0.0f, 1.0f);
+            [WRLDViewAnchor positionView:_calloutView screenPoint:screenPoint anchorUV:&anchorUV];
         }
         [_calloutView setHidden: false];
     }
@@ -59,59 +100,6 @@
     [_calloutView setDescription: [NSString stringWithFormat:@"%@\n%@",
                                    screenPointText,
                                    transformedPointText]];
-}
-@end
-
-@interface PositionViewOnMap ()
-@property (nonatomic) WRLDMapView *mapView;
-@property (nonatomic) PositionerCallout *calloutView;
-@property (nonatomic) UIButton *collapseButton;
-@property BOOL mapCollapsed;
--(void) onClickMapCollapse;
-@end
-
-@implementation PositionViewOnMap
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    _mapCollapsed = false;
-
-    _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
-    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.802355, -122.405848)
-                        zoomLevel:15
-                         animated:NO];
-    [self.view addSubview:_mapView];
-        
-    _calloutView = [[PositionerCallout alloc] init];
-    _calloutView.frame = CGRectMake(10, 10, 500, 200);
-    [_mapView addSubview: _calloutView];
-
-    WRLDPositioner* positioner = [WRLDPositioner positionerAtCoordinate:CLLocationCoordinate2DMake(37.802355, -122.405848)];
-    positioner.delegate = [[PositionViewOnMap_PositionerChangedController alloc]
-                           initWithPositioner: positioner
-                           calloutView: _calloutView];
-    [_mapView addPositioner:positioner];
-    
-    _collapseButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_collapseButton.layer setMasksToBounds:YES];
-    [_collapseButton.layer setCornerRadius:10.0f];
-    [_collapseButton.layer setBackgroundColor:[UIColor whiteColor].CGColor];
-    [_collapseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [_collapseButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-    [_collapseButton setTitle:@"Collapse" forState:UIControlStateNormal];
-    [_collapseButton setUserInteractionEnabled:YES];
-    _collapseButton.frame = CGRectMake(10, 10, 150, 60);
-    [_collapseButton addTarget:self action:@selector(onClickMapCollapse) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview: _collapseButton];
-}
-
--(void) onClickMapCollapse
-{
-    _mapCollapsed = !_mapCollapsed;
-    [_mapView setMapCollapsed:_mapCollapsed];
 }
 
 @end
