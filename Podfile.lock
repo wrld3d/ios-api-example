@@ -1,16 +1,16 @@
 PODS:
-  - WRLD (0.0.553)
+  - WRLD (0.0.568)
 
 DEPENDENCIES:
-  - WRLD (from `https://github.com/eegeo/ios-api/releases/download/v0.0.553/WRLD.podspec`)
+  - WRLD (from `https://github.com/eegeo/ios-api/releases/download/v0.0.568/WRLD.podspec`)
 
 EXTERNAL SOURCES:
   WRLD:
-    :podspec: https://github.com/eegeo/ios-api/releases/download/v0.0.553/WRLD.podspec
+    :podspec: https://github.com/eegeo/ios-api/releases/download/v0.0.568/WRLD.podspec
 
 SPEC CHECKSUMS:
-  WRLD: 977a4217ff022b2f1b2e181a07230ba4191d1f84
+  WRLD: 70fbfdf1e88c490344715e6fc1195c62ffbed94d
 
-PODFILE CHECKSUM: 1b6c0291d16c30f452aa10fc61ef5c9d1056e345
+PODFILE CHECKSUM: 97ec130bc5cf459a0e216f362a39177fefe50a71
 
 COCOAPODS: 1.3.1
