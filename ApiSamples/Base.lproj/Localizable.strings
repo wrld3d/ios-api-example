@@ -190,3 +190,9 @@
 /* No comment provided by engineer. */
 "SampleDescription_AddPolylineIndoors" = "Display a polyline inside a building";
 
+/* No comment provided by engineer. */
+"SampleTitle_Search" = "Search Title";
+
+/* No comment provided by engineer. */
+"SampleDescription_Search" = "Search Description";
+

@@ -1,6 +1,7 @@
 #pragma once
 
 #import "BasicMap.h"
+#import "Search.h"
 #import "MoveCamera.h"
 #import "AnimateCamera.h"
 #import "FrameCamera.h"
