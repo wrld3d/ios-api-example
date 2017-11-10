@@ -33,3 +33,4 @@
 #import "BlueSphereIndoors.h"
 #import "AddPolyline.h"
 #import "AddPolylineIndoors.h"
+#import "SearchExample.h"

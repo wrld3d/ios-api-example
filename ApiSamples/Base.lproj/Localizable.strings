@@ -190,3 +190,8 @@
 /* No comment provided by engineer. */
 "SampleDescription_AddPolylineIndoors" = "Display a polyline inside a building";
 
+/* No comment provided by engineer. */
+"SampleTitle_SearchExample" = "Search for POIs";
+
+/* No comment provided by engineer. */
+"SampleDescription_SearchExample" = "Use the POI service to find POIs on the map matching a certain query";
