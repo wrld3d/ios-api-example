@@ -1,6 +1,7 @@
 #import "Search.h"
 #import "SamplesMessage.h"
 @import Wrld;
+@import WrldWidgets;
 
 @implementation Search
 
@@ -19,6 +20,11 @@
     
     [self.view addSubview:mapView];
     
+    WRLDSearchModule *searchModule = [[WRLDSearchModule alloc] initWithFrame:self.view.bounds];
+    
+    //[searchModule addSearchProvider: nil];
+    
+    [self.view addSubview:searchModule];
     [SamplesMessage showWithMessage:@"Search Widget"];
 }
 
