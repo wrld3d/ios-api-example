@@ -16,7 +16,9 @@
 		A815479B1FA768100050F21E /* PositionerCallout.xib in Resources */ = {isa = PBXBuildFile; fileRef = A815479A1FA768100050F21E /* PositionerCallout.xib */; };
 		A815479E1FA7747C0050F21E /* PositionerCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = A815479D1FA7747C0050F21E /* PositionerCallout.m */; };
 		A81ECBC91FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A81ECBC81FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m */; };
+		A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B34741FB4AEE6009B21D3 /* SearchExample.m */; };
 		A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A88643AF1FA1FC3D001D65A0 /* PositionViewOnMap.m */; };
+		A8B5F6A61FB9AAB00015888E /* CancelSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B5F6A51FB9AAB00015888E /* CancelSearch.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
 		D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B675A1F31D53800B164FB /* BlueSphereIndoors.m */; };
@@ -105,8 +107,12 @@
 		A815479D1FA7747C0050F21E /* PositionerCallout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PositionerCallout.m; sourceTree = "<group>"; };
 		A81ECBC81FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PositionCodeCreatedViewOnMap.m; sourceTree = "<group>"; };
 		A81ECBCA1FA78561003CFF29 /* PositionCodeCreatedViewOnMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PositionCodeCreatedViewOnMap.h; sourceTree = "<group>"; };
+		A82B34741FB4AEE6009B21D3 /* SearchExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchExample.m; sourceTree = "<group>"; };
+		A82B34761FB4AF01009B21D3 /* SearchExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchExample.h; sourceTree = "<group>"; };
 		A88643AF1FA1FC3D001D65A0 /* PositionViewOnMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionViewOnMap.m; sourceTree = "<group>"; };
 		A88643B01FA1FC3D001D65A0 /* PositionViewOnMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionViewOnMap.h; sourceTree = "<group>"; };
+		A8B5F6A51FB9AAB00015888E /* CancelSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancelSearch.m; sourceTree = "<group>"; };
+		A8B5F6A71FB9AACB0015888E /* CancelSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancelSearch.h; sourceTree = "<group>"; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeHeading.h; sourceTree = "<group>"; };
 		D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeHeading.m; sourceTree = "<group>"; };
@@ -377,6 +383,10 @@
 				A815479D1FA7747C0050F21E /* PositionerCallout.m */,
 				A81ECBC81FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m */,
 				A81ECBCA1FA78561003CFF29 /* PositionCodeCreatedViewOnMap.h */,
+				A82B34741FB4AEE6009B21D3 /* SearchExample.m */,
+				A82B34761FB4AF01009B21D3 /* SearchExample.h */,
+				A8B5F6A51FB9AAB00015888E /* CancelSearch.m */,
+				A8B5F6A71FB9AACB0015888E /* CancelSearch.h */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -629,8 +639,10 @@
 				093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
+				A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */,
 				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
+				A8B5F6A61FB9AAB00015888E /* CancelSearch.m in Sources */,
 				D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
 				E0DEEA441ED327A600B6BD9A /* QueryCamera.m in Sources */,
