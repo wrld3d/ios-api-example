@@ -48,7 +48,8 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[BlueSphereChangeElevation class]],
         [SampleInfo infoForSample:[BlueSphereIndoors class]],
         [SampleInfo infoForSample:[InitialStreamingCompleteNotification class]],
-        [SampleInfo infoForSample:[SearchExample class]]
+        [SampleInfo infoForSample:[SearchExample class]],
+        [SampleInfo infoForSample:[CancelSearch class]]
     ];
     
     self.title = @"WRLD iOS API Samples";

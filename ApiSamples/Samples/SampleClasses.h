@@ -34,3 +34,4 @@
 #import "AddPolyline.h"
 #import "AddPolylineIndoors.h"
 #import "SearchExample.h"
+#import "CancelSearch.h"
