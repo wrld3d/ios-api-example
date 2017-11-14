@@ -37,7 +37,7 @@ If you are creating a new app, or integrating WRLD 3D Maps into an existing app,
 ## Further information
 For more detailed information, see the [API documentation](https://docs.wrld3d.com/ios/latest/docs/api/) and [API examples](https://docs.wrld3d.com/ios/latest/docs/examples/).
 
-We also have [step-by-step instructions](https://docs.wrld3d.com/ios/latest/docs/api/Walkthrough/) on how to integrate a WRLD map view into your app.
+We also have [step-by-step instructions](https://docs.wrld3d.com/ios/latest/docs/api/walkthrough/) on how to integrate a WRLD map view into your app.
 
 Questions, comments, or problems? All feedback is welcome - just [create an issue](https://github.com/wrld3d/ios-api-example/issues).
 
