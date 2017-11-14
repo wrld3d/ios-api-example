@@ -57,11 +57,29 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
 
     if([poiSearchResponse succeeded] && [[poiSearchResponse results] count] > 0)
     {
+    
+        // Icon/Tag mapping, see:
+        // https://github.com/wrld3d/wrld-icon-tools/blob/master/data/search_tags.json
+        NSDictionary* iconKeyTagDict = @{
+            @"park" : @"park",
+            @"coffee" : @"coffee",
+            @"general" : @"misc"
+        };
+    
         for(WRLDPoiSearchResult *searchResult in [poiSearchResponse results])
         {
             WRLDMarker* marker = [WRLDMarker markerAtCoordinate:[searchResult latLng]];
             marker.title = [searchResult title];
-            marker.iconKey = [searchResult tags];
+            marker.iconKey = @"misc";
+            
+            for (id tag in [[searchResult tags] componentsSeparatedByString: @" "])
+            {
+                if([iconKeyTagDict objectForKey: tag])
+                {
+                    marker.iconKey = iconKeyTagDict[tag];
+                }
+            }
+            
             [_mapView addMarker:marker];
         }
     }
