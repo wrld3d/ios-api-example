@@ -89,7 +89,7 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
         
         if(m_failedSearches >= 3)
         {
-            [SamplesMessage showWithMessage:@"No POIs found; Visit https://mapdesigner.wrld3d.com/poi/latest/ to create some POIs." andDuration:[[NSNumber alloc] initWithInt: 99999]];
+            [SamplesMessage showWithMessage:@"No POIs found; Visit https://mapdesigner.wrld3d.com/poi/latest/ to create some POIs." andDuration:[[NSNumber alloc] initWithInt: 8]];
         }
     }
 
