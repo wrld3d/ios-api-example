@@ -6,7 +6,7 @@
 
 @implementation Search
 {
-    UITableView *m_tableView;
+    WRLDSearchWidgetView *m_tableView;
     
     WRLDSearchModule* m_searchModule;
 }
@@ -27,8 +27,7 @@
     [self.view addSubview:mapView];
     
     
-    m_tableView = [[UITableView alloc ] init];
-    m_tableView.frame = CGRectMake(10, 10, 450, 600);
+    m_tableView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 150, 200)];
     [self.view addSubview:m_tableView];
     
     
@@ -37,7 +36,7 @@
     //TODO
     //[m_searchModule addSearchProvider: [[WRLDPoiSearchProvider alloc] initWithMap:mapView]];
     
-    [m_tableView setDataSource:m_searchModule];
+    [m_tableView setSearchModule:m_searchModule];
 
     
 }
