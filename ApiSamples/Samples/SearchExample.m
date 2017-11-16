@@ -1,16 +1,19 @@
 #import "SearchExample.h"
 #import "SamplesMessage.h"
 @import Wrld;
+@import WrldWidgets;
 
-@interface SearchExample() <WRLDMapViewDelegate>
+@interface SearchExample() <WRLDMapViewDelegate, OnResultsRecievedCallback>
 
 @property (nonatomic) WRLDMapView *mapView;
+@property (nonatomic) POIServiceSuggestionProvider* suggestionProvider;
 
 @end
 
 @implementation SearchExample
 {
     int m_failedSearches;
+    
 }
 
 - (void)viewDidLoad
@@ -33,7 +36,15 @@
 
     WRLDPoiService* wrldPoiService = [_mapView createPoiService];
     
-    WRLDTextSearchOptions* textSearchOptions = [[WRLDTextSearchOptions alloc] init];
+    _suggestionProvider = [[POIServiceSuggestionProvider alloc] initWithMapViewAndPoiService: [self mapView] poiService:wrldPoiService];
+    
+    [[self suggestionProvider] addOnSuggestionsRecievedCallback: self];
+    
+    [[self suggestionProvider] getSearchResults:@"auto"];
+    
+    
+    
+    /*WRLDTextSearchOptions* textSearchOptions = [[WRLDTextSearchOptions alloc] init];
     [textSearchOptions setQuery: @"free"];
     [textSearchOptions setCenter:  [_mapView centerCoordinate] ];
     [textSearchOptions setRadius: 1000.0];
@@ -48,8 +59,14 @@
     WRLDAutocompleteOptions* autocompleteOptions = [[WRLDAutocompleteOptions alloc] init];
     [autocompleteOptions setQuery: @"auto"];
     [autocompleteOptions setCenter:  [_mapView centerCoordinate] ];
-    [wrldPoiService searchAutocomplete: autocompleteOptions];
+    [wrldPoiService searchAutocomplete: autocompleteOptions];*/
+    
+    // Testing widget
+    
+    
 }
+
+
 
 - (void)mapView:(WRLDMapView *)mapView poiSearchDidComplete: (int) poiSearchId
 poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
@@ -94,5 +111,19 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
     }
 
 }
+
+- (void)onResultsRecieved:(NSMutableArray<SearchResult*>*)searchResults
+{
+    for(SearchResult* searchResult in searchResults)
+    {
+        WRLDMarker* marker = [WRLDMarker markerAtCoordinate:[searchResult latLng]];
+        marker.title = [searchResult title];
+        marker.iconKey = @"misc";
+        
+        [_mapView addMarker:marker];
+    }
+}
+
+
 
 @end
