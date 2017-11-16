@@ -1,5 +1,6 @@
 #import "Search.h"
 #import "SamplesMessage.h"
+
 @import Wrld;
 @import WrldWidgets;
 
@@ -9,6 +10,10 @@
     WRLDSearchWidgetView *m_tableView;
     
     WRLDSearchModule* m_searchModule;
+    
+    WRLDPoiService* m_poiService;
+    
+    POIServiceSuggestionProvider* m_poiSearchProvider;
 }
 
 - (void)viewDidLoad
@@ -33,11 +38,19 @@
     
     m_searchModule = [[WRLDSearchModule alloc] init];
     
-    //TODO
-    //[m_searchModule addSearchProvider: [[WRLDPoiSearchProvider alloc] initWithMap:mapView]];
+    
+    
+    m_poiService = [mapView createPoiService];
+    
+    m_poiSearchProvider = [[POIServiceSuggestionProvider alloc] initWithMapViewAndPoiService: mapView poiService: m_poiService];
+    
+    
+    [m_searchModule addSuggestionProvider: m_poiSearchProvider];
     
     [m_tableView setSearchModule:m_searchModule];
-
+    
+    
+    [m_searchModule doAutoCompleteQuery: @"auto"];
     
 }
 
