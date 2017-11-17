@@ -32,7 +32,7 @@
     [self.view addSubview:mapView];
     
     
-    m_tableView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 150, 200)];
+    m_tableView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 300, 500)];
     [self.view addSubview:m_tableView];
     
     
@@ -50,7 +50,7 @@
     [m_tableView setSearchModule:m_searchModule];
     
     
-    [m_searchModule doAutoCompleteQuery: @"auto"];
+    [m_searchModule doAutoCompleteQuery: @"Yerba"];
     
 }
 
