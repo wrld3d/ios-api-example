@@ -26,9 +26,8 @@
     
     m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 300, 500)];
     [m_searchWidgetView setSearchModule:m_searchModule];
+    [m_searchWidgetView setMapView:mapView];
     [self.view addSubview:m_searchWidgetView];
-    
-    [m_searchModule search:@"Mouse"];
 }
 
 @end
