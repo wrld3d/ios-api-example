@@ -47,12 +47,8 @@
 
 -(void)setDescription:(NSString*)description
 {
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:description];
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineSpacing = 8.0f;
-    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, description.length)];
 
-    _descriptionLabel.attributedText = attributedString;
+    [_descriptionLabel setText:description];
 }
 
 @end

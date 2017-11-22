@@ -36,7 +36,17 @@
     [self.view addSubview:_mapView];
         
     _calloutView = [[PositionerCallout alloc] init];
-    _calloutView.frame = CGRectMake(10, 10, 500, 170);
+    
+    double dominantAxis = self.view.bounds.size.height;
+    
+    if(self.view.bounds.size.width > self.view.bounds.size.height)
+    {
+        dominantAxis = self.view.bounds.size.width;
+    }
+    
+    double scaleFactor = MAX(0.6, MIN((dominantAxis * 0.5) / 500, 1.0));
+    
+    _calloutView.frame = CGRectMake(10, 10, 500 * scaleFactor, 170 * scaleFactor);
     [_mapView addSubview: _calloutView];
 
     _positioner = [WRLDPositioner positionerAtCoordinate:CLLocationCoordinate2DMake(37.802355, -122.405848)];
