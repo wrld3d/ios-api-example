@@ -35,3 +35,4 @@
 #import "AddPolylineIndoors.h"
 #import "SearchExample.h"
 #import "CancelSearch.h"
+#import "LoadMapsceneExample.h"
