@@ -35,3 +35,7 @@
 #import "AddPolylineIndoors.h"
 #import "SearchExample.h"
 #import "CancelSearch.h"
+#import "FindOutdoorRoute.h"
+#import "FindIndoorRoute.h"
+#import "FindMultipartRoute.h"
+#import "CancelRoutingQuery.h"

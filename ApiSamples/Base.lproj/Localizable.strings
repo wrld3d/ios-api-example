@@ -201,3 +201,27 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_CancelSearch" = "Cancel an ongoing search before it completes";
+
+/* No comment provided by engineer. */
+"SampleTitle_FindOutdoorRoute" = "Find an outdoor route";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindOutdoorRoute" = "Find a route between two outdoor locations";
+
+/* No comment provided by engineer. */
+"SampleTitle_FindIndoorRoute" = "Find an indoor route";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindIndoorRoute" = "Find a route between two indoor locations";
+
+/* No comment provided by engineer. */
+"SampleTitle_FindMultipartRoute" = "Find a multipart route";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindMultipartRoute" = "Find a route between two locations - indoor or out";
+
+/* No comment provided by engineer. */
+"SampleTitle_CancelRoutingQuery" = "Cancel a routing query";
+
+/* No comment provided by engineer. */
+"SampleDescription_CancelRoutingQuery" = "Cancel an ongoing routing query before it completes";
