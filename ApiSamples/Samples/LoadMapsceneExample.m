@@ -9,9 +9,6 @@
 @end
 
 @implementation LoadMapsceneExample
-{
-    
-}
 
 - (void)viewDidLoad
 {
@@ -32,7 +29,7 @@
     WRLDMapsceneService* wrldMapsceneService = [_mapView createMapsceneService];
     WRLDMapsceneRequest* MapsceneRequest = [[WRLDMapsceneRequest alloc] init];
     
-    MapsceneRequest = [wrldMapsceneService RequestMapscene:[[WRLDMapsceneRequestOptions alloc] initMapsceneRequestOptions:@"https://wrld.mp/63fcc9b" :true]];
+    MapsceneRequest = [wrldMapsceneService RequestMapscene:[[WRLDMapsceneRequestOptions alloc] initMapsceneRequestOptions:@"https://wrld.mp/63fcc9b" applyMapsceneOnSuccess:true]];
     
 }
 
