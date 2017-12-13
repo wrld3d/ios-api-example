@@ -36,9 +36,9 @@
 - (void)mapView:(WRLDMapView *)mapView mapsceneResponse:(WRLDMapsceneRequestResponse*)mapsceneResponse
 {
     
-    if([mapsceneResponse getSucceeded])
+    if(mapsceneResponse.succeeded)
     {
-        NSString* message = [NSString stringWithFormat:@"Mapscene %@ loaded", [[mapsceneResponse getMapscene] getName]];
+        NSString* message = [NSString stringWithFormat:@"Mapscene %@ loaded", mapsceneResponse.mapscene.name];
         
         [SamplesMessage showWithMessage:message andDuration:[[NSNumber alloc] initWithInt: 8]];
     }
