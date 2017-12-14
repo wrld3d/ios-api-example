@@ -49,7 +49,11 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[BlueSphereIndoors class]],
         [SampleInfo infoForSample:[InitialStreamingCompleteNotification class]],
         [SampleInfo infoForSample:[SearchExample class]],
-        [SampleInfo infoForSample:[CancelSearch class]]
+        [SampleInfo infoForSample:[CancelSearch class]],
+        [SampleInfo infoForSample:[FindOutdoorRoute class]],
+        [SampleInfo infoForSample:[FindIndoorRoute class]],
+        [SampleInfo infoForSample:[FindMultipartRoute class]],
+        [SampleInfo infoForSample:[CancelRoutingQuery class]]
     ];
     
     self.title = @"WRLD iOS API Samples";
