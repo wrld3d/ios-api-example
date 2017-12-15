@@ -27,9 +27,9 @@
     [self.view addSubview:_mapView];
     
     WRLDMapsceneService* wrldMapsceneService = [_mapView createMapsceneService];
-    WRLDMapsceneRequest* MapsceneRequest = [[WRLDMapsceneRequest alloc] init];
+    WRLDMapsceneRequest* MapsceneRequest;
     
-    MapsceneRequest = [wrldMapsceneService RequestMapscene:[[WRLDMapsceneRequestOptions alloc] initMapsceneRequestOptions:@"https://wrld.mp/63fcc9b" applyMapsceneOnSuccess:true]];
+    MapsceneRequest = [wrldMapsceneService RequestMapscene:[[WRLDMapsceneRequestOptions alloc] initWithShortLink:@"https://wrld.mp/63fcc9b" applyMapsceneOnSuccess:true]];
     
 }
 
