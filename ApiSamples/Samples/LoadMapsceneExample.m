@@ -27,15 +27,12 @@
     [self.view addSubview:_mapView];
     
     WRLDMapsceneService* wrldMapsceneService = [_mapView createMapsceneService];
-    WRLDMapsceneRequest* MapsceneRequest;
     
-    MapsceneRequest = [wrldMapsceneService RequestMapscene:[[WRLDMapsceneRequestOptions alloc] initWithShortLink:@"https://wrld.mp/63fcc9b" applyMapsceneOnSuccess:true]];
-    
+    [wrldMapsceneService requestMapscene:[[WRLDMapsceneRequestOptions alloc] initWithShortLink:@"https://wrld.mp/63fcc9b" applyMapsceneOnSuccess:true]];
 }
 
-- (void)mapView:(WRLDMapView *)mapView mapsceneResponse:(WRLDMapsceneRequestResponse*)mapsceneResponse
+- (void)mapView:(WRLDMapView *)mapView mapsceneRequestDidComplete: (int)requestId mapsceneResponse:(WRLDMapsceneRequestResponse*)mapsceneResponse;
 {
-    
     if(mapsceneResponse.succeeded)
     {
         NSString* message = [NSString stringWithFormat:@"Mapscene %@ loaded", mapsceneResponse.mapscene.name];
