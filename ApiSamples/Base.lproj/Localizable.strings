@@ -207,3 +207,27 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_LoadMapsceneExample" = "Use the Mapscene service to load and apply a mapscene";
+
+/* No comment provided by engineer. */
+"SampleTitle_FindOutdoorRoute" = "Find an outdoor route";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindOutdoorRoute" = "Use the routing service to find a route between two places outdoors";
+
+/* No comment provided by engineer. */
+"SampleTitle_FindIndoorRoute" = "Find an indoor route";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindIndoorRoute" = "Use the routing service to find a route inside a building";
+
+/* No comment provided by engineer. */
+"SampleTitle_FindMultipartRoute" = "Find a multipart route";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindMultipartRoute" = "Use the routing service to find a route from inside one building to another";
+
+/* No comment provided by engineer. */
+"SampleTitle_CancelRoutingQuery" = "Cancel a routing query";
+
+/* No comment provided by engineer. */
+"SampleDescription_CancelRoutingQuery" = "Cancel a routing service query before it completes";

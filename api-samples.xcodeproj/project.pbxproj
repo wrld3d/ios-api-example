@@ -22,6 +22,10 @@
 		A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */ = {isa = PBXBuildFile; fileRef = A82B34741FB4AEE6009B21D3 /* SearchExample.m */; };
 		A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A88643AF1FA1FC3D001D65A0 /* PositionViewOnMap.m */; };
 		A8B5F6A61FB9AAB00015888E /* CancelSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B5F6A51FB9AAB00015888E /* CancelSearch.m */; };
+		BB6B6D7A1FD96A2F0070E78F /* FindOutdoorRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D791FD96A2F0070E78F /* FindOutdoorRoute.m */; };
+		BB6B6D7C1FD972280070E78F /* FindIndoorRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D7B1FD972280070E78F /* FindIndoorRoute.m */; };
+		BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D7E1FDA4FFD0070E78F /* FindMultipartRoute.m */; };
+		BB6B6D821FDA54110070E78F /* CancelRoutingQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D811FDA54110070E78F /* CancelRoutingQuery.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
 		D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B675A1F31D53800B164FB /* BlueSphereIndoors.m */; };
@@ -120,6 +124,14 @@
 		A88643B01FA1FC3D001D65A0 /* PositionViewOnMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionViewOnMap.h; sourceTree = "<group>"; };
 		A8B5F6A51FB9AAB00015888E /* CancelSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancelSearch.m; sourceTree = "<group>"; };
 		A8B5F6A71FB9AACB0015888E /* CancelSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancelSearch.h; sourceTree = "<group>"; };
+		BB6B6D781FD96A050070E78F /* FindOutdoorRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindOutdoorRoute.h; sourceTree = "<group>"; };
+		BB6B6D791FD96A2F0070E78F /* FindOutdoorRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindOutdoorRoute.m; sourceTree = "<group>"; };
+		BB6B6D7B1FD972280070E78F /* FindIndoorRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindIndoorRoute.m; sourceTree = "<group>"; };
+		BB6B6D7D1FD972430070E78F /* FindIndoorRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindIndoorRoute.h; sourceTree = "<group>"; };
+		BB6B6D7E1FDA4FFD0070E78F /* FindMultipartRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindMultipartRoute.m; sourceTree = "<group>"; };
+		BB6B6D801FDA50300070E78F /* FindMultipartRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindMultipartRoute.h; sourceTree = "<group>"; };
+		BB6B6D811FDA54110070E78F /* CancelRoutingQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancelRoutingQuery.m; sourceTree = "<group>"; };
+		BB6B6D831FDA54970070E78F /* CancelRoutingQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancelRoutingQuery.h; sourceTree = "<group>"; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeHeading.h; sourceTree = "<group>"; };
 		D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeHeading.m; sourceTree = "<group>"; };
@@ -398,6 +410,14 @@
 				6F47C7601FD5960D0071ECE5 /* LoadMapsceneExample.h */,
 				A8B5F6A51FB9AAB00015888E /* CancelSearch.m */,
 				A8B5F6A71FB9AACB0015888E /* CancelSearch.h */,
+				BB6B6D791FD96A2F0070E78F /* FindOutdoorRoute.m */,
+				BB6B6D781FD96A050070E78F /* FindOutdoorRoute.h */,
+				BB6B6D7B1FD972280070E78F /* FindIndoorRoute.m */,
+				BB6B6D7D1FD972430070E78F /* FindIndoorRoute.h */,
+				BB6B6D7E1FDA4FFD0070E78F /* FindMultipartRoute.m */,
+				BB6B6D801FDA50300070E78F /* FindMultipartRoute.h */,
+				BB6B6D811FDA54110070E78F /* CancelRoutingQuery.m */,
+				BB6B6D831FDA54970070E78F /* CancelRoutingQuery.h */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -635,6 +655,7 @@
 				D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
+				BB6B6D7A1FD96A2F0070E78F /* FindOutdoorRoute.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
 				D0AAB6751EC1F5BB00384605 /* MarkerWithElevation.m in Sources */,
 				F3DDBFFE1EC34716006E4D0C /* AddCustomIndoorControl.m in Sources */,
@@ -651,14 +672,17 @@
 				093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
+				BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */,
 				A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */,
 				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
 				A8B5F6A61FB9AAB00015888E /* CancelSearch.m in Sources */,
 				D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */,
 				E0A525441EB73AF900504831 /* main.m in Sources */,
+				BB6B6D7C1FD972280070E78F /* FindIndoorRoute.m in Sources */,
 				E0DEEA441ED327A600B6BD9A /* QueryCamera.m in Sources */,
 				E04885961F39CC3D0031D631 /* AddPolyline.m in Sources */,
+				BB6B6D821FDA54110070E78F /* CancelRoutingQuery.m in Sources */,
 				521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */,
 				E0A525411EB73A7600504831 /* MoveCamera.m in Sources */,
 			);
