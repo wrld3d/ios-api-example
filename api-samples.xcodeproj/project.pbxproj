@@ -12,6 +12,9 @@
 		521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C11EC09F3E0070ACDD /* AddMarker.m */; };
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
+		6F47C7621FD596370071ECE5 /* LoadMapsceneExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F47C7611FD596370071ECE5 /* LoadMapsceneExample.m */; };
+		6F47C7631FD59B2E0071ECE5 /* Wrld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F47C7641FD59B2E0071ECE5 /* Wrld.framework */; };
+		6F47C7651FD59B330071ECE5 /* WrldWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F47C7661FD59B330071ECE5 /* WrldWidgets.framework */; };
 		8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */; };
 		A815479B1FA768100050F21E /* PositionerCallout.xib in Resources */ = {isa = PBXBuildFile; fileRef = A815479A1FA768100050F21E /* PositionerCallout.xib */; };
 		A815479E1FA7747C0050F21E /* PositionerCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = A815479D1FA7747C0050F21E /* PositionerCallout.m */; };
@@ -106,6 +109,10 @@
 		521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerChangeDrawOrder.m; sourceTree = "<group>"; };
 		521807C71EC0B75B0070ACDD /* MarkerTappedNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerTappedNotification.h; sourceTree = "<group>"; };
 		521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerTappedNotification.m; sourceTree = "<group>"; };
+		6F47C7601FD5960D0071ECE5 /* LoadMapsceneExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMapsceneExample.h; sourceTree = "<group>"; };
+		6F47C7611FD596370071ECE5 /* LoadMapsceneExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMapsceneExample.m; sourceTree = "<group>"; };
+		6F47C7641FD59B2E0071ECE5 /* Wrld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wrld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F47C7661FD59B330071ECE5 /* WrldWidgets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WrldWidgets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C9B4744696165DA6CB24EE /* Pods-ApiSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.release.xcconfig"; sourceTree = "<group>"; };
 		A1211FA56F62A4E195678F32 /* Pods_ApiSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A815479A1FA768100050F21E /* PositionerCallout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositionerCallout.xib; sourceTree = "<group>"; };
@@ -218,6 +225,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F47C7631FD59B2E0071ECE5 /* Wrld.framework in Frameworks */,
+				6F47C7651FD59B330071ECE5 /* WrldWidgets.framework in Frameworks */,
 				8BE2BD2F617DCB8FC15D19E4 /* Pods_ApiSamples.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +412,8 @@
 				A81ECBCA1FA78561003CFF29 /* PositionCodeCreatedViewOnMap.h */,
 				A82B34741FB4AEE6009B21D3 /* SearchExample.m */,
 				A82B34761FB4AF01009B21D3 /* SearchExample.h */,
+				6F47C7611FD596370071ECE5 /* LoadMapsceneExample.m */,
+				6F47C7601FD5960D0071ECE5 /* LoadMapsceneExample.h */,
 				A8B5F6A51FB9AAB00015888E /* CancelSearch.m */,
 				A8B5F6A71FB9AACB0015888E /* CancelSearch.h */,
 				BB6B6D791FD96A2F0070E78F /* FindOutdoorRoute.m */,
@@ -641,6 +652,7 @@
 				E04885971F39CC3D0031D631 /* AddPolylineIndoors.m in Sources */,
 				E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */,
 				D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */,
+				6F47C7621FD596370071ECE5 /* LoadMapsceneExample.m in Sources */,
 				D07F7C241F30CA6600956ACE /* BlueSphereChangeLocation.m in Sources */,
 				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
 				E0DEEA471ED32D9000B6BD9A /* MapTappedNotification.m in Sources */,

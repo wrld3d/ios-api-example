@@ -215,6 +215,12 @@
 "SampleDescription_CancelSearch" = "Cancel an ongoing search before it completes";
 
 /* No comment provided by engineer. */
+"SampleTitle_LoadMapsceneExample" = "Load a Mapscene";
+
+/* No comment provided by engineer. */
+"SampleDescription_LoadMapsceneExample" = "Use the Mapscene service to load and apply a mapscene";
+
+/* No comment provided by engineer. */
 "SampleTitle_FindOutdoorRoute" = "Find an outdoor route";
 
 /* No comment provided by engineer. */
