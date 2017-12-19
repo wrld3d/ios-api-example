@@ -20,8 +20,8 @@
     _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _mapView.delegate = self;
     
-    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.782084, -122.404578)
-                        zoomLevel:15
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.781871, -122.404812)
+                        zoomLevel:16
                          animated:NO];
     
     _exitButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -43,17 +43,15 @@
     [self addObservers];
 }
 
-// wait until map finishes loading before moving camera
 - (void)mapViewDidFinishLoadingInitialMap:(WRLDMapView *)mapView
 {
-    WRLDMapCamera* camera = [WRLDMapCamera cameraLookingAtCenterCoordinateIndoors:CLLocationCoordinate2DMake(37.782332,  -122.404667)
-                                                                     fromDistance:500
-                                                                            pitch:30
-                                                                          heading:270
-                                                                        elevation:0
-                                                                    elevationMode:WRLDElevationModeHeightAboveGround
-                                                                      indoorMapId: @"intercontinental_hotel_8628"
-                                                                 indoorMapFloorId:2];
+    WRLDMapCamera* camera = [_mapView camera];
+    camera.centerCoordinate = CLLocationCoordinate2DMake(37.782332,  -122.404667);
+    camera.distance = 300;
+    camera.heading = 270;
+    camera.indoorMapId = @"intercontinental_hotel_8628";
+    camera.indoorMapFloorId = 2;
+    
     [_mapView setCamera:camera];
 }
 
