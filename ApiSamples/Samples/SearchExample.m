@@ -32,19 +32,19 @@
     m_failedSearches = 0;
 
     WRLDPoiService* wrldPoiService = [_mapView createPoiService];
-    
+
     WRLDTextSearchOptions* textSearchOptions = [[WRLDTextSearchOptions alloc] init];
     [textSearchOptions setQuery: @"free"];
     [textSearchOptions setCenter:  [_mapView centerCoordinate] ];
     [textSearchOptions setRadius: 1000.0];
     [textSearchOptions setNumber: 60];
     [wrldPoiService searchText: textSearchOptions];
-    
+
     WRLDTagSearchOptions* tagSearchOptions = [[WRLDTagSearchOptions alloc] init];
     [tagSearchOptions setQuery: @"coffee"];
     [tagSearchOptions setCenter:  [_mapView centerCoordinate] ];
     [wrldPoiService searchTag: tagSearchOptions];
-    
+
     WRLDAutocompleteOptions* autocompleteOptions = [[WRLDAutocompleteOptions alloc] init];
     [autocompleteOptions setQuery: @"auto"];
     [autocompleteOptions setCenter:  [_mapView centerCoordinate] ];
@@ -57,7 +57,7 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
 
     if([poiSearchResponse succeeded] && [[poiSearchResponse results] count] > 0)
     {
-    
+
         // Icon/Tag mapping, see:
         // https://github.com/wrld3d/wrld-icon-tools/blob/master/data/search_tags.json
         NSDictionary* iconKeyTagDict = @{
@@ -65,13 +65,23 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
             @"coffee" : @"coffee",
             @"general" : @"misc"
         };
-    
+
         for(WRLDPoiSearchResult *searchResult in [poiSearchResponse results])
         {
-            WRLDMarker* marker = [WRLDMarker markerAtCoordinate:[searchResult latLng]];
+            WRLDMarker* marker;
+
+            if ([searchResult indoor])
+            {
+                marker = [WRLDMarker markerAtCoordinate:[searchResult latLng] inIndoorMap:[searchResult indoorMapId] onFloor:[searchResult indoorMapFloorId]];
+            }
+            else
+            {
+                marker = [WRLDMarker markerAtCoordinate:[searchResult latLng]];
+            }
+
             marker.title = [searchResult title];
             marker.iconKey = @"misc";
-            
+
             for (id tag in [[searchResult tags] componentsSeparatedByString: @" "])
             {
                 if([iconKeyTagDict objectForKey: tag])
@@ -79,14 +89,14 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
                     marker.iconKey = iconKeyTagDict[tag];
                 }
             }
-            
+
             [_mapView addMarker:marker];
         }
     }
     else
     {
         m_failedSearches++;
-        
+
         if(m_failedSearches >= 3)
         {
             [SamplesMessage showWithMessage:@"No POIs found; Visit https://mapdesigner.wrld3d.com/poi/latest/ to create some POIs." andDuration:[[NSNumber alloc] initWithInt: 8]];
