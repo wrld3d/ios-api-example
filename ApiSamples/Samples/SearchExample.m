@@ -63,7 +63,7 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
         NSDictionary* iconKeyTagDict = @{
             @"park" : @"park",
             @"coffee" : @"coffee",
-            @"general" : @"misc"
+            @"general" : @"general"
         };
 
         for(WRLDPoiSearchResult *searchResult in [poiSearchResponse results])
@@ -80,7 +80,7 @@ poiSearchResponse: (WRLDPoiSearchResponse*) poiSearchResponse
             }
 
             marker.title = [searchResult title];
-            marker.iconKey = @"misc";
+            marker.iconKey = @"pin";
 
             for (id tag in [[searchResult tags] componentsSeparatedByString: @" "])
             {
