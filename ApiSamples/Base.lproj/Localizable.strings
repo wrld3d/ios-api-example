@@ -116,7 +116,7 @@
 "SampleTitle_MarkerChangeLocation" = "Change the location of a marker";
 
 /* No comment provided by engineer. */
-"SampleDescription_MarkerChangeLocation" = "Adjust the location of a marker after it has been created";
+"SampleDescription_MarkerChangeLocation" = "Alter the location of a marker after adding to the map";
 
 /* No comment provided by engineer. */
 "SampleTitle_MarkerTappedNotification" = "Select a marker";
