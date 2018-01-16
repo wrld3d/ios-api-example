@@ -33,8 +33,6 @@
 		D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429431EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m */; };
 		D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429451EDEFCE800F5AEEE /* PolygonWithElevation.m */; };
 		D07F7C241F30CA6600956ACE /* BlueSphereChangeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D07F7C231F30CA6600956ACE /* BlueSphereChangeLocation.m */; };
-		D0959EA11FE2AAAC0023E444 /* MoveCameraToIndoor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0959EA01FE2AAAC0023E444 /* MoveCameraToIndoor.m */; };
-		D0959EA51FE2B61B0023E444 /* AnimateCameraToIndoor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
@@ -149,10 +147,6 @@
 		D04429471EDEFD0400F5AEEE /* PolygonWithElevation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonWithElevation.h; sourceTree = "<group>"; };
 		D07F7C231F30CA6600956ACE /* BlueSphereChangeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeLocation.m; sourceTree = "<group>"; };
 		D07F7C251F30CC1100956ACE /* BlueSphereChangeLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeLocation.h; sourceTree = "<group>"; };
-		D0959EA01FE2AAAC0023E444 /* MoveCameraToIndoor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveCameraToIndoor.m; sourceTree = "<group>"; };
-		D0959EA21FE2AAC70023E444 /* MoveCameraToIndoor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveCameraToIndoor.h; sourceTree = "<group>"; };
-		D0959EA31FE2B6040023E444 /* AnimateCameraToIndoor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateCameraToIndoor.h; sourceTree = "<group>"; };
-		D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateCameraToIndoor.m; sourceTree = "<group>"; };
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
@@ -424,10 +418,6 @@
 				BB6B6D801FDA50300070E78F /* FindMultipartRoute.h */,
 				BB6B6D811FDA54110070E78F /* CancelRoutingQuery.m */,
 				BB6B6D831FDA54970070E78F /* CancelRoutingQuery.h */,
-				D0959EA01FE2AAAC0023E444 /* MoveCameraToIndoor.m */,
-				D0959EA21FE2AAC70023E444 /* MoveCameraToIndoor.h */,
-				D0959EA31FE2B6040023E444 /* AnimateCameraToIndoor.h */,
-				D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -683,8 +673,6 @@
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */,
-				D0959EA51FE2B61B0023E444 /* AnimateCameraToIndoor.m in Sources */,
-				D0959EA11FE2AAAC0023E444 /* MoveCameraToIndoor.m in Sources */,
 				A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */,
 				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
