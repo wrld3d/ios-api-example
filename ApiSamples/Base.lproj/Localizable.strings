@@ -231,3 +231,9 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_CancelRoutingQuery" = "Cancel a routing service query before it completes";
+
+/* No comment provided by engineer. */
+"SampleTitle_SearchWidget" = "Adding a search widget";
+
+/* No comment provided by engineer. */
+"SampleDescription_SearchWidget" = "Add a search widget to the UI";

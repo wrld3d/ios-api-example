@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = 093BFBDA1EEEC56C00A727B3 /* AddPolygonIndoors.m */; };
+		269940F72010CA8D0099E34A /* SearchWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 269940F52010CA8D0099E34A /* SearchWidget.m */; };
+		269940FC2010D5130099E34A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A5252F1EB73A7600504831 /* Info.plist */; };
 		2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C27ECFE1EC220FF00A9E677 /* AddIndoorControl.m */; };
 		521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C11EC09F3E0070ACDD /* AddMarker.m */; };
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
@@ -97,6 +99,8 @@
 		093BFBD91EEEC56C00A727B3 /* AddPolygonIndoors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPolygonIndoors.h; sourceTree = "<group>"; };
 		093BFBDA1EEEC56C00A727B3 /* AddPolygonIndoors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolygonIndoors.m; sourceTree = "<group>"; };
 		2421BE34EEAE71A620738985 /* Pods-ApiSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiSamples/Pods-ApiSamples.debug.xcconfig"; sourceTree = "<group>"; };
+		269940F52010CA8D0099E34A /* SearchWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchWidget.m; sourceTree = "<group>"; };
+		269940F62010CA8D0099E34A /* SearchWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchWidget.h; sourceTree = "<group>"; };
 		2C27ECFD1EC220FF00A9E677 /* AddIndoorControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddIndoorControl.h; sourceTree = "<group>"; };
 		2C27ECFE1EC220FF00A9E677 /* AddIndoorControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddIndoorControl.m; sourceTree = "<group>"; };
 		2C77593C15EA7D89AD77295F /* Pods_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +240,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269940F42010CA160099E34A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				6F47C7641FD59B2E0071ECE5 /* Wrld.framework */,
+				6F47C7661FD59B330071ECE5 /* WrldWidgets.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		E01489C51EB73A23002B60DC = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +257,7 @@
 				E01489CF1EB73A23002B60DC /* Products */,
 				E0A525511EB73BAA00504831 /* Frameworks */,
 				E07D4BECC8A6548E9EADBFBB /* Pods */,
+				269940F42010CA160099E34A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,6 +350,8 @@
 		E0A525331EB73A7600504831 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				269940F62010CA8D0099E34A /* SearchWidget.h */,
+				269940F52010CA8D0099E34A /* SearchWidget.m */,
 				A88643B01FA1FC3D001D65A0 /* PositionViewOnMap.h */,
 				A88643AF1FA1FC3D001D65A0 /* PositionViewOnMap.m */,
 				E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */,
@@ -524,6 +540,7 @@
 				E0A5253B1EB73A7600504831 /* Assets.xcassets in Resources */,
 				E0A48C431EBC81C500DD387F /* Main.storyboard in Resources */,
 				E0A48C421EBC81C500DD387F /* Localizable.strings in Resources */,
+				269940FC2010D5130099E34A /* Info.plist in Resources */,
 				A815479B1FA768100050F21E /* PositionerCallout.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,6 +714,7 @@
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */,
+				269940F72010CA8D0099E34A /* SearchWidget.m in Sources */,
 				A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */,
 				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,

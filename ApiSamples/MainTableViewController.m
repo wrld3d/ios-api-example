@@ -16,6 +16,7 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
     [super viewDidLoad];
     
     self.samples = @[
+        [SampleInfo infoForSample:[SearchWidget class]],
         [SampleInfo infoForSample:[ViewController class]],
         [SampleInfo infoForSample:[MoveCamera class]],
         [SampleInfo infoForSample:[AnimateCamera class]],

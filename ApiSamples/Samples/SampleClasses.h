@@ -40,3 +40,4 @@
 #import "FindIndoorRoute.h"
 #import "FindMultipartRoute.h"
 #import "CancelRoutingQuery.h"
+#import "SearchWidget.h"
