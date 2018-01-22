@@ -6,7 +6,7 @@
 
 @implementation SearchWidget
 {
-    WRLDSearchModule *m_searchModule;
+    WRLDSearchWidgetViewController *m_searchWidgetViewController;
     WRLDSearchWidgetView *m_searchWidgetView;
 }
 
@@ -21,11 +21,11 @@
                         animated:NO];
     [self.view addSubview:mapView];
     
-    m_searchModule = [[WRLDSearchModule alloc] init];
+    m_searchWidgetViewController = [[WRLDSearchWidgetViewController alloc] init];
     
     m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 300, 500)];
-    [m_searchWidgetView setSearchModule:m_searchModule];
-    [m_searchWidgetView setMapView:mapView];
+    //[m_searchWidgetView setSearchModule:m_searchWidgetViewController];
+    //[m_searchWidgetView setMapView:mapView];
     [self.view addSubview:m_searchWidgetView];
 }
 
