@@ -231,3 +231,21 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_CancelRoutingQuery" = "Cancel a routing service query before it completes";
+
+/* No comment provided by engineer. */
+"SampleTitle_RouteView" = "Display a route";
+
+/* No comment provided by engineer. */
+"SampleDescription_RouteView" = "Display routes on the map using the RouteView widget";
+
+/* No comment provided by engineer. */
+"SampleTitle_RouteViewStyle" = "Change the style of a route view";
+
+/* No comment provided by engineer. */
+"SampleDescription_RouteViewStyle" = "Change the color and width of a route view dynamically";
+
+/* No comment provided by engineer. */
+"SampleTitle_RouteViewMarkers" = "Draw markers along a Route";
+
+/* No comment provided by engineer. */
+"SampleDescription_RouteViewMarkers" = "Add markers to the map for each step of the route";
