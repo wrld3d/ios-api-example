@@ -26,6 +26,9 @@
 		BB6B6D7C1FD972280070E78F /* FindIndoorRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D7B1FD972280070E78F /* FindIndoorRoute.m */; };
 		BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D7E1FDA4FFD0070E78F /* FindMultipartRoute.m */; };
 		BB6B6D821FDA54110070E78F /* CancelRoutingQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D811FDA54110070E78F /* CancelRoutingQuery.m */; };
+		BB6B6DC51FECD57C0070E78F /* AddBuildingHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DC41FECD57C0070E78F /* AddBuildingHighlight.m */; };
+		BB6B6DC81FECDA930070E78F /* RemoveBuildingHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DC71FECDA930070E78F /* RemoveBuildingHighlight.m */; };
+		BB6B6DCD1FECDF9C0070E78F /* QueryBuildingInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
 		D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B675A1F31D53800B164FB /* BlueSphereIndoors.m */; };
@@ -135,6 +138,12 @@
 		BB6B6D801FDA50300070E78F /* FindMultipartRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindMultipartRoute.h; sourceTree = "<group>"; };
 		BB6B6D811FDA54110070E78F /* CancelRoutingQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancelRoutingQuery.m; sourceTree = "<group>"; };
 		BB6B6D831FDA54970070E78F /* CancelRoutingQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancelRoutingQuery.h; sourceTree = "<group>"; };
+		BB6B6DC41FECD57C0070E78F /* AddBuildingHighlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddBuildingHighlight.m; sourceTree = "<group>"; };
+		BB6B6DC61FECD58B0070E78F /* AddBuildingHighlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddBuildingHighlight.h; sourceTree = "<group>"; };
+		BB6B6DC71FECDA930070E78F /* RemoveBuildingHighlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveBuildingHighlight.m; sourceTree = "<group>"; };
+		BB6B6DC91FECDA9F0070E78F /* RemoveBuildingHighlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveBuildingHighlight.h; sourceTree = "<group>"; };
+		BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryBuildingInformation.m; sourceTree = "<group>"; };
+		BB6B6DCE1FECDFAC0070E78F /* QueryBuildingInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryBuildingInformation.h; sourceTree = "<group>"; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeHeading.h; sourceTree = "<group>"; };
 		D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeHeading.m; sourceTree = "<group>"; };
@@ -427,6 +436,12 @@
 				BB6B6D801FDA50300070E78F /* FindMultipartRoute.h */,
 				BB6B6D811FDA54110070E78F /* CancelRoutingQuery.m */,
 				BB6B6D831FDA54970070E78F /* CancelRoutingQuery.h */,
+				BB6B6DC41FECD57C0070E78F /* AddBuildingHighlight.m */,
+				BB6B6DC61FECD58B0070E78F /* AddBuildingHighlight.h */,
+				BB6B6DC71FECDA930070E78F /* RemoveBuildingHighlight.m */,
+				BB6B6DC91FECDA9F0070E78F /* RemoveBuildingHighlight.h */,
+				BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */,
+				BB6B6DCE1FECDFAC0070E78F /* QueryBuildingInformation.h */,
 				D09B2CEE2008E0BC00162BCC /* RouteView.m */,
 				D09B2CED2008E0A600162BCC /* RouteView.h */,
 				D09B2D02200E243E00162BCC /* RouteViewMarkers.m */,
@@ -663,6 +678,7 @@
 				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
 				E0DEEA471ED32D9000B6BD9A /* MapTappedNotification.m in Sources */,
 				E0DEEA411ED316D000B6BD9A /* ExitIndoorMap.m in Sources */,
+				BB6B6DC81FECDA930070E78F /* RemoveBuildingHighlight.m in Sources */,
 				E0A525421EB73A7600504831 /* SamplesContainerViewController.m in Sources */,
 				521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */,
 				E0A48C091EBB927600DD387F /* InitialStreamingCompleteNotification.m in Sources */,
@@ -683,6 +699,7 @@
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
 				D09B2D01200E23F800162BCC /* RouteViewStyle.m in Sources */,
+				BB6B6DC51FECD57C0070E78F /* AddBuildingHighlight.m in Sources */,
 				A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */,
 				F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */,
 				A815479E1FA7747C0050F21E /* PositionerCallout.m in Sources */,
@@ -693,6 +710,7 @@
 				BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */,
 				A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */,
 				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,
+				BB6B6DCD1FECDF9C0070E78F /* QueryBuildingInformation.m in Sources */,
 				D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */,
 				A8B5F6A61FB9AAB00015888E /* CancelSearch.m in Sources */,
 				D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */,
