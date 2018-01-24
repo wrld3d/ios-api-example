@@ -35,6 +35,9 @@
 		D07F7C241F30CA6600956ACE /* BlueSphereChangeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D07F7C231F30CA6600956ACE /* BlueSphereChangeLocation.m */; };
 		D0959EA11FE2AAAC0023E444 /* MoveCameraToIndoor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0959EA01FE2AAAC0023E444 /* MoveCameraToIndoor.m */; };
 		D0959EA51FE2B61B0023E444 /* AnimateCameraToIndoor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */; };
+		D09B2CEF2008E0BC00162BCC /* RouteView.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B2CEE2008E0BC00162BCC /* RouteView.m */; };
+		D09B2D01200E23F800162BCC /* RouteViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B2D00200E23F800162BCC /* RouteViewStyle.m */; };
+		D09B2D03200E243E00162BCC /* RouteViewMarkers.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B2D02200E243E00162BCC /* RouteViewMarkers.m */; };
 		D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB6481EBB4A6F00384605 /* AppDelegate.m */; };
 		D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64A1EBB4BD400384605 /* SampleInfo.m */; };
 		D0AAB64E1EBB5C3F00384605 /* FrameCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AAB64D1EBB5C3F00384605 /* FrameCamera.m */; };
@@ -153,6 +156,12 @@
 		D0959EA21FE2AAC70023E444 /* MoveCameraToIndoor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveCameraToIndoor.h; sourceTree = "<group>"; };
 		D0959EA31FE2B6040023E444 /* AnimateCameraToIndoor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateCameraToIndoor.h; sourceTree = "<group>"; };
 		D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateCameraToIndoor.m; sourceTree = "<group>"; };
+		D09B2CED2008E0A600162BCC /* RouteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteView.h; sourceTree = "<group>"; };
+		D09B2CEE2008E0BC00162BCC /* RouteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteView.m; sourceTree = "<group>"; };
+		D09B2CFE200E23D600162BCC /* RouteViewMarkers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewMarkers.h; sourceTree = "<group>"; };
+		D09B2CFF200E23E600162BCC /* RouteViewStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewStyle.h; sourceTree = "<group>"; };
+		D09B2D00200E23F800162BCC /* RouteViewStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewStyle.m; sourceTree = "<group>"; };
+		D09B2D02200E243E00162BCC /* RouteViewMarkers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteViewMarkers.m; sourceTree = "<group>"; };
 		D0AAB6471EBB37C500384605 /* SampleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleInfo.h; sourceTree = "<group>"; };
 		D0AAB6481EBB4A6F00384605 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AAB64A1EBB4BD400384605 /* SampleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleInfo.m; sourceTree = "<group>"; };
@@ -428,6 +437,12 @@
 				D0959EA21FE2AAC70023E444 /* MoveCameraToIndoor.h */,
 				D0959EA31FE2B6040023E444 /* AnimateCameraToIndoor.h */,
 				D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */,
+				D09B2CEE2008E0BC00162BCC /* RouteView.m */,
+				D09B2CED2008E0A600162BCC /* RouteView.h */,
+				D09B2D02200E243E00162BCC /* RouteViewMarkers.m */,
+				D09B2CFE200E23D600162BCC /* RouteViewMarkers.h */,
+				D09B2D00200E23F800162BCC /* RouteViewStyle.m */,
+				D09B2CFF200E23E600162BCC /* RouteViewStyle.h */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -648,6 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09B2CEF2008E0BC00162BCC /* RouteView.m in Sources */,
 				D0AAB66C1EC1CF1500384605 /* MarkerChangeLocation.m in Sources */,
 				E04885971F39CC3D0031D631 /* AddPolylineIndoors.m in Sources */,
 				E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */,
@@ -676,12 +692,14 @@
 				A81ECBC91FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m in Sources */,
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
+				D09B2D01200E23F800162BCC /* RouteViewStyle.m in Sources */,
 				A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */,
 				F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */,
 				A815479E1FA7747C0050F21E /* PositionerCallout.m in Sources */,
 				093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */,
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
+				D09B2D03200E243E00162BCC /* RouteViewMarkers.m in Sources */,
 				BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */,
 				D0959EA51FE2B61B0023E444 /* AnimateCameraToIndoor.m in Sources */,
 				D0959EA11FE2AAAC0023E444 /* MoveCameraToIndoor.m in Sources */,

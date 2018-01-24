@@ -40,25 +40,6 @@
 {
     if (routingQueryResponse.succeeded && [[routingQueryResponse results] count] > 0)
     {
-        for (WRLDRoute* route in routingQueryResponse.results)
-        {
-            for (WRLDRouteSection* section in route.sections)
-            {
-                for (WRLDRouteStep* step in section.steps)
-                {
-                    if (step.pathCount < 2)
-                    {
-                        continue;
-                    }
-
-                    WRLDPolyline* polyline = [WRLDPolyline polylineWithCoordinates:step.path count:step.pathCount];
-                    polyline.color = [[UIColor redColor] colorWithAlphaComponent:0.5];
-
-                    [mapView addOverlay:polyline];
-                }
-            }
-        }
-
         [SamplesMessage showWithMessage:@"Found routes." andDuration:[[NSNumber alloc] initWithInt: 8]];
     }
     else

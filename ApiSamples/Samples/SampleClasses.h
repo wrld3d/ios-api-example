@@ -42,3 +42,6 @@
 #import "FindIndoorRoute.h"
 #import "FindMultipartRoute.h"
 #import "CancelRoutingQuery.h"
+#import "RouteView.h"
+#import "RouteViewStyle.h"
+#import "RouteViewMarkers.h"
