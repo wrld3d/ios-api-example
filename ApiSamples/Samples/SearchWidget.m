@@ -6,8 +6,8 @@
 
 @implementation SearchWidget
 {
-    WRLDSearchWidgetViewController *m_searchWidgetViewController;
     WRLDSearchWidgetView *m_searchWidgetView;
+    POIServiceSearchProvider *wrldPoiSearchProvider;
 }
 
 - (void)viewDidLoad
@@ -21,11 +21,21 @@
                         animated:NO];
     [self.view addSubview:mapView];
     
-    m_searchWidgetViewController = [[WRLDSearchWidgetViewController alloc] init];
-    
-    m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 300, 500)];
+    wrldPoiSearchProvider = [[POIServiceSearchProvider alloc] initWithMapViewAndPoiService: mapView poiService: [mapView createPoiService]];
+        
+    m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 375, 500)];
     //[m_searchWidgetView setSearchModule:m_searchWidgetViewController];
-    //[m_searchWidgetView setMapView:mapView];
+    [m_searchWidgetView addSearchProvider:wrldPoiSearchProvider];
+    
+    MockSearchProvider* mockProvider = [[MockSearchProvider alloc] init];
+    [m_searchWidgetView addSearchProvider:mockProvider];
+    
+    NSBundle* widgetsBundle = [NSBundle bundleForClass:[WRLDSearchWidgetView class]];
+    
+    UINib* yelpNib = [UINib nibWithNibName:@"YelpSearchResultCell" bundle:widgetsBundle];
+    
+    [m_searchWidgetView registerCellForResultsTable:@"YelpSearchResultCell" :yelpNib];
+    
     [self.view addSubview:m_searchWidgetView];
 }
 
