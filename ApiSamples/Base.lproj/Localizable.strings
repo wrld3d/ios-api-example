@@ -17,6 +17,18 @@
 "SampleDescription_AnimateCamera" = "Move the camera with animation";
 
 /* No comment provided by engineer. */
+"SampleTitle_MoveCameraToIndoor" = "Move the camera to an indoor map";
+
+/* No comment provided by engineer. */
+"SampleDescription_MoveCameraToIndoor" = "Move the camera to a point on an indoor map";
+
+/* No comment provided by engineer. */
+"SampleTitle_AnimateCameraToIndoor" = "Animate the camera to an indoor map";
+
+/* No comment provided by engineer. */
+"SampleDescription_AnimateCameraToIndoor" = "Move the map camera with animation to a point on an indoor map";
+
+/* No comment provided by engineer. */
 "SampleTitle_FrameCamera" = "Frame an area";
 
 /* No comment provided by engineer. */

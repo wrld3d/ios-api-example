@@ -36,6 +36,8 @@
 		D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429431EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m */; };
 		D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D04429451EDEFCE800F5AEEE /* PolygonWithElevation.m */; };
 		D07F7C241F30CA6600956ACE /* BlueSphereChangeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D07F7C231F30CA6600956ACE /* BlueSphereChangeLocation.m */; };
+		D0959EA11FE2AAAC0023E444 /* MoveCameraToIndoor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0959EA01FE2AAAC0023E444 /* MoveCameraToIndoor.m */; };
+		D0959EA51FE2B61B0023E444 /* AnimateCameraToIndoor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */; };
 		D09B2CEF2008E0BC00162BCC /* RouteView.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B2CEE2008E0BC00162BCC /* RouteView.m */; };
 		D09B2D01200E23F800162BCC /* RouteViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B2D00200E23F800162BCC /* RouteViewStyle.m */; };
 		D09B2D03200E243E00162BCC /* RouteViewMarkers.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B2D02200E243E00162BCC /* RouteViewMarkers.m */; };
@@ -159,6 +161,10 @@
 		D04429471EDEFD0400F5AEEE /* PolygonWithElevation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonWithElevation.h; sourceTree = "<group>"; };
 		D07F7C231F30CA6600956ACE /* BlueSphereChangeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeLocation.m; sourceTree = "<group>"; };
 		D07F7C251F30CC1100956ACE /* BlueSphereChangeLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeLocation.h; sourceTree = "<group>"; };
+		D0959EA01FE2AAAC0023E444 /* MoveCameraToIndoor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveCameraToIndoor.m; sourceTree = "<group>"; };
+		D0959EA21FE2AAC70023E444 /* MoveCameraToIndoor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveCameraToIndoor.h; sourceTree = "<group>"; };
+		D0959EA31FE2B6040023E444 /* AnimateCameraToIndoor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateCameraToIndoor.h; sourceTree = "<group>"; };
+		D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateCameraToIndoor.m; sourceTree = "<group>"; };
 		D09B2CED2008E0A600162BCC /* RouteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteView.h; sourceTree = "<group>"; };
 		D09B2CEE2008E0BC00162BCC /* RouteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteView.m; sourceTree = "<group>"; };
 		D09B2CFE200E23D600162BCC /* RouteViewMarkers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteViewMarkers.h; sourceTree = "<group>"; };
@@ -442,6 +448,10 @@
 				BB6B6DC91FECDA9F0070E78F /* RemoveBuildingHighlight.h */,
 				BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */,
 				BB6B6DCE1FECDFAC0070E78F /* QueryBuildingInformation.h */,
+				D0959EA01FE2AAAC0023E444 /* MoveCameraToIndoor.m */,
+				D0959EA21FE2AAC70023E444 /* MoveCameraToIndoor.h */,
+				D0959EA31FE2B6040023E444 /* AnimateCameraToIndoor.h */,
+				D0959EA41FE2B61B0023E444 /* AnimateCameraToIndoor.m */,
 				D09B2CEE2008E0BC00162BCC /* RouteView.m */,
 				D09B2CED2008E0A600162BCC /* RouteView.h */,
 				D09B2D02200E243E00162BCC /* RouteViewMarkers.m */,
@@ -708,6 +718,8 @@
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				D09B2D03200E243E00162BCC /* RouteViewMarkers.m in Sources */,
 				BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */,
+				D0959EA51FE2B61B0023E444 /* AnimateCameraToIndoor.m in Sources */,
+				D0959EA11FE2AAAC0023E444 /* MoveCameraToIndoor.m in Sources */,
 				A82B34751FB4AEE6009B21D3 /* SearchExample.m in Sources */,
 				D04429461EDEFCE800F5AEEE /* PolygonWithElevation.m in Sources */,
 				BB6B6DCD1FECDF9C0070E78F /* QueryBuildingInformation.m in Sources */,

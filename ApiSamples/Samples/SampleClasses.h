@@ -3,6 +3,8 @@
 #import "BasicMap.h"
 #import "MoveCamera.h"
 #import "AnimateCamera.h"
+#import "MoveCameraToIndoor.h"
+#import "AnimateCameraToIndoor.h"
 #import "FrameCamera.h"
 #import "QueryCamera.h"
 #import "MapTappedNotification.h"
