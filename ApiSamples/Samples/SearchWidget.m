@@ -22,8 +22,14 @@
     [self.view addSubview:mapView];
     
     wrldPoiSearchProvider = [[POIServiceSearchProvider alloc] initWithMapViewAndPoiService: mapView poiService: [mapView createPoiService]];
-        
-    m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 375, 500)];
+    
+    if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+    {
+        m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 375, 568)];
+    }
+    else{
+        m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake((self.view.bounds.size.width-375)/2.0f, 10, 375, 568)];
+    }
     //[m_searchWidgetView setSearchModule:m_searchWidgetViewController];
     [m_searchWidgetView addSearchProvider:wrldPoiSearchProvider];
     
