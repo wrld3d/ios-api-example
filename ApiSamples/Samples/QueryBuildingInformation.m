@@ -33,7 +33,8 @@
     [buildingHighlightOptions highlightBuildingAtLocation:CLLocationCoordinate2DMake(37.784079, -122.396762)];
     [buildingHighlightOptions informationOnly];
 
-    [_mapView addBuildingHighlight:buildingHighlightOptions];
+    WRLDBuildingHighlight* buildingHighlight = [WRLDBuildingHighlight highlightWithOptions:buildingHighlightOptions];
+    [_mapView addBuildingHighlight:buildingHighlight];
 }
 
 - (void)mapView:(WRLDMapView *)mapView didReceiveBuildingInformationForHighlight:(WRLDBuildingHighlight *)buildingHighlight
@@ -57,14 +58,10 @@
 
     for (WRLDBuildingContour* contour in buildingInformation.contours)
     {
-        CLLocationCoordinate2D coordinates[contour.pointCount+1];
+        CLLocationCoordinate2D* coordinates = malloc((contour.pointCount+1) * sizeof(CLLocationCoordinate2D));
 
-        for (int i=0; i<contour.pointCount; i++)
-        {
-            coordinates[i] = contour.points[i];
-        }
-
-        coordinates[contour.pointCount] = contour.points[0];
+        [contour getPoints:coordinates];
+        coordinates[contour.pointCount] = coordinates[0];
 
         WRLDPolyline* polyline = [WRLDPolyline polylineWithCoordinates:coordinates count:contour.pointCount+1];
         polyline.elevationMode = WRLDElevationModeHeightAboveSeaLevel;
@@ -72,6 +69,8 @@
         polyline.color = [UIColor blueColor];
 
         [_mapView addOverlay:polyline];
+
+        free(coordinates);
     }
 }
 

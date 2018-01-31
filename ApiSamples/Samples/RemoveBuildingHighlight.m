@@ -47,7 +47,8 @@
 
     if (buildingHighlight == nil)
     {
-        buildingHighlight = [_mapView addBuildingHighlight:buildingHighlightOptions];
+        buildingHighlight = [WRLDBuildingHighlight highlightWithOptions:buildingHighlightOptions];
+        [_mapView addBuildingHighlight:buildingHighlight];
     }
     else
     {

@@ -32,7 +32,8 @@
     [buildingHighlightOptions highlightBuildingAtLocation:CLLocationCoordinate2DMake(37.795189, -122.402777)];
     [buildingHighlightOptions setColor:[[UIColor yellowColor] colorWithAlphaComponent:0.5]];
 
-    [_mapView addBuildingHighlight:buildingHighlightOptions];
+    WRLDBuildingHighlight* buildingHighlight = [WRLDBuildingHighlight highlightWithOptions:buildingHighlightOptions];
+    [_mapView addBuildingHighlight:buildingHighlight];
 }
 
 @end
