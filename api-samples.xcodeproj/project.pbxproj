@@ -29,6 +29,8 @@
 		BB6B6DC51FECD57C0070E78F /* AddBuildingHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DC41FECD57C0070E78F /* AddBuildingHighlight.m */; };
 		BB6B6DC81FECDA930070E78F /* RemoveBuildingHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DC71FECDA930070E78F /* RemoveBuildingHighlight.m */; };
 		BB6B6DCD1FECDF9C0070E78F /* QueryBuildingInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */; };
+		BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */; };
+		BBFA4A382024317C00124AF1 /* PlaceObjectsOnBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
 		D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B675A1F31D53800B164FB /* BlueSphereIndoors.m */; };
@@ -146,6 +148,10 @@
 		BB6B6DC91FECDA9F0070E78F /* RemoveBuildingHighlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveBuildingHighlight.h; sourceTree = "<group>"; };
 		BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryBuildingInformation.m; sourceTree = "<group>"; };
 		BB6B6DCE1FECDFAC0070E78F /* QueryBuildingInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryBuildingInformation.h; sourceTree = "<group>"; };
+		BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickingBuildings.m; sourceTree = "<group>"; };
+		BBFA4A2F2022DD2B00124AF1 /* PickingBuildings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickingBuildings.h; sourceTree = "<group>"; };
+		BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceObjectsOnBuildings.m; sourceTree = "<group>"; };
+		BBFA4A392024318B00124AF1 /* PlaceObjectsOnBuildings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceObjectsOnBuildings.h; sourceTree = "<group>"; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeHeading.h; sourceTree = "<group>"; };
 		D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeHeading.m; sourceTree = "<group>"; };
@@ -458,6 +464,10 @@
 				D09B2CFE200E23D600162BCC /* RouteViewMarkers.h */,
 				D09B2D00200E23F800162BCC /* RouteViewStyle.m */,
 				D09B2CFF200E23E600162BCC /* RouteViewStyle.h */,
+				BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */,
+				BBFA4A2F2022DD2B00124AF1 /* PickingBuildings.h */,
+				BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */,
+				BBFA4A392024318B00124AF1 /* PlaceObjectsOnBuildings.h */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -694,6 +704,7 @@
 				E0A48C091EBB927600DD387F /* InitialStreamingCompleteNotification.m in Sources */,
 				D0AAB66F1EC1D19D00384605 /* MarkerCustomIcon.m in Sources */,
 				521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */,
+				BBFA4A382024317C00124AF1 /* PlaceObjectsOnBuildings.m in Sources */,
 				D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
@@ -705,6 +716,7 @@
 				D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */,
 				D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
+				BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */,
 				A81ECBC91FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m in Sources */,
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,

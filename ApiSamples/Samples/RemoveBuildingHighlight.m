@@ -30,8 +30,7 @@
     [self.view addSubview:_mapView];
 
     // create building highlight options
-    WRLDBuildingHighlightOptions* buildingHighlightOptions = [[WRLDBuildingHighlightOptions alloc] init];
-    [buildingHighlightOptions highlightBuildingAtLocation:CLLocationCoordinate2DMake(37.795189, -122.402777)];
+    WRLDBuildingHighlightOptions* buildingHighlightOptions = [WRLDBuildingHighlightOptions highlightOptionsWithLocation:CLLocationCoordinate2DMake(37.795189, -122.402777)];
     [buildingHighlightOptions setColor:[[UIColor yellowColor] colorWithAlphaComponent:0.5]];
 
     highlightTimer = [NSTimer scheduledTimerWithTimeInterval:2

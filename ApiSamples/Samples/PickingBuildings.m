@@ -1,0 +1,70 @@
+#import "PickingBuildings.h"
+#import "SamplesMessage.h"
+@import Wrld;
+
+@interface PickingBuildings() <WRLDMapViewDelegate>
+
+@property (nonatomic) WRLDMapView *mapView;
+
+@end
+
+@implementation PickingBuildings
+{
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
+
+    _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _mapView.delegate = self;
+
+    // set the center of the map and the zoom level
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.795189, -122.402777)
+                        zoomLevel:16
+                         animated:NO];
+
+    [self.view addSubview:_mapView];
+
+    UITapGestureRecognizer* tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    [self.view addGestureRecognizer:tapGestureRecognizer];
+}
+
+- (void)handleTapGesture:(UITapGestureRecognizer *)gestureRecognizer
+{
+    if (gestureRecognizer.state == UIGestureRecognizerStateRecognized)
+    {
+        CGPoint tappedPoint = [gestureRecognizer locationInView:gestureRecognizer.view];
+        WRLDPickResult* pickResult = [_mapView pickFeatureAtScreenPoint:tappedPoint];
+
+        NSString* message = [NSString stringWithFormat:@"Picked map feature: %@", WRLDMapFeatureTypeToString(pickResult.mapFeatureType)];
+        [SamplesMessage showWithMessage:message andDuration:[[NSNumber alloc] initWithInt: 3]];
+
+        if (pickResult.mapFeatureType == WRLDFeatureTypeBuilding)
+        {
+            WRLDBuildingHighlightOptions* buildingHighlightOptions = [WRLDBuildingHighlightOptions highlightOptionsWithScreenPoint:tappedPoint
+                                                                                                                  screenProperties:_mapView.screenProperties];
+            [buildingHighlightOptions setColor:[[UIColor yellowColor] colorWithAlphaComponent:0.5]];
+
+            WRLDBuildingHighlight* buildingHighlight = [WRLDBuildingHighlight highlightWithOptions:buildingHighlightOptions];
+            [_mapView addBuildingHighlight:buildingHighlight];
+
+            [NSTimer scheduledTimerWithTimeInterval:3
+                                             target:self
+                                           selector:@selector(removeHighlight:)
+                                           userInfo:buildingHighlight
+                                            repeats:NO];
+        }
+    }
+}
+
+- (void)removeHighlight:(NSTimer *)timer
+{
+    WRLDBuildingHighlight* buildingHighlight = timer.userInfo;
+    [_mapView removeBuildingHighlight:buildingHighlight];
+}
+
+@end
+

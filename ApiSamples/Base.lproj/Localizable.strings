@@ -279,3 +279,15 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_QueryBuildingInformation" = "Obtain information about a building at a location and place a marker above its centroid";
+
+/* No comment provided by engineer. */
+"SampleTitle_PlaceObjectsOnBuildings" = "Place objects on buildings";
+
+/* No comment provided by engineer. */
+"SampleDescription_PlaceObjectsOnBuildings" = "Query the altitude of a building in order to position a marker";
+
+/* No comment provided by engineer. */
+"SampleTitle_PickingBuildings" = "Picking buildings";
+
+/* No comment provided by engineer. */
+"SampleDescription_PickingBuildings" = "Highlight buildings by tapping on them";

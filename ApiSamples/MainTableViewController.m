@@ -62,7 +62,9 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[RouteViewMarkers class]],
         [SampleInfo infoForSample:[AddBuildingHighlight class]],
         [SampleInfo infoForSample:[RemoveBuildingHighlight class]],
-        [SampleInfo infoForSample:[QueryBuildingInformation class]]
+        [SampleInfo infoForSample:[QueryBuildingInformation class]],
+        [SampleInfo infoForSample:[PickingBuildings class]],
+        [SampleInfo infoForSample:[PlaceObjectsOnBuildings class]]
     ];
     
     self.title = @"WRLD iOS API Samples";
