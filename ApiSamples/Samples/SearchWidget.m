@@ -23,13 +23,18 @@
     
     wrldPoiSearchProvider = [[POIServiceSearchProvider alloc] initWithMapViewAndPoiService: mapView poiService: [mapView createPoiService]];
     
-    if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+    CGRect searchFrame = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ?
+        CGRectMake(10, 10, 375, 568) :
+        CGRectMake((self.view.bounds.size.width-375)/2.0f, 10, 375, 568);
+    
+    if(@available(iOS 10.0, *))
     {
-        m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake(10, 10, 375, 568)];
+        m_searchWidgetView = [[WRLDSearchWidgetViewWithSpeechRecognition alloc ] initWithFrame:searchFrame];
     }
     else{
-        m_searchWidgetView = [[WRLDSearchWidgetView alloc ] initWithFrame:CGRectMake((self.view.bounds.size.width-375)/2.0f, 10, 375, 568)];
+        m_searchWidgetView = [[WRLDSearchWidgetView alloc] initWithFrame:searchFrame];
     }
+    
     //[m_searchWidgetView setSearchModule:m_searchWidgetViewController];
     [m_searchWidgetView addSearchProvider:wrldPoiSearchProvider];
     
