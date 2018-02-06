@@ -57,7 +57,7 @@
 
     for (WRLDBuildingContour* contour in buildingInformation.contours)
     {
-        CLLocationCoordinate2D* coordinates = malloc((contour.pointCount+1) * sizeof(CLLocationCoordinate2D));
+        CLLocationCoordinate2D coordinates[contour.pointCount+1];
 
         [contour getPoints:coordinates];
         coordinates[contour.pointCount] = coordinates[0];
@@ -68,8 +68,6 @@
         polyline.color = [UIColor blueColor];
 
         [_mapView addOverlay:polyline];
-
-        free(coordinates);
     }
 }
 
