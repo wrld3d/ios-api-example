@@ -27,43 +27,37 @@
                          animated:NO];
 
     [self.view addSubview:_mapView];
-
-    UITapGestureRecognizer* tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
-    [self.view addGestureRecognizer:tapGestureRecognizer];
-}
-
-- (void)handleTapGesture:(UITapGestureRecognizer *)gestureRecognizer
-{
-    if (gestureRecognizer.state == UIGestureRecognizerStateRecognized)
-    {
-        CGPoint tappedPoint = [gestureRecognizer locationInView:gestureRecognizer.view];
-        WRLDPickResult* pickResult = [_mapView pickFeatureAtScreenPoint:tappedPoint];
-
-        NSString* message = [NSString stringWithFormat:@"Picked map feature: %@", WRLDMapFeatureTypeToString(pickResult.mapFeatureType)];
-        [SamplesMessage showWithMessage:message andDuration:[[NSNumber alloc] initWithInt: 3]];
-
-        if (pickResult.mapFeatureType == WRLDFeatureTypeBuilding)
-        {
-            WRLDBuildingHighlightOptions* buildingHighlightOptions = [WRLDBuildingHighlightOptions highlightOptionsWithScreenPoint:tappedPoint
-                                                                                                                  screenProperties:_mapView.screenProperties];
-            [buildingHighlightOptions setColor:[[UIColor yellowColor] colorWithAlphaComponent:0.5]];
-
-            WRLDBuildingHighlight* buildingHighlight = [WRLDBuildingHighlight highlightWithOptions:buildingHighlightOptions];
-            [_mapView addBuildingHighlight:buildingHighlight];
-
-            [NSTimer scheduledTimerWithTimeInterval:3
-                                             target:self
-                                           selector:@selector(removeHighlight:)
-                                           userInfo:buildingHighlight
-                                            repeats:NO];
-        }
-    }
 }
 
 - (void)removeHighlight:(NSTimer *)timer
 {
     WRLDBuildingHighlight* buildingHighlight = timer.userInfo;
     [_mapView removeBuildingHighlight:buildingHighlight];
+}
+
+#pragma mark - WRLDMapViewDelegate implementation
+
+- (void)mapView:(WRLDMapView *)mapView didTapView:(WRLDTouchTapInfo)tapInfo
+{
+    WRLDPickResult* pickResult = [_mapView pickFeatureAtScreenPoint:tapInfo.screenPoint];
+
+    NSString* message = [NSString stringWithFormat:@"Picked map feature: %@", WRLDMapFeatureTypeToString(pickResult.mapFeatureType)];
+    [SamplesMessage showWithMessage:message andDuration:[[NSNumber alloc] initWithInt: 3]];
+
+    if (pickResult.mapFeatureType == WRLDFeatureTypeBuilding)
+    {
+        WRLDBuildingHighlightOptions* buildingHighlightOptions = [WRLDBuildingHighlightOptions highlightOptionsWithScreenPoint:tapInfo.screenPoint];
+        [buildingHighlightOptions setColor:[[UIColor yellowColor] colorWithAlphaComponent:0.5]];
+
+        WRLDBuildingHighlight* buildingHighlight = [WRLDBuildingHighlight highlightWithOptions:buildingHighlightOptions];
+        [_mapView addBuildingHighlight:buildingHighlight];
+
+        [NSTimer scheduledTimerWithTimeInterval:3
+                                         target:self
+                                       selector:@selector(removeHighlight:)
+                                       userInfo:buildingHighlight
+                                        repeats:NO];
+    }
 }
 
 @end
