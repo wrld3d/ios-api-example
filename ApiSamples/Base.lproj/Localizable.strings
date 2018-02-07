@@ -261,3 +261,33 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_RouteViewMarkers" = "Add markers to the map for each step of the route";
+
+/* No comment provided by engineer. */
+"SampleTitle_AddBuildingHighlight" = "Add a building highlight";
+
+/* No comment provided by engineer. */
+"SampleDescription_AddBuildingHighlight" = "Add a highlight for a building";
+
+/* No comment provided by engineer. */
+"SampleTitle_RemoveBuildingHighlight" = "Remove a building highlight";
+
+/* No comment provided by engineer. */
+"SampleDescription_RemoveBuildingHighlight" = "Remove a building highlight that was previously added to the map";
+
+/* No comment provided by engineer. */
+"SampleTitle_QueryBuildingInformation" = "Query building information";
+
+/* No comment provided by engineer. */
+"SampleDescription_QueryBuildingInformation" = "Obtain information about a building at a location and place a marker above its centroid";
+
+/* No comment provided by engineer. */
+"SampleTitle_PlaceObjectsOnBuildings" = "Place objects on buildings";
+
+/* No comment provided by engineer. */
+"SampleDescription_PlaceObjectsOnBuildings" = "Query the altitude of a building in order to position a marker";
+
+/* No comment provided by engineer. */
+"SampleTitle_PickingBuildings" = "Picking buildings";
+
+/* No comment provided by engineer. */
+"SampleDescription_PickingBuildings" = "Highlight buildings by tapping on them";

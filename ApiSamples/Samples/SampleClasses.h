@@ -45,3 +45,8 @@
 #import "RouteView.h"
 #import "RouteViewStyle.h"
 #import "RouteViewMarkers.h"
+#import "AddBuildingHighlight.h"
+#import "RemoveBuildingHighlight.h"
+#import "QueryBuildingInformation.h"
+#import "PickingBuildings.h"
+#import "PlaceObjectsOnBuildings.h"
