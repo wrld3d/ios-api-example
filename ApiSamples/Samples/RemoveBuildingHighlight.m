@@ -28,11 +28,15 @@
                          animated:NO];
 
     [self.view addSubview:_mapView];
+}
 
+
+- (void)mapViewDidFinishLoadingInitialMap:(WRLDMapView *)mapView
+{
     // create building highlight options
     WRLDBuildingHighlightOptions* buildingHighlightOptions = [WRLDBuildingHighlightOptions highlightOptionsWithLocation:CLLocationCoordinate2DMake(37.795189, -122.402777)];
     [buildingHighlightOptions setColor:[[UIColor yellowColor] colorWithAlphaComponent:0.5]];
-
+    
     highlightTimer = [NSTimer scheduledTimerWithTimeInterval:2
                                                       target:self
                                                     selector:@selector(toggleBuildingHighlight:)

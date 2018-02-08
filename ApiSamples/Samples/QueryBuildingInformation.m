@@ -28,10 +28,15 @@
 
     [self.view addSubview:_mapView];
 
+
+}
+
+- (void)mapViewDidFinishLoadingInitialMap:(WRLDMapView *)mapView
+{
     // create building highlight options
     WRLDBuildingHighlightOptions* buildingHighlightOptions = [WRLDBuildingHighlightOptions highlightOptionsWithLocation:CLLocationCoordinate2DMake(37.784079, -122.396762)];
     [buildingHighlightOptions informationOnly];
-
+    
     WRLDBuildingHighlight* buildingHighlight = [WRLDBuildingHighlight highlightWithOptions:buildingHighlightOptions];
     [_mapView addBuildingHighlight:buildingHighlight];
 }
