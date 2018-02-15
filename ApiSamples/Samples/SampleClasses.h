@@ -50,3 +50,5 @@
 #import "QueryBuildingInformation.h"
 #import "PickingBuildings.h"
 #import "PlaceObjectsOnBuildings.h"
+#import "HighlightIndoorMapEntities.h"
+#import "QueryIndoorMapEntities.h"
