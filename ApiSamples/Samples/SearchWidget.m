@@ -3,6 +3,7 @@
 
 @import Wrld;
 @import WrldWidgets;
+@import WrldSearchWidget;
 
 @implementation SearchWidget
 
@@ -17,26 +18,29 @@
                         animated:NO];
     [self.view addSubview:mapView];
     
-    
     CGRect searchFrame = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ?
-        CGRectMake(10, 10, 375, 568) :
-        CGRectMake((self.view.bounds.size.width-375)/2.0f, 10, 375, 568);
+        CGRectMake(20, 20, 375, CGRectGetHeight(self.view.bounds) - 40) :
+        CGRectMake((self.view.bounds.size.width-375)/2.0f, 10, 375, CGRectGetHeight(self.view.bounds) - 20);
     
-    WRLDSearchWidgetViewController* searchWidgetViewController = [[WRLDSearchWidgetViewController alloc] initWithFrame:searchFrame];
+    WRLDSearchModel* searchModel = [[WRLDSearchModel alloc] init];
+    WRLDSearchWidgetViewController* searchWidgetViewController = [[WRLDSearchWidgetViewController alloc] initWithSearchModel:searchModel];
+    [self addChildViewController:searchWidgetViewController];
+    searchWidgetViewController.view.frame = searchFrame;
+    [self.view addSubview: searchWidgetViewController.view];
     
-//    POIServiceSearchProvider * wrldPoiSearchProvider = [[POIServiceSearchProvider alloc] initWithMapViewAndPoiService: mapView poiService: [mapView createPoiService]];
-//    [m_searchWidgetViewController addSearchProvider:wrldPoiSearchProvider];
-//
-//    MockSearchProvider* mockProvider = [[MockSearchProvider alloc] init];
-//    [m_searchWidgetViewController addSearchProvider:mockProvider];
-//
-//    NSBundle* widgetsBundle = [NSBundle bundleForClass:[WRLDSearchWidgetView class]];
-//
-//    UINib* yelpNib = [UINib nibWithNibName:@"YelpSearchResultCell" bundle:widgetsBundle];
-//
-//    [m_searchWidgetViewController registerCellForResultsTable:@"YelpSearchResultCell" :yelpNib];
+    WRLDMockSearchProvider *mockProvider = [[WRLDMockSearchProvider alloc] init];
+    WRLDSearchProviderHandle *mockSearchHandle = [searchModel addSearchProvider:mockProvider];
+    WRLDSuggestionProviderHandle *mockSuggestionHandle = [searchModel addSuggestionProvider:mockProvider];
+        
+    [searchWidgetViewController displaySearchProvider: mockSearchHandle];
+    [searchWidgetViewController displaySuggestionProvider: mockSuggestionHandle];
+        
+    WRLDPoiServiceSearchProvider * wrldPoiSearchProvider = [[WRLDPoiServiceSearchProvider alloc] initWithMapViewAndPoiService: mapView poiService: [mapView createPoiService]];
+    WRLDSearchProviderHandle *poiSearchHandle = [searchModel addSearchProvider:wrldPoiSearchProvider];
+    WRLDSuggestionProviderHandle *poiSuggestionHandle = [searchModel addSuggestionProvider:wrldPoiSearchProvider];
     
-    [self.view addSubview: searchWidgetViewController.rootView];
+    [searchWidgetViewController displaySearchProvider: poiSearchHandle];
+    [searchWidgetViewController displaySuggestionProvider: poiSuggestionHandle];
 }
 
 @end
