@@ -19,8 +19,8 @@
     [self.view addSubview:mapView];
     
     CGRect searchFrame = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ?
-        CGRectMake(20, 20, 375, CGRectGetHeight(self.view.bounds) - 40) :
-        CGRectMake((self.view.bounds.size.width-375)/2.0f, 10, 375, CGRectGetHeight(self.view.bounds) - 20);
+        CGRectMake(20, 20, 375, CGRectGetHeight(self.view.bounds) - 40) :   // ipad
+        CGRectMake(10, 10, CGRectGetWidth(self.view.bounds) - 20, CGRectGetHeight(self.view.bounds) - 20); // iphone
     
     WRLDSearchModel* searchModel = [[WRLDSearchModel alloc] init];
     WRLDSearchWidgetViewController* searchWidgetViewController = [[WRLDSearchWidgetViewController alloc] initWithSearchModel:searchModel];
