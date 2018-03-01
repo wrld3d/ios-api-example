@@ -4,7 +4,7 @@
 @interface HighlightIndoorMapEntities ()
 
 @property (nonatomic) WRLDMapView *mapView;
-@property (nonatomic) NSArray<UIButton *> *buttons;
+@property (nonatomic) UIButton *exitIndoorsButton;
 
 @end
 
@@ -24,13 +24,11 @@
 
     [self.view addSubview:_mapView];
 
-    NSMutableArray<UIButton *>* buttons = [NSMutableArray array];
-
-    [[self addButton: @"Go to floor" withIndex: 0 andSelector: @selector(goToFloor)] setEnabled:YES];
-    [buttons addObject: [self addButton: @"Highlight entities" withIndex: 1 andSelector: @selector(highlightEntities)]];
-    [buttons addObject: [self addButton: @"Clear highlights" withIndex: 2 andSelector: @selector(clearEntityHighlights)]];
-
-    _buttons = buttons;
+    [self addButton: @"Go to floor" withIndex: 0 andSelector: @selector(goToFloor)];
+    [self addButton: @"Highlight entities" withIndex: 1 andSelector: @selector(highlightEntities)];
+    [self addButton: @"Clear highlights" withIndex: 2 andSelector: @selector(clearEntityHighlights)];
+    _exitIndoorsButton = [self addButton: @"Exit Interior" withIndex: 3 andSelector: @selector(exitIndoorMap)];
+    [_exitIndoorsButton setEnabled:NO];
 
     [self addObservers];
 }
@@ -72,7 +70,7 @@
     [button setFrame:CGRectMake(0.0, 44.0 + (height+spacing) * index, 125.0, height)];
     [button setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:button];
-    [button setEnabled:NO];
+    [button setEnabled:YES];
     return button;
 }
 
@@ -89,39 +87,38 @@
 
 - (void) highlightEntities
 {
-    NSString* indoorId = _mapView.activeIndoorMap.indoorId;
-    [_mapView setEntityHighlights:indoorId
-                     highlightIds:@[@"0007", @"Small Meeting Room"]
-                            color:[[UIColor redColor] colorWithAlphaComponent:0.5]];
+    NSString* indoorMapId = @"westport_house";
+    [_mapView setIndoorEntityHighlights:indoorMapId
+                        indoorEntityIds:@[@"0007", @"Small Meeting Room"]
+                                  color:[[UIColor redColor] colorWithAlphaComponent:0.5]];
 
-    [_mapView setEntityHighlights:indoorId
-                     highlightIds:@[@"0002", @"Meeting Room"]
-                            color:[[UIColor blueColor] colorWithAlphaComponent:0.5]];
+    [_mapView setIndoorEntityHighlights:indoorMapId
+                        indoorEntityIds:@[@"0002", @"Meeting Room"]
+                                  color:[[UIColor blueColor] colorWithAlphaComponent:0.5]];
 
-    [_mapView setEntityHighlights:indoorId
-                     highlightIds:@[@"0033"]
-                            color:[[UIColor greenColor] colorWithAlphaComponent:0.5]];
+    [_mapView setIndoorEntityHighlights:indoorMapId
+                        indoorEntityIds:@[@"0033"]
+                                  color:[[UIColor greenColor] colorWithAlphaComponent:0.5]];
 }
 
 - (void) clearEntityHighlights
 {
-    [_mapView clearAllEntityHighlights];
+    [_mapView clearAllIndoorEntityHighlights];
+}
+
+- (void) exitIndoorMap
+{
+    [_mapView exitIndoorMap];
 }
 
 - (void) didEnterIndoorMap
 {
-    for (UIButton *button in _buttons)
-    {
-        [button setEnabled:YES];
-    }
+    [_exitIndoorsButton setEnabled:YES];
 }
 
 - (void) didExitIndoorMap
 {
-    for (UIButton *button in _buttons)
-    {
-        [button setEnabled:NO];
-    }
+    [_exitIndoorsButton setEnabled:NO];
 }
 
 @end
