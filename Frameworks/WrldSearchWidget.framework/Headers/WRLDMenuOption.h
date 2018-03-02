@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString* text;
 
-@property (nonatomic, copy) NSObject* context;
+@property (nonatomic, copy) NSObject* _Nullable context;
 
 - (instancetype)initWithText:(NSString *)text
                      context:(nullable NSObject *)context;
@@ -22,8 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addChild:(WRLDMenuChild *)child;
 
 - (void)addChild:(NSString *)text
-            icon:(NSString *)icon
-         context:(NSObject *)context;
+            icon:(nullable NSString *)icon
+         context:(nullable NSObject *)context;
 
 @end
 
