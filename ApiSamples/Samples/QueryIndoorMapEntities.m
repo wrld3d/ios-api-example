@@ -119,11 +119,13 @@
 
 - (void)mapView:(WRLDMapView *)mapView didTapIndoorEntities:(WRLDIndoorEntityTapResult *)indoorEntityTapResult
 {
-    if (_mapView.activeIndoorMap != nil)
+    UIColor *color = [self colorForIndoorEntity:indoorEntityTapResult.indoorEntityIds[0]];
+    for(NSString *entityId in indoorEntityTapResult.indoorEntityIds)
     {
-        [mapView setIndoorEntityHighlights:indoorEntityTapResult.indoorMapId
-                           indoorEntityIds:indoorEntityTapResult.indoorEntityIds
-                                     color:[self colorForIndoorEntity:indoorEntityTapResult.indoorEntityIds[0]]];
+        WRLDIndoorEntityHighlight *indoorEntityHighlight = [WRLDIndoorEntityHighlight indoorEntityHighlightWithId:entityId
+                                                                                                      indoorMapId:indoorEntityTapResult.indoorMapId
+                                                                                                            color:color];
+        [_mapView addIndoorEntityHighlight:indoorEntityHighlight];
     }
 }
 
