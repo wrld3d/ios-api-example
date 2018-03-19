@@ -85,33 +85,20 @@
     [_mapView setCamera:camera];
 }
 
-- (void) addIndoorEntityHighlightsForIds: (NSArray<NSString*>*) indoorEntityIds
-                             indoorMapId: (NSString*) indoorMapId
-                                   color: (UIColor*) color
-{
-    for (NSString* entityId in indoorEntityIds)
-    {
-        WRLDIndoorEntityHighlight* indoorEntityHighlight = [WRLDIndoorEntityHighlight indoorEntityHighlightWithId:entityId
-                                                                                                      indoorMapId:indoorMapId
-                                                                                                            color:color];
-        [_mapView addIndoorEntityHighlight:indoorEntityHighlight];
-    }
-}
-
 - (void) highlightEntities
 {
     NSString* indoorMapId = @"westport_house";
-    [self addIndoorEntityHighlightsForIds:@[@"0007", @"Small Meeting Room"]
-                              indoorMapId:indoorMapId
-                                    color:[[UIColor redColor] colorWithAlphaComponent:0.5]];
-    
-    [self addIndoorEntityHighlightsForIds:@[@"0002", @"Meeting Room"]
-                              indoorMapId:indoorMapId
-                                    color:[[UIColor blueColor] colorWithAlphaComponent:0.5]];
-    
-    [self addIndoorEntityHighlightsForIds:@[@"0033"]
-                              indoorMapId:indoorMapId
-                                    color:[[UIColor greenColor] colorWithAlphaComponent:0.5]];
+    [_mapView setIndoorEntityHighlights:indoorMapId
+                        indoorEntityIds:@[@"0007", @"Small Meeting Room"]
+                                  color:[[UIColor redColor] colorWithAlphaComponent:0.5]];
+
+    [_mapView setIndoorEntityHighlights:indoorMapId
+                        indoorEntityIds:@[@"0002", @"Meeting Room"]
+                                  color:[[UIColor blueColor] colorWithAlphaComponent:0.5]];
+
+    [_mapView setIndoorEntityHighlights:indoorMapId
+                        indoorEntityIds:@[@"0033"]
+                                  color:[[UIColor greenColor] colorWithAlphaComponent:0.5]];
 }
 
 - (void) clearEntityHighlights
