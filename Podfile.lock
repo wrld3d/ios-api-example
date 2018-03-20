@@ -1,16 +1,16 @@
 PODS:
-  - WRLD (0.0.679)
+  - WRLD (0.0.734)
 
 DEPENDENCIES:
-  - WRLD (from `https://github.com/wrld3d/ios-api/releases/download/v0.0.679/WRLD.podspec`)
+  - WRLD (from `https://github.com/wrld3d/ios-api/releases/download/v0.0.734/WRLD.podspec`)
 
 EXTERNAL SOURCES:
   WRLD:
-    :podspec: https://github.com/wrld3d/ios-api/releases/download/v0.0.679/WRLD.podspec
+    :podspec: https://github.com/wrld3d/ios-api/releases/download/v0.0.734/WRLD.podspec
 
 SPEC CHECKSUMS:
-  WRLD: e67e4add210dd8959a94dee08582248b510f64a7
+  WRLD: ed7bd98bd519cb8ffcc146a9d5321d37031c2ef9
 
-PODFILE CHECKSUM: c6a689210d0bfd38284011b116e48c9c1789da71
+PODFILE CHECKSUM: 50a500b6f6e1b5be1e08ec654ffc6347a868f5e2
 
 COCOAPODS: 1.3.1
