@@ -2,7 +2,7 @@ platform :ios, "8.0"
 
 use_frameworks!
 
-WRLDPodspecUrl='https://github.com/wrld3d/ios-api/releases/download/v0.0.734/WRLD.podspec'
+WRLDPodspecUrl='https://github.com/wrld3d/ios-api/releases/download/v0.0.736/WRLD.podspec'
 
 
 target 'ApiSamples' do
