@@ -44,9 +44,17 @@
         marker = nil;
     }
     
-    marker = [WRLDMarker markerAtCoordinate:coordinateWithAltitude.coordinate];
-    marker.elevationMode = WRLDElevationModeHeightAboveSeaLevel;
-    marker.elevation = coordinateWithAltitude.altitude;
+    if ([mapView isIndoors])
+    {
+        marker = [WRLDMarker markerAtCoordinate:coordinateWithAltitude.coordinate
+                                    inIndoorMap:[[mapView activeIndoorMap] indoorId]
+                                        onFloor:[mapView currentFloorIndex]];
+    }
+    else
+    {
+        marker = [WRLDMarker markerAtCoordinate:coordinateWithAltitude.coordinate];
+    }
+    
     [_mapView addMarker:marker];
 }
 
