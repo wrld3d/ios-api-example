@@ -82,6 +82,8 @@ typedef NS_ENUM(NSInteger, MenuOptionType)
     [searchWidgetViewController displaySearchProvider: poiSearchHandle];
     [searchWidgetViewController displaySuggestionProvider: poiSuggestionHandle];
     
+    [searchWidgetViewController enableVoiceSearch:@"Say something!"];
+    
     menuModel.title = @"Menu";
     
     WRLDMenuGroup* groupA = [[WRLDMenuGroup alloc] initWithTitle:@"Show me the closest..."];
@@ -117,7 +119,7 @@ typedef NS_ENUM(NSInteger, MenuOptionType)
     [menuModel addMenuGroup:groupB];
     [menuModel addMenuGroup:groupC];
     
-    [searchWidgetViewController.menuOptionSelectionObserver addOptionSelectedEvent:^(NSObject* context)
+    [searchWidgetViewController.menuObserver addOptionSelectedEvent:^(NSObject* context)
      {
          MenuOptionContext* selectedOptionContext = (MenuOptionContext *)context;
          
