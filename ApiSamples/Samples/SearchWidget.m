@@ -63,24 +63,25 @@ typedef NS_ENUM(NSInteger, MenuOptionType)
     WRLDSearchMenuModel* menuModel = [[WRLDSearchMenuModel alloc] init];
     
     WRLDSearchModel* searchModel = [[WRLDSearchModel alloc] init];
-    WRLDSearchWidgetViewController* searchWidgetViewController = [[WRLDSearchWidgetViewController alloc] initWithSearchModel:searchModel menuModel:menuModel];
-    [self addChildViewController:searchWidgetViewController];
-    searchWidgetViewController.view.frame = searchFrame;
-    [self.view addSubview: searchWidgetViewController.view];
+    WRLDSearchWidgetView* searchWidgetView = [[WRLDSearchWidgetView alloc] initWithFrame:searchFrame];
+    [searchWidgetView useSearchModel: searchModel];
+    [searchWidgetView useMenuModel: menuModel];
+    
+    [self.view addSubview: searchWidgetView];
     
     WRLDMockSearchProvider *mockProvider = [[WRLDMockSearchProvider alloc] init];
     WRLDSearchProviderHandle *mockSearchHandle = [searchModel addSearchProvider:mockProvider];
     WRLDSuggestionProviderHandle *mockSuggestionHandle = [searchModel addSuggestionProvider:mockProvider];
     
-    [searchWidgetViewController displaySearchProvider: mockSearchHandle];
-    [searchWidgetViewController displaySuggestionProvider: mockSuggestionHandle];
+    [searchWidgetView displaySearchProvider: mockSearchHandle];
+    [searchWidgetView displaySuggestionProvider: mockSuggestionHandle];
     
     WRLDPoiServiceSearchProvider * wrldPoiSearchProvider = [[WRLDPoiServiceSearchProvider alloc] initWithMapViewAndPoiService: mapView poiService: [mapView createPoiService]];
     WRLDSearchProviderHandle *poiSearchHandle = [searchModel addSearchProvider:wrldPoiSearchProvider];
     WRLDSuggestionProviderHandle *poiSuggestionHandle = [searchModel addSuggestionProvider:wrldPoiSearchProvider];
     
-    [searchWidgetViewController displaySearchProvider: poiSearchHandle];
-    [searchWidgetViewController displaySuggestionProvider: poiSuggestionHandle];
+    [searchWidgetView displaySearchProvider: poiSearchHandle];
+    [searchWidgetView displaySuggestionProvider: poiSuggestionHandle];
     
     [searchWidgetViewController enableVoiceSearch:@"Say something!"];
     
@@ -119,7 +120,7 @@ typedef NS_ENUM(NSInteger, MenuOptionType)
     [menuModel addMenuGroup:groupB];
     [menuModel addMenuGroup:groupC];
     
-    [searchWidgetViewController.menuObserver addOptionSelectedEvent:^(NSObject* context)
+    [searchWidgetView.menuObserver addOptionSelectedEvent:^(NSObject* context)
      {
          MenuOptionContext* selectedOptionContext = (MenuOptionContext *)context;
          
