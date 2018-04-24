@@ -89,11 +89,11 @@
 {
     NSString* indoorMapId = @"westport_house";
     [_mapView setIndoorEntityHighlights:indoorMapId
-                        indoorEntityIds:@[@"0007", @"Small Meeting Room"]
+                        indoorEntityIds:@[@"0007", @"Meeting Room Small"]
                                   color:[[UIColor redColor] colorWithAlphaComponent:0.5]];
 
     [_mapView setIndoorEntityHighlights:indoorMapId
-                        indoorEntityIds:@[@"0002", @"Meeting Room"]
+                        indoorEntityIds:@[@"0002", @"Meeting Room Large"]
                                   color:[[UIColor blueColor] colorWithAlphaComponent:0.5]];
 
     [_mapView setIndoorEntityHighlights:indoorMapId
