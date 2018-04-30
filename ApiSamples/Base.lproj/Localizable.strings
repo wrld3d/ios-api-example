@@ -303,3 +303,9 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_QueryIndoorMapEntities" = "Click on the 'Go to floor' button to navigate indoors and click on the two meeting rooms or the desks to highlight them.";
+
+/* No comment provided by engineer. */
+"SampleTitle_PreloadMapData" = "Preloading map data";
+
+/* No comment provided by engineer. */
+"SampleDescription_PreloadMapData" = "Cache map data for future use";
