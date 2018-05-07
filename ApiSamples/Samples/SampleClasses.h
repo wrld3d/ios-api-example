@@ -52,4 +52,4 @@
 #import "PlaceObjectsOnBuildings.h"
 #import "HighlightIndoorMapEntities.h"
 #import "QueryIndoorMapEntities.h"
-#import "PreloadMapData.h"
+#import "PrecacheMapData.h"

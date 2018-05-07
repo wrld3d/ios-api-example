@@ -1,14 +1,14 @@
-#import "PreloadMapData.h"
+#import "PrecacheMapData.h"
 #import "SamplesMessage.h"
 @import Wrld;
 
-@interface PreloadMapData() <WRLDMapViewDelegate>
+@interface PrecacheMapData() <WRLDMapViewDelegate>
 
 @property (nonatomic) WRLDMapView *mapView;
 
 @end
 
-@implementation PreloadMapData
+@implementation PrecacheMapData
 {
  
 }
@@ -34,7 +34,7 @@
      {
          // A few seconds after starting the example, this message should appear when the
          // precaching has completed.
-         NSString* message = [NSString stringWithFormat:@"Precaching %s.", [result succeeded] ? "succeeded" : "failed"];
+         NSString* message = [NSString stringWithFormat:@"Precaching %s", [result succeeded] ? "complete" : "failed"];
          [SamplesMessage showWithMessage:message andDuration:[[NSNumber alloc] initWithInt: 6]];
      }];
 }
