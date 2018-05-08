@@ -53,3 +53,4 @@
 #import "HighlightIndoorMapEntities.h"
 #import "QueryIndoorMapEntities.h"
 #import "PrecacheMapData.h"
+#import "CancelPrecacheMapData.h"

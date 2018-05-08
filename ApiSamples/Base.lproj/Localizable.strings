@@ -309,3 +309,9 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_PrecacheMapData" = "Precache map data for future use";
+
+/* No comment provided by engineer. */
+"SampleTitle_CancelPrecacheMapData" = "Cancel precaching map data";
+
+/* No comment provided by engineer. */
+"SampleDescription_CancelPrecacheMapData" = "Cancel an operation to precache map data for future use";

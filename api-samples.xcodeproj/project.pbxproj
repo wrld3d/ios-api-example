@@ -13,6 +13,7 @@
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
 		65B6A4D420932FD800F17DEE /* PrecacheMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A4D320932FD800F17DEE /* PrecacheMapData.m */; };
+		65B6A4E620A1FDC900F17DEE /* CancelPrecacheMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */; };
 		6F47C7621FD596370071ECE5 /* LoadMapsceneExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F47C7611FD596370071ECE5 /* LoadMapsceneExample.m */; };
 		6F47C7631FD59B2E0071ECE5 /* Wrld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F47C7641FD59B2E0071ECE5 /* Wrld.framework */; };
 		6F47C7651FD59B330071ECE5 /* WrldWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F47C7661FD59B330071ECE5 /* WrldWidgets.framework */; };
@@ -122,6 +123,8 @@
 		521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerTappedNotification.m; sourceTree = "<group>"; };
 		65B6A4D220932FD800F17DEE /* PrecacheMapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrecacheMapData.h; sourceTree = "<group>"; };
 		65B6A4D320932FD800F17DEE /* PrecacheMapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrecacheMapData.m; sourceTree = "<group>"; };
+		65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelPrecacheMapData.m; sourceTree = "<group>"; };
+		65B6A4E520A1FDC900F17DEE /* CancelPrecacheMapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelPrecacheMapData.h; sourceTree = "<group>"; };
 		6F47C7601FD5960D0071ECE5 /* LoadMapsceneExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMapsceneExample.h; sourceTree = "<group>"; };
 		6F47C7611FD596370071ECE5 /* LoadMapsceneExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMapsceneExample.m; sourceTree = "<group>"; };
 		6F47C7641FD59B2E0071ECE5 /* Wrld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Wrld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -375,6 +378,8 @@
 		E0A525331EB73A7600504831 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				65B6A4E520A1FDC900F17DEE /* CancelPrecacheMapData.h */,
+				65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */,
 				65B6A4D220932FD800F17DEE /* PrecacheMapData.h */,
 				65B6A4D320932FD800F17DEE /* PrecacheMapData.m */,
 				A88643B01FA1FC3D001D65A0 /* PositionViewOnMap.h */,
@@ -734,6 +739,7 @@
 				D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
 				BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */,
+				65B6A4E620A1FDC900F17DEE /* CancelPrecacheMapData.m in Sources */,
 				A81ECBC91FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m in Sources */,
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,
 				D0AAB6691EC1C18000384605 /* MarkerChangeText.m in Sources */,
