@@ -303,3 +303,15 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_QueryIndoorMapEntities" = "Click on the 'Go to floor' button to navigate indoors and click on the two meeting rooms or the desks to highlight them.";
+
+/* No comment provided by engineer. */
+"SampleTitle_PrecacheMapData" = "Precaching map data";
+
+/* No comment provided by engineer. */
+"SampleDescription_PrecacheMapData" = "Precache map data for future use";
+
+/* No comment provided by engineer. */
+"SampleTitle_CancelPrecacheMapData" = "Cancel precaching map data";
+
+/* No comment provided by engineer. */
+"SampleDescription_CancelPrecacheMapData" = "Cancel an operation to precache map data for future use";
