@@ -8,6 +8,7 @@
 @property (nonatomic) WRLDMapView *mapView;
 @property (nonatomic) NSMutableArray *m_routeViews;
 @property (nonatomic) WRLDIndoorControlView *indoorControlView;
+@property (nonatomic) WRLDPointOnPathService *pointOnPathService;
 
 @end
 
@@ -39,6 +40,8 @@
     
     WRLDRoutingService* wrldRoutingService = [_mapView createRoutingService];
     
+    _pointOnPathService = [_mapView createPointOnPathService];
+    
     WRLDRoutingQueryOptions* wrldRoutingQueryOptions = [[WRLDRoutingQueryOptions alloc] init];
     [wrldRoutingQueryOptions addIndoorWaypoint:CLLocationCoordinate2DMake(56.461231653264029, -2.983122836389253) forIndoorFloor:2];
     [wrldRoutingQueryOptions addIndoorWaypoint:CLLocationCoordinate2DMake(56.4600344, -2.9783117) forIndoorFloor:2];
@@ -51,6 +54,11 @@
 {
     if (routingQueryResponse.succeeded && [[routingQueryResponse results] count] > 0)
     {
+        CLLocationCoordinate2D testCoordinate = CLLocationCoordinate2DMake(56.460469, -2.980330);
+        WRLDMarker* targetMarker = [WRLDMarker markerAtCoordinate:testCoordinate];
+        targetMarker.title = @"Target Marker";
+        [mapView addMarker:targetMarker];
+    
         for (WRLDRoute* route in routingQueryResponse.results)
         {
             WRLDRouteViewOptions* options = [[[WRLDRouteViewOptions alloc] init] color:[[UIColor redColor] colorWithAlphaComponent:0.5]];
@@ -68,6 +76,19 @@
                     }
                     [mapView addMarker:marker];
                 }
+            }
+            
+            WRLDPointOnRoute* pointOnRouteInfo = [_pointOnPathService getPointOnRoute:route point:testCoordinate];
+            
+            if(pointOnRouteInfo != nil)
+            {
+                WRLDMarker* pointOnRouteMarker = [WRLDMarker markerAtCoordinate:pointOnRouteInfo.resultPoint];
+                pointOnRouteMarker.title = [NSString stringWithFormat:@"R: %f, S: %f, St: %f", pointOnRouteInfo.fractionAlongRoute, pointOnRouteInfo.fractionAlongRouteSection, pointOnRouteInfo.fractionAlongRouteStep];
+                [mapView addMarker:pointOnRouteMarker];
+            }
+            else
+            {
+                [SamplesMessage showWithMessage:@"No viable closest-point on route found." andDuration:[[NSNumber alloc] initWithInt: 8]];
             }
         }
         
