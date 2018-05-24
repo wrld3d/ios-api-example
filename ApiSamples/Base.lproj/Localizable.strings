@@ -315,3 +315,9 @@
 
 /* No comment provided by engineer. */
 "SampleDescription_CancelPrecacheMapData" = "Cancel an operation to precache map data for future use";
+
+/* No comment provided by engineer. */
+"SampleTitle_SetThemeManifest" = "Change the theme manifest";
+
+/* No comment provided by engineer. */
+"SampleDescription_SetThemeManifest" = "Set an alternate display theme manifest";

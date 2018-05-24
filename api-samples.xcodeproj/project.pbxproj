@@ -35,6 +35,7 @@
 		BB6B6DCD1FECDF9C0070E78F /* QueryBuildingInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */; };
 		BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */; };
 		BBFA4A382024317C00124AF1 /* PlaceObjectsOnBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */; };
+		C85C475D20AD9F5100B5AA96 /* SetThemeManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
 		D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B675A1F31D53800B164FB /* BlueSphereIndoors.m */; };
@@ -164,6 +165,8 @@
 		BBFA4A2F2022DD2B00124AF1 /* PickingBuildings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickingBuildings.h; sourceTree = "<group>"; };
 		BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceObjectsOnBuildings.m; sourceTree = "<group>"; };
 		BBFA4A392024318B00124AF1 /* PlaceObjectsOnBuildings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceObjectsOnBuildings.h; sourceTree = "<group>"; };
+		C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetThemeManifest.m; sourceTree = "<group>"; };
+		C85C475E20AD9FA400B5AA96 /* SetThemeManifest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetThemeManifest.h; sourceTree = "<group>"; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeHeading.h; sourceTree = "<group>"; };
 		D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeHeading.m; sourceTree = "<group>"; };
@@ -488,6 +491,8 @@
 				BB3CEC312034310900AF5235 /* HighlightIndoorMapEntities.h */,
 				BB3CEC322034357400AF5235 /* QueryIndoorMapEntities.m */,
 				BB3CEC342034357F00AF5235 /* QueryIndoorMapEntities.h */,
+				C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */,
+				C85C475E20AD9FA400B5AA96 /* SetThemeManifest.h */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -769,6 +774,7 @@
 				BB6B6D821FDA54110070E78F /* CancelRoutingQuery.m in Sources */,
 				521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */,
 				E0A525411EB73A7600504831 /* MoveCamera.m in Sources */,
+				C85C475D20AD9F5100B5AA96 /* SetThemeManifest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
