@@ -66,7 +66,9 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[PickingBuildings class]],
         [SampleInfo infoForSample:[PlaceObjectsOnBuildings class]],
         [SampleInfo infoForSample:[HighlightIndoorMapEntities class]],
-        [SampleInfo infoForSample:[QueryIndoorMapEntities class]]
+        [SampleInfo infoForSample:[QueryIndoorMapEntities class]],
+        [SampleInfo infoForSample:[FindPointOnPath class]],
+        [SampleInfo infoForSample:[FindPointOnRoute class]]
     ];
     
     self.title = @"WRLD iOS API Samples";
