@@ -52,6 +52,8 @@
 #import "PlaceObjectsOnBuildings.h"
 #import "HighlightIndoorMapEntities.h"
 #import "QueryIndoorMapEntities.h"
+#import "FindPointOnPath.h"
+#import "FindPointOnRoute.h"
 #import "PrecacheMapData.h"
 #import "CancelPrecacheMapData.h"
 #import "SetThemeManifest.h"

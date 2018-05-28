@@ -305,6 +305,16 @@
 "SampleDescription_QueryIndoorMapEntities" = "Click on the 'Go to floor' button to navigate indoors and click on the two meeting rooms or the desks to highlight them.";
 
 /* No comment provided by engineer. */
+"SampleTitle_FindPointOnRoute" = "Find the closest point on a Route";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindPointOnRoute" = "Retrieve information about the closest point on a Route to a given input point.";
+
+/* No comment provided by engineer. */
+"SampleTitle_FindPointOnPath" = "Find the closest point on a Path";
+
+/* No comment provided by engineer. */
+"SampleDescription_FindPointOnPath" = "Retrieve information about the closest point on a Path to a given input point.";
 "SampleTitle_PrecacheMapData" = "Precaching map data";
 
 /* No comment provided by engineer. */

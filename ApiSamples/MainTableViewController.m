@@ -67,6 +67,8 @@ NSString *const SegueTableToSample = @"TableToSampleSegue";
         [SampleInfo infoForSample:[PlaceObjectsOnBuildings class]],
         [SampleInfo infoForSample:[HighlightIndoorMapEntities class]],
         [SampleInfo infoForSample:[QueryIndoorMapEntities class]],
+        [SampleInfo infoForSample:[FindPointOnPath class]],
+        [SampleInfo infoForSample:[FindPointOnRoute class]],
         [SampleInfo infoForSample:[PrecacheMapData class]],
         [SampleInfo infoForSample:[CancelPrecacheMapData class]],
         [SampleInfo infoForSample:[SetThemeManifest class]]

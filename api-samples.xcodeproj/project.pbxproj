@@ -35,6 +35,8 @@
 		BB6B6DCD1FECDF9C0070E78F /* QueryBuildingInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */; };
 		BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */; };
 		BBFA4A382024317C00124AF1 /* PlaceObjectsOnBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */; };
+		D00CD32020B4510D00A09252 /* FindPointOnRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CD31F20B4510D00A09252 /* FindPointOnRoute.m */; };
+		D00CD32420B46BFB00A09252 /* FindPointOnPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CD32320B46BFB00A09252 /* FindPointOnPath.m */; };
 		C85C475D20AD9F5100B5AA96 /* SetThemeManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
@@ -168,6 +170,10 @@
 		C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetThemeManifest.m; sourceTree = "<group>"; };
 		C85C475E20AD9FA400B5AA96 /* SetThemeManifest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetThemeManifest.h; sourceTree = "<group>"; };
 		CB3A753B09931F91CD5E3FBD /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		D00CD31F20B4510D00A09252 /* FindPointOnRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPointOnRoute.m; sourceTree = "<group>"; };
+		D00CD32120B4516900A09252 /* FindPointOnRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPointOnRoute.h; sourceTree = "<group>"; };
+		D00CD32220B46BE900A09252 /* FindPointOnPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPointOnPath.h; sourceTree = "<group>"; };
+		D00CD32320B46BFB00A09252 /* FindPointOnPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPointOnPath.m; sourceTree = "<group>"; };
 		D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSphereChangeHeading.h; sourceTree = "<group>"; };
 		D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeHeading.m; sourceTree = "<group>"; };
 		D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueSphereChangeElevation.m; sourceTree = "<group>"; };
@@ -491,6 +497,10 @@
 				BB3CEC312034310900AF5235 /* HighlightIndoorMapEntities.h */,
 				BB3CEC322034357400AF5235 /* QueryIndoorMapEntities.m */,
 				BB3CEC342034357F00AF5235 /* QueryIndoorMapEntities.h */,
+				D00CD31F20B4510D00A09252 /* FindPointOnRoute.m */,
+				D00CD32120B4516900A09252 /* FindPointOnRoute.h */,
+				D00CD32320B46BFB00A09252 /* FindPointOnPath.m */,
+				D00CD32220B46BE900A09252 /* FindPointOnPath.h */,
 				C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */,
 				C85C475E20AD9FA400B5AA96 /* SetThemeManifest.h */,
 			);
@@ -741,6 +751,7 @@
 				D04429411EDED5B500F5AEEE /* AddPolygon.m in Sources */,
 				BB3CEC30203430FE00AF5235 /* HighlightIndoorMapEntities.m in Sources */,
 				D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */,
+				D00CD32020B4510D00A09252 /* FindPointOnRoute.m in Sources */,
 				D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
 				BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */,
@@ -758,6 +769,7 @@
 				D0AAB6491EBB4A6F00384605 /* AppDelegate.m in Sources */,
 				D0AAB6771EC1FA3500384605 /* AddIndoorMarker.m in Sources */,
 				D09B2D03200E243E00162BCC /* RouteViewMarkers.m in Sources */,
+				D00CD32420B46BFB00A09252 /* FindPointOnPath.m in Sources */,
 				BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */,
 				D0959EA51FE2B61B0023E444 /* AnimateCameraToIndoor.m in Sources */,
 				D0959EA11FE2AAAC0023E444 /* MoveCameraToIndoor.m in Sources */,
