@@ -1,7 +1,7 @@
-#import "QueryIndoorMapEntities.h"
+#import "PickIndoorMapEntities.h"
 @import Wrld;
 
-@interface QueryIndoorMapEntities () <WRLDMapViewDelegate>
+@interface PickIndoorMapEntities () <WRLDMapViewDelegate>
 
 @property (nonatomic) WRLDMapView *mapView;
 @property (nonatomic) NSArray<UIColor*> *colors;
@@ -9,7 +9,7 @@
 @property (nonatomic) UIButton *exitIndoorsButton;
 @end
 
-@implementation QueryIndoorMapEntities
+@implementation PickIndoorMapEntities
 
 - (void)viewDidLoad
 {
