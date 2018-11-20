@@ -25,7 +25,7 @@
 		A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A88643AF1FA1FC3D001D65A0 /* PositionViewOnMap.m */; };
 		A8B5F6A61FB9AAB00015888E /* CancelSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B5F6A51FB9AAB00015888E /* CancelSearch.m */; };
 		BB3CEC30203430FE00AF5235 /* HighlightIndoorMapEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3CEC2F203430FE00AF5235 /* HighlightIndoorMapEntities.m */; };
-		BB3CEC332034357400AF5235 /* QueryIndoorMapEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3CEC322034357400AF5235 /* QueryIndoorMapEntities.m */; };
+		BB3CEC332034357400AF5235 /* PickIndoorMapEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3CEC322034357400AF5235 /* PickIndoorMapEntities.m */; };
 		BB6B6D7A1FD96A2F0070E78F /* FindOutdoorRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D791FD96A2F0070E78F /* FindOutdoorRoute.m */; };
 		BB6B6D7C1FD972280070E78F /* FindIndoorRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D7B1FD972280070E78F /* FindIndoorRoute.m */; };
 		BB6B6D7F1FDA4FFD0070E78F /* FindMultipartRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6D7E1FDA4FFD0070E78F /* FindMultipartRoute.m */; };
@@ -33,11 +33,11 @@
 		BB6B6DC51FECD57C0070E78F /* AddBuildingHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DC41FECD57C0070E78F /* AddBuildingHighlight.m */; };
 		BB6B6DC81FECDA930070E78F /* RemoveBuildingHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DC71FECDA930070E78F /* RemoveBuildingHighlight.m */; };
 		BB6B6DCD1FECDF9C0070E78F /* QueryBuildingInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */; };
-		BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */; };
+		BBFA4A2E2022DD1900124AF1 /* PickBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A2D2022DD1900124AF1 /* PickBuildings.m */; };
 		BBFA4A382024317C00124AF1 /* PlaceObjectsOnBuildings.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */; };
+		C85C475D20AD9F5100B5AA96 /* SetThemeManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */; };
 		D00CD32020B4510D00A09252 /* FindPointOnRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CD31F20B4510D00A09252 /* FindPointOnRoute.m */; };
 		D00CD32420B46BFB00A09252 /* FindPointOnPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CD32320B46BFB00A09252 /* FindPointOnPath.m */; };
-		C85C475D20AD9F5100B5AA96 /* SetThemeManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */; };
 		D01B67551F31CC5100B164FB /* BlueSphereChangeHeading.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67541F31CC5100B164FB /* BlueSphereChangeHeading.m */; };
 		D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B67561F31D2B900B164FB /* BlueSphereChangeElevation.m */; };
 		D01B675B1F31D53800B164FB /* BlueSphereIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = D01B675A1F31D53800B164FB /* BlueSphereIndoors.m */; };
@@ -69,6 +69,7 @@
 		E03E75FD1EBCC598004FBD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03E75FB1EBCC598004FBD8B /* LaunchScreen.storyboard */; };
 		E04885961F39CC3D0031D631 /* AddPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = E04885941F39CC3D0031D631 /* AddPolyline.m */; };
 		E04885971F39CC3D0031D631 /* AddPolylineIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = E04885951F39CC3D0031D631 /* AddPolylineIndoors.m */; };
+		E05C0A3D21A32E1500D78D80 /* QueryIndoorMapEntityInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C0A3B21A32E1400D78D80 /* QueryIndoorMapEntityInformation.m */; };
 		E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C051EBB8E7200DD387F /* SamplesMessage.m */; };
 		E0A48C091EBB927600DD387F /* InitialStreamingCompleteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C081EBB927600DD387F /* InitialStreamingCompleteNotification.m */; };
 		E0A48C0B1EBB95BF00DD387F /* BasicMap.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A48C0A1EBB95BF00DD387F /* BasicMap.m */; };
@@ -147,8 +148,8 @@
 		A8B5F6A71FB9AACB0015888E /* CancelSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancelSearch.h; sourceTree = "<group>"; };
 		BB3CEC2F203430FE00AF5235 /* HighlightIndoorMapEntities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighlightIndoorMapEntities.m; sourceTree = "<group>"; };
 		BB3CEC312034310900AF5235 /* HighlightIndoorMapEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighlightIndoorMapEntities.h; sourceTree = "<group>"; };
-		BB3CEC322034357400AF5235 /* QueryIndoorMapEntities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryIndoorMapEntities.m; sourceTree = "<group>"; };
-		BB3CEC342034357F00AF5235 /* QueryIndoorMapEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryIndoorMapEntities.h; sourceTree = "<group>"; };
+		BB3CEC322034357400AF5235 /* PickIndoorMapEntities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickIndoorMapEntities.m; sourceTree = "<group>"; };
+		BB3CEC342034357F00AF5235 /* PickIndoorMapEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickIndoorMapEntities.h; sourceTree = "<group>"; };
 		BB6B6D781FD96A050070E78F /* FindOutdoorRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindOutdoorRoute.h; sourceTree = "<group>"; };
 		BB6B6D791FD96A2F0070E78F /* FindOutdoorRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindOutdoorRoute.m; sourceTree = "<group>"; };
 		BB6B6D7B1FD972280070E78F /* FindIndoorRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindIndoorRoute.m; sourceTree = "<group>"; };
@@ -163,8 +164,8 @@
 		BB6B6DC91FECDA9F0070E78F /* RemoveBuildingHighlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveBuildingHighlight.h; sourceTree = "<group>"; };
 		BB6B6DCC1FECDF9C0070E78F /* QueryBuildingInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryBuildingInformation.m; sourceTree = "<group>"; };
 		BB6B6DCE1FECDFAC0070E78F /* QueryBuildingInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryBuildingInformation.h; sourceTree = "<group>"; };
-		BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickingBuildings.m; sourceTree = "<group>"; };
-		BBFA4A2F2022DD2B00124AF1 /* PickingBuildings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickingBuildings.h; sourceTree = "<group>"; };
+		BBFA4A2D2022DD1900124AF1 /* PickBuildings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickBuildings.m; sourceTree = "<group>"; };
+		BBFA4A2F2022DD2B00124AF1 /* PickBuildings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickBuildings.h; sourceTree = "<group>"; };
 		BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceObjectsOnBuildings.m; sourceTree = "<group>"; };
 		BBFA4A392024318B00124AF1 /* PlaceObjectsOnBuildings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceObjectsOnBuildings.h; sourceTree = "<group>"; };
 		C85C475C20AD9F5100B5AA96 /* SetThemeManifest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetThemeManifest.m; sourceTree = "<group>"; };
@@ -232,6 +233,8 @@
 		E04885931F39CC3D0031D631 /* AddPolylineIndoors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPolylineIndoors.h; sourceTree = "<group>"; };
 		E04885941F39CC3D0031D631 /* AddPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolyline.m; sourceTree = "<group>"; };
 		E04885951F39CC3D0031D631 /* AddPolylineIndoors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPolylineIndoors.m; sourceTree = "<group>"; };
+		E05C0A3B21A32E1400D78D80 /* QueryIndoorMapEntityInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryIndoorMapEntityInformation.m; sourceTree = "<group>"; };
+		E05C0A3C21A32E1500D78D80 /* QueryIndoorMapEntityInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryIndoorMapEntityInformation.h; sourceTree = "<group>"; };
 		E0A48C041EBB8E7200DD387F /* SamplesMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesMessage.h; sourceTree = "<group>"; };
 		E0A48C051EBB8E7200DD387F /* SamplesMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesMessage.m; sourceTree = "<group>"; };
 		E0A48C071EBB927600DD387F /* InitialStreamingCompleteNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialStreamingCompleteNotification.h; sourceTree = "<group>"; };
@@ -387,6 +390,8 @@
 		E0A525331EB73A7600504831 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				E05C0A3C21A32E1500D78D80 /* QueryIndoorMapEntityInformation.h */,
+				E05C0A3B21A32E1400D78D80 /* QueryIndoorMapEntityInformation.m */,
 				65B6A4E520A1FDC900F17DEE /* CancelPrecacheMapData.h */,
 				65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */,
 				65B6A4D220932FD800F17DEE /* PrecacheMapData.h */,
@@ -489,14 +494,14 @@
 				D09B2CFE200E23D600162BCC /* RouteViewMarkers.h */,
 				D09B2D00200E23F800162BCC /* RouteViewStyle.m */,
 				D09B2CFF200E23E600162BCC /* RouteViewStyle.h */,
-				BBFA4A2D2022DD1900124AF1 /* PickingBuildings.m */,
-				BBFA4A2F2022DD2B00124AF1 /* PickingBuildings.h */,
+				BBFA4A2D2022DD1900124AF1 /* PickBuildings.m */,
+				BBFA4A2F2022DD2B00124AF1 /* PickBuildings.h */,
 				BBFA4A372024317C00124AF1 /* PlaceObjectsOnBuildings.m */,
 				BBFA4A392024318B00124AF1 /* PlaceObjectsOnBuildings.h */,
 				BB3CEC2F203430FE00AF5235 /* HighlightIndoorMapEntities.m */,
 				BB3CEC312034310900AF5235 /* HighlightIndoorMapEntities.h */,
-				BB3CEC322034357400AF5235 /* QueryIndoorMapEntities.m */,
-				BB3CEC342034357F00AF5235 /* QueryIndoorMapEntities.h */,
+				BB3CEC322034357400AF5235 /* PickIndoorMapEntities.m */,
+				BB3CEC342034357F00AF5235 /* PickIndoorMapEntities.h */,
 				D00CD31F20B4510D00A09252 /* FindPointOnRoute.m */,
 				D00CD32120B4516900A09252 /* FindPointOnRoute.h */,
 				D00CD32320B46BFB00A09252 /* FindPointOnPath.m */,
@@ -730,6 +735,7 @@
 				D0AAB6721EC1E05400384605 /* MarkerWithAbsoluteAltitude.m in Sources */,
 				6F47C7621FD596370071ECE5 /* LoadMapsceneExample.m in Sources */,
 				D07F7C241F30CA6600956ACE /* BlueSphereChangeLocation.m in Sources */,
+				E05C0A3D21A32E1500D78D80 /* QueryIndoorMapEntityInformation.m in Sources */,
 				E0A48C061EBB8E7200DD387F /* SamplesMessage.m in Sources */,
 				E0DEEA471ED32D9000B6BD9A /* MapTappedNotification.m in Sources */,
 				E0DEEA411ED316D000B6BD9A /* ExitIndoorMap.m in Sources */,
@@ -742,7 +748,7 @@
 				BBFA4A382024317C00124AF1 /* PlaceObjectsOnBuildings.m in Sources */,
 				D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
-				BB3CEC332034357400AF5235 /* QueryIndoorMapEntities.m in Sources */,
+				BB3CEC332034357400AF5235 /* PickIndoorMapEntities.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				BB6B6D7A1FD96A2F0070E78F /* FindOutdoorRoute.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,
@@ -754,7 +760,7 @@
 				D00CD32020B4510D00A09252 /* FindPointOnRoute.m in Sources */,
 				D01B67571F31D2B900B164FB /* BlueSphereChangeElevation.m in Sources */,
 				2C27ECFF1EC220FF00A9E677 /* AddIndoorControl.m in Sources */,
-				BBFA4A2E2022DD1900124AF1 /* PickingBuildings.m in Sources */,
+				BBFA4A2E2022DD1900124AF1 /* PickBuildings.m in Sources */,
 				65B6A4E620A1FDC900F17DEE /* CancelPrecacheMapData.m in Sources */,
 				A81ECBC91FA7853C003CFF29 /* PositionCodeCreatedViewOnMap.m in Sources */,
 				E0DEEA3E1ED3155000B6BD9A /* IndoorMapDisplayName.m in Sources */,

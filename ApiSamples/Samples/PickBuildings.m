@@ -1,14 +1,14 @@
-#import "PickingBuildings.h"
+#import "PickBuildings.h"
 #import "SamplesMessage.h"
 @import Wrld;
 
-@interface PickingBuildings() <WRLDMapViewDelegate>
+@interface PickBuildings() <WRLDMapViewDelegate>
 
 @property (nonatomic) WRLDMapView *mapView;
 
 @end
 
-@implementation PickingBuildings
+@implementation PickBuildings
 {
 }
 
