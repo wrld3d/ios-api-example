@@ -203,6 +203,12 @@
 "SampleDescription_AddPolylineIndoors" = "Display a polyline inside a building";
 
 /* No comment provided by engineer. */
+"SampleTitle_AddPropIndoors" = "Add a prop to an indoor map";
+
+/* No comment provided by engineer. */
+"SampleDescription_AddPropIndoors" = "Display a prop inside a building";
+
+/* No comment provided by engineer. */
 "SampleTitle_SearchExample" = "Search for POIs";
 
 /* No comment provided by engineer. */

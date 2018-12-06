@@ -12,6 +12,7 @@
 		521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C11EC09F3E0070ACDD /* AddMarker.m */; };
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
+		650E369121B589B2003A5E73 /* AddPropIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = 650E368F21B589B2003A5E73 /* AddPropIndoors.m */; };
 		65B6A4D420932FD800F17DEE /* PrecacheMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A4D320932FD800F17DEE /* PrecacheMapData.m */; };
 		65B6A4E620A1FDC900F17DEE /* CancelPrecacheMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */; };
 		6F47C7621FD596370071ECE5 /* LoadMapsceneExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F47C7611FD596370071ECE5 /* LoadMapsceneExample.m */; };
@@ -125,6 +126,8 @@
 		521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerChangeDrawOrder.m; sourceTree = "<group>"; };
 		521807C71EC0B75B0070ACDD /* MarkerTappedNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerTappedNotification.h; sourceTree = "<group>"; };
 		521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerTappedNotification.m; sourceTree = "<group>"; };
+		650E368F21B589B2003A5E73 /* AddPropIndoors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPropIndoors.m; sourceTree = "<group>"; };
+		650E369021B589B2003A5E73 /* AddPropIndoors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPropIndoors.h; sourceTree = "<group>"; };
 		65B6A4D220932FD800F17DEE /* PrecacheMapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrecacheMapData.h; sourceTree = "<group>"; };
 		65B6A4D320932FD800F17DEE /* PrecacheMapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrecacheMapData.m; sourceTree = "<group>"; };
 		65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelPrecacheMapData.m; sourceTree = "<group>"; };
@@ -392,6 +395,8 @@
 			children = (
 				E05C0A3C21A32E1500D78D80 /* QueryIndoorMapEntityInformation.h */,
 				E05C0A3B21A32E1400D78D80 /* QueryIndoorMapEntityInformation.m */,
+				650E369021B589B2003A5E73 /* AddPropIndoors.h */,
+				650E368F21B589B2003A5E73 /* AddPropIndoors.m */,
 				65B6A4E520A1FDC900F17DEE /* CancelPrecacheMapData.h */,
 				65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */,
 				65B6A4D220932FD800F17DEE /* PrecacheMapData.h */,
@@ -769,6 +774,7 @@
 				D09B2D01200E23F800162BCC /* RouteViewStyle.m in Sources */,
 				BB6B6DC51FECD57C0070E78F /* AddBuildingHighlight.m in Sources */,
 				A88643B11FA1FC3D001D65A0 /* PositionViewOnMap.m in Sources */,
+				650E369121B589B2003A5E73 /* AddPropIndoors.m in Sources */,
 				F3FFE6B51EC4AB6100E3057B /* SamplesNavigationController.m in Sources */,
 				A815479E1FA7747C0050F21E /* PositionerCallout.m in Sources */,
 				093BFBDB1EEEC56C00A727B3 /* AddPolygonIndoors.m in Sources */,

@@ -35,6 +35,7 @@
 #import "BlueSphereIndoors.h"
 #import "AddPolyline.h"
 #import "AddPolylineIndoors.h"
+#import "AddPropIndoors.h"
 #import "SearchExample.h"
 #import "CancelSearch.h"
 #import "LoadMapsceneExample.h"
