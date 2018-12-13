@@ -20,7 +20,7 @@
     
     _mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.782084, -122.404578)
+    [_mapView setCenterCoordinate:CLLocationCoordinate2DMake(37.782080, -122.404575)
                         zoomLevel:17
                          animated:NO];
     
@@ -34,13 +34,13 @@
     
     // the intercontinental hotel in SF has 5 floors. Let's add a prop to each of them.
     const int floorCount = 5;
-    for(int floorIndex = 0; floorIndex < floorCount; floorIndex++)
+    for(int floorId = 0; floorId < floorCount; floorId++)
     {
-        WRLDProp* prop = [WRLDProp propWithName:@"my_prop"
+        WRLDProp* prop = [WRLDProp propWithName:[NSString stringWithFormat:@"my_prop_%d", floorId]
                                      geometryId:@"duck"
-                                       location:CLLocationCoordinate2DMake(37.782084, -122.404578)
+                                       location:CLLocationCoordinate2DMake(37.782080, -122.404575)
                                     indoorMapId:@"intercontinental_hotel_8628"
-                               indoorMapFloorId: floorIndex
+                               indoorMapFloorId:floorId
                                       elevation:0
                                   elevationMode:WRLDElevationModeHeightAboveGround
                                  headingDegrees:90.0];
