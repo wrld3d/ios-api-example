@@ -34,6 +34,7 @@
     
     // the intercontinental hotel in SF has 5 floors. Let's add a prop to each of them.
     const int floorCount = 5;
+
     for(int floorId = 0; floorId < floorCount; floorId++)
     {
         WRLDProp* prop = [WRLDProp propWithName:[NSString stringWithFormat:@"my_prop_%d", floorId]
