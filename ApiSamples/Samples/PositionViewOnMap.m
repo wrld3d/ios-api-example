@@ -98,7 +98,7 @@
 
     NSString* transformedPointText;
     if(transformedPoint != nil)
-        transformedPointText = [NSString stringWithFormat:@"Lat:%.4f Long:%.4f Alt:%.4f",
+        transformedPointText = [NSString stringWithFormat:@"Lat:%.6f Long:%.6f Alt:%.2f m",
                                 transformedPoint->coordinate.latitude,
                                 transformedPoint->coordinate.longitude,
                                 transformedPoint->altitude];
