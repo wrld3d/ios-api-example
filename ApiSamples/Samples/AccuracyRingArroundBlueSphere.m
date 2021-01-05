@@ -1,11 +1,8 @@
 #import "AccuracyRingArroundBlueSphere.h"
 @import Wrld;
 
-
 @interface AccuracyRingArroundBlueSphere ()
-
 @property (nonatomic) WRLDMapView *mapView;
-
 @end
 
 @implementation AccuracyRingArroundBlueSphere
