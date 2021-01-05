@@ -12,6 +12,7 @@
 		521807C21EC09F3E0070ACDD /* AddMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C11EC09F3E0070ACDD /* AddMarker.m */; };
 		521807C61EC0B1670070ACDD /* MarkerChangeDrawOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */; };
 		521807C91EC0B75B0070ACDD /* MarkerTappedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */; };
+		5911F11F259E35DE0095E53A /* AccuracyRingArroundBlueSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911F11D259E35DE0095E53A /* AccuracyRingArroundBlueSphere.m */; };
 		650E369121B589B2003A5E73 /* AddPropIndoors.m in Sources */ = {isa = PBXBuildFile; fileRef = 650E368F21B589B2003A5E73 /* AddPropIndoors.m */; };
 		65B6A4D420932FD800F17DEE /* PrecacheMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A4D320932FD800F17DEE /* PrecacheMapData.m */; };
 		65B6A4E620A1FDC900F17DEE /* CancelPrecacheMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B6A4E420A1FDC800F17DEE /* CancelPrecacheMapData.m */; };
@@ -126,6 +127,8 @@
 		521807C51EC0B1670070ACDD /* MarkerChangeDrawOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerChangeDrawOrder.m; sourceTree = "<group>"; };
 		521807C71EC0B75B0070ACDD /* MarkerTappedNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerTappedNotification.h; sourceTree = "<group>"; };
 		521807C81EC0B75B0070ACDD /* MarkerTappedNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerTappedNotification.m; sourceTree = "<group>"; };
+		5911F11D259E35DE0095E53A /* AccuracyRingArroundBlueSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccuracyRingArroundBlueSphere.m; sourceTree = "<group>"; };
+		5911F11E259E35DE0095E53A /* AccuracyRingArroundBlueSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccuracyRingArroundBlueSphere.h; sourceTree = "<group>"; };
 		650E368F21B589B2003A5E73 /* AddPropIndoors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPropIndoors.m; sourceTree = "<group>"; };
 		650E369021B589B2003A5E73 /* AddPropIndoors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPropIndoors.h; sourceTree = "<group>"; };
 		65B6A4D220932FD800F17DEE /* PrecacheMapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrecacheMapData.h; sourceTree = "<group>"; };
@@ -406,6 +409,8 @@
 				E0A48C0E1EBB9A6200DD387F /* SampleClasses.h */,
 				E0A525341EB73A7600504831 /* BasicMap.h */,
 				E0A48C0A1EBB95BF00DD387F /* BasicMap.m */,
+				5911F11E259E35DE0095E53A /* AccuracyRingArroundBlueSphere.h */,
+				5911F11D259E35DE0095E53A /* AccuracyRingArroundBlueSphere.m */,
 				D07F7C251F30CC1100956ACE /* BlueSphereChangeLocation.h */,
 				D07F7C231F30CA6600956ACE /* BlueSphereChangeLocation.m */,
 				D01B67531F31CC1F00B164FB /* BlueSphereChangeHeading.h */,
@@ -754,6 +759,7 @@
 				D04429441EDEDCBB00F5AEEE /* PolygonWithInteriorPolygons.m in Sources */,
 				D0AAB6541EBB6FCE00384605 /* AnimateCamera.m in Sources */,
 				BB3CEC332034357400AF5235 /* PickIndoorMapEntities.m in Sources */,
+				5911F11F259E35DE0095E53A /* AccuracyRingArroundBlueSphere.m in Sources */,
 				D0AAB64B1EBB4BD400384605 /* SampleInfo.m in Sources */,
 				BB6B6D7A1FD96A2F0070E78F /* FindOutdoorRoute.m in Sources */,
 				E0A5253F1EB73A7600504831 /* MainTableViewController.m in Sources */,

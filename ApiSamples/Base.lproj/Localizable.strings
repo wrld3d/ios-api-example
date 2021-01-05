@@ -167,6 +167,12 @@
 "SampleDescription_PolygonWithElevation" = "Display a polygon on the map at a height above the ground";
 
 /* No comment provided by engineer. */
+"SampleTitle_AccuracyRingArroundBlueSphere" = "Blue sphere with accuracy ring arround";
+
+/* No comment provided by engineer. */
+"SampleDescription_AccuracyRingArroundBlueSphere" = "Move the blue sphere with accuracy ring to a different point on the map";
+
+/* No comment provided by engineer. */
 "SampleTitle_BlueSphereChangeLocation" = "Change the location of the blue sphere";
 
 /* No comment provided by engineer. */

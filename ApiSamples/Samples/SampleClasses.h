@@ -29,6 +29,7 @@
 #import "AddPolygonIndoors.h"
 #import "PolygonWithInteriorPolygons.h"
 #import "PolygonWithElevation.h"
+#import "AccuracyRingArroundBlueSphere.h"
 #import "BlueSphereChangeLocation.h"
 #import "BlueSphereChangeHeading.h"
 #import "BlueSphereChangeElevation.h"
