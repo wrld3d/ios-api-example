@@ -1,25 +1,27 @@
-#import "AccuracyRingArroundBlueSphere.h"
+#import "AccuracyRingAroundBlueSphere.h"
 @import Wrld;
 
-@interface AccuracyRingArroundBlueSphere ()
+@interface AccuracyRingAroundBlueSphere ()
 @property (nonatomic) WRLDMapView *mapView;
 @end
 
-@implementation AccuracyRingArroundBlueSphere
+@implementation AccuracyRingAroundBlueSphere
 {
     NSTimer *myTimer;
-    BOOL locationToggle;
+    BOOL accuracyRingToggle;
     CLLocationCoordinate2D initialBlueSphereLocation;
-    CLLocationCoordinate2D alteredBlueSphereLocation;
+    float initialAccuracyRingRadius;
+    float alteredAccuracyRingRadius;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    locationToggle = false;
+    accuracyRingToggle = false;
     initialBlueSphereLocation = CLLocationCoordinate2DMake(56.459811, -2.977928);
-    alteredBlueSphereLocation = CLLocationCoordinate2DMake(56.459675, -2.977205);
+    initialAccuracyRingRadius = 5;
+    alteredAccuracyRingRadius = 10;
     
     _mapView = [[WRLDMapView alloc] initWithFrame:self.view.bounds];
     
@@ -35,7 +37,7 @@
     bluesphere = [_mapView blueSphere];
     [bluesphere setEnabled:YES];
     [bluesphere setAccuracyRingEnabled:YES];
-    [bluesphere setAccuracyInMeters:10.0];
+    [bluesphere setAccuracyInMeters:initialAccuracyRingRadius];
     [bluesphere setCoordinate:initialBlueSphereLocation];
     
     myTimer = [NSTimer scheduledTimerWithTimeInterval:2
@@ -55,8 +57,8 @@
 - (void)toggleLocation:(NSTimer *)timer
 {
     WRLDBlueSphere* bluesphere = timer.userInfo;
-    bluesphere.coordinate = locationToggle ? initialBlueSphereLocation : alteredBlueSphereLocation;
-    locationToggle = !locationToggle;
+    bluesphere.accuracyInMeters = accuracyRingToggle ? initialAccuracyRingRadius : alteredAccuracyRingRadius;
+    accuracyRingToggle = !accuracyRingToggle;
 }
 
 @end
