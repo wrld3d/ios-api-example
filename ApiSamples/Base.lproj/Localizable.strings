@@ -170,7 +170,7 @@
 "SampleTitle_AccuracyRingAroundBlueSphere" = "Blue sphere with accuracy ring";
 
 /* No comment provided by engineer. */
-"SampleDescription_AccuracyRingAroundBlueSphere" = "Move the blue sphere with accuracy ring to a different point on the map";
+"SampleDescription_AccuracyRingAroundBlueSphere" = "Show an accuracy ring around blue sphere";
 
 /* No comment provided by engineer. */
 "SampleTitle_BlueSphereChangeLocation" = "Change the location of the blue sphere";
